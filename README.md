@@ -1,2 +1,3 @@
 # ansible-galaxy-fmgdevice-sphinxdoc
-Ansible collection for configuring FortiManager Devices.
+
+Read the docs online: https://ansible-galaxy-fmgdevice-docs.readthedocs.io/en/latest/
