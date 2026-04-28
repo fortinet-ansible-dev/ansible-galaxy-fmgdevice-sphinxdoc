@@ -27,14 +27,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
 
 
 
@@ -58,31 +58,31 @@ Parameters
  <li><span class="li-head">id</span> Index (1 - 4096). <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">object</span> Name of the configuration object that can be configured independently for all vdoms. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log.fortianalyzer.setting, log.fortianalyzer.override-setting, vpn.ipsec.phase1-interface, vpn.ipsec.phase2-interface, router.bgp, router.route-map, router.prefix-list, firewall.ippool, log.fortianalyzer2.setting, log.fortianalyzer2.override-setting, log.fortianalyzer3.setting, log.fortianalyzer3.override-setting, log.fortianalyzer-cloud.setting, log.fortianalyzer-cloud.override-setting, system.central-management, system.csf, user.radius, system.virtual-wan-link, log.syslogd.setting, log.syslogd.override-setting, log.syslogd2.setting, log.syslogd2.override-setting, log.syslogd3.setting, log.syslogd3.override-setting, log.syslogd4.setting, log.syslogd4.override-setting, firewall.vip, firewall.vip6, firewall.vip46, firewall.vip64, firewall.ippool6, router.static, router.static6, system.interface, system.sdwan, system.saml, router.policy, router.policy6, system.gre-tunnel, system.cluster-sync, system.standalone-cluster, system.snmp.sysinfo, system.snmp.community, system.snmp.user, firewall.address]</span> 
+ <li><span class="li-head">object</span> Name of the configuration object that can be configured independently for all vdoms. <span class="li-normal">type: str</span> <span class="li-normal">choices: [log.fortianalyzer.setting, log.fortianalyzer.override-setting, vpn.ipsec.phase1-interface, vpn.ipsec.phase2-interface, router.bgp, router.route-map, router.prefix-list, firewall.ippool, log.fortianalyzer2.setting, log.fortianalyzer2.override-setting, log.fortianalyzer3.setting, log.fortianalyzer3.override-setting, log.fortianalyzer-cloud.setting, log.fortianalyzer-cloud.override-setting, system.central-management, system.csf, user.radius, system.virtual-wan-link, log.syslogd.setting, log.syslogd.override-setting, log.syslogd2.setting, log.syslogd2.override-setting, log.syslogd3.setting, log.syslogd3.override-setting, log.syslogd4.setting, log.syslogd4.override-setting, firewall.vip, firewall.vip6, firewall.vip46, firewall.vip64, firewall.ippool6, router.static, router.static6, system.interface, system.sdwan, system.saml, router.policy, router.policy6, system.gre-tunnel, system.cluster-sync, system.standalone-cluster, system.snmp.sysinfo, system.snmp.community, system.snmp.user, firewall.address, system.vin-alarm]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">oid</span> Object id. <span class="li-normal">type: int</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">scope</span> Determine whether the configuration object can be configured separately for all vdoms or if some vdoms share the same configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, inclusive, exclusive]</span> 
+ <li><span class="li-head">scope</span> Determine whether the configuration object can be configured separately for all vdoms or if some vdoms share the same configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [all, inclusive, exclusive]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">vdom</span> Names of the vdoms. <span class="li-normal">type: list</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -106,6 +106,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -114,8 +115,8 @@ Examples
       - name: Global configuration objects that can be configured independently across different ha peers for all VDOMs or for the defined VDOM scope.
         fortinet.fmgdevice.fmgd_system_vdomexception:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

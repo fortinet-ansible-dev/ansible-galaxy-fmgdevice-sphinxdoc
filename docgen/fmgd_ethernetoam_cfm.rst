@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -98,13 +98,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">message_interval</span> <b>(Alias name: message-interval)</b>  Continuity-check message frequency interval in ms <span class="li-normal">type: str</span> <span class="li-normal">choices: [100, 1000, 10000, 60000, 600000]</span> 
+ <li><span class="li-head">message_interval</span> <b>(Alias name: message-interval)</b>  Continuity-check message frequency interval in ms <span class="li-normal">type: str</span> <span class="li-normal">choices: [100, 1000, 10000, 60000, 600000]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sender_id</span> <b>(Alias name: sender-id)</b>  Tlv sender id. <span class="li-normal">type: str</span> <span class="li-normal">choices: [None, Hostname]</span> 
+ <li><span class="li-head">sender_id</span> <b>(Alias name: sender-id)</b>  Tlv sender id. <span class="li-normal">type: str</span> <span class="li-normal">choices: [None, Hostname]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -145,6 +145,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -153,8 +154,8 @@ Examples
       - name: CFM domain configuration.
         fortinet.fmgdevice.fmgd_ethernetoam_cfm:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

@@ -27,14 +27,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
 
 
 
@@ -59,25 +59,25 @@ Parameters
  <li><span class="li-head">_local_platform_str</span> Local platform str. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ddscan</span> Enable/disable use of one radio for dedicated full-band scanning to detect rf characterization and wireless threat management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ddscan</span> Enable/disable use of one radio for dedicated full-band scanning to detect rf characterization and wireless threat management. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Configure operation mode of 5g radios (default = single-5g). <span class="li-normal">type: str</span> <span class="li-normal">choices: [dual-5G, single-5G]</span> 
+ <li><span class="li-head">mode</span> Configure operation mode of 5g radios (default = single-5g). <span class="li-normal">type: str</span> <span class="li-normal">choices: [dual-5G, single-5G]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Wtp, fortiap or ap platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [30B-50B, 60B, 80CM-81CM, 220A, 220B, 210B, 60C, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, S321C, S323C, FWF, S311C, S313C, AP-11N, S322C, S321CR, S322CR, S323CR, S421E, S422E, S423E, 421E, 423E, C221E, C226E, C23JD, C24JE, C21D, U421E, U423E, 221E, 222E, 223E, S221E, S223E, U221EV, U223EV, U321EV, U323EV, 224E, U422EV, U24JEV, 321E, U431F, U433F, 231E, 431F, 433F, 231F, 432F, 234F, 23JF, U231F, 831F, U234F, U432F, 431FL, 432FR, 433FL, 231FL, 231G, 233G, 431G, 433G, U231G, U441G, 234G, 432G, 441K, 443K, 241K, 243K, 231K, 23JK]</span> 
+ <li><span class="li-head">type</span> Wtp, fortiap or ap platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [30B-50B, 60B, 80CM-81CM, 220A, 220B, 210B, 60C, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, S321C, S323C, FWF, S311C, S313C, AP-11N, S322C, S321CR, S322CR, S323CR, S421E, S422E, S423E, 421E, 423E, C221E, C226E, C23JD, C24JE, C21D, U421E, U423E, 221E, 222E, 223E, S221E, S223E, U221EV, U223EV, U321EV, U323EV, 224E, U422EV, U24JEV, 321E, U431F, U433F, 231E, 431F, 433F, 231F, 432F, 234F, 23JF, U231F, 831F, U234F, U432F, 431FL, 432FR, 433FL, 231FL, 231G, 233G, 431G, 433G, U231G, U441G, 234G, 432G, 441K, 443K, 241K, 243K, 231K, 23JK, 222KL, 244K, 432K, MVP, 231KD]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -101,6 +101,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -109,8 +110,8 @@ Examples
       - name: WTP, FortiAP, or AP platform.
         fortinet.fmgdevice.fmgd_wireless_wtpprofile_platform:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

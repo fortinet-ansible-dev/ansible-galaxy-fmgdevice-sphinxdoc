@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -56,19 +56,19 @@ Parameters
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vpn_ssl_settings_authenticationrule</span> - Authentication rule for SSL VPN. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth</span> Ssl vpn authentication method restriction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, local, radius, ldap, tacacs+, peer]</span> 
+ <li><span class="li-head">auth</span> Ssl vpn authentication method restriction. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, local, radius, ldap, tacacs+, peer]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cipher</span> Ssl vpn cipher strength. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, high, medium]</span> 
+ <li><span class="li-head">cipher</span> Ssl vpn cipher strength. <span class="li-normal">type: str</span> <span class="li-normal">choices: [any, high, medium]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Enable/disable ssl vpn client certificate restrictive. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">client_cert</span> <b>(Alias name: client-cert)</b>  Enable/disable ssl vpn client certificate restrictive. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -104,7 +104,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_address_negate</span> <b>(Alias name: source-address-negate)</b>  Enable/disable negated source address match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">source_address_negate</span> <b>(Alias name: source-address-negate)</b>  Enable/disable negated source address match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -116,7 +116,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">source_address6_negate</span> <b>(Alias name: source-address6-negate)</b>  Enable/disable negated source ipv6 address match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">source_address6_negate</span> <b>(Alias name: source-address6-negate)</b>  Enable/disable negated source ipv6 address match. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> latest</code></p>
@@ -161,6 +161,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -169,8 +170,8 @@ Examples
       - name: Authentication rule for SSL VPN.
         fortinet.fmgdevice.fmgd_vpn_ssl_settings_authenticationrule:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

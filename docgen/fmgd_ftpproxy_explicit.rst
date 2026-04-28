@@ -27,14 +27,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
 
 
 
@@ -58,61 +58,79 @@ Parameters
  <li><span class="li-head">incoming_ip</span> <b>(Alias name: incoming-ip)</b>  Accept incoming ftp requests from this ip address. <span class="li-normal">type: str</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">incoming_port</span> <b>(Alias name: incoming-port)</b>  Accept incoming ftp requests on one or more ports. <span class="li-normal">type: list</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">outgoing_ip</span> <b>(Alias name: outgoing-ip)</b>  Outgoing ftp requests will leave from this ip address. <span class="li-normal">type: list</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sec_default_action</span> <b>(Alias name: sec-default-action)</b>  Accept or deny explicit ftp proxy sessions when no ftp proxy firewall policy exists. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, accept]</span> 
+ <li><span class="li-head">sec_default_action</span> <b>(Alias name: sec-default-action)</b>  Accept or deny explicit ftp proxy sessions when no ftp proxy firewall policy exists. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, accept]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_data_mode</span> <b>(Alias name: server-data-mode)</b>  Determine mode of data session on ftp server side. <span class="li-normal">type: str</span> <span class="li-normal">choices: [client, passive]</span> 
+ <li><span class="li-head">server_data_mode</span> <b>(Alias name: server-data-mode)</b>  Determine mode of data session on ftp server side. <span class="li-normal">type: str</span> <span class="li-normal">choices: [client, passive]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl</span> Enable/disable the explicit ftps proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ssl</span> Enable/disable the explicit ftps proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_algorithm</span> <b>(Alias name: ssl-algorithm)</b>  Relative strength of encryption algorithms accepted in negotiation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, low, medium]</span> 
+ <li><span class="li-head">ssl_algorithm</span> <b>(Alias name: ssl-algorithm)</b>  Relative strength of encryption algorithms accepted in negotiation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [high, low, medium]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ssl_cert</span> <b>(Alias name: ssl-cert)</b>  List of certificate names to use for ssl connections to this server. <span class="li-normal">type: list</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssl_dh_bits</span> <b>(Alias name: ssl-dh-bits)</b>  Bit-size of diffie-hellman (dh) prime used in dhe-rsa negotiation (default = 2048). <span class="li-normal">type: str</span> <span class="li-normal">choices: [768, 1024, 1536, 2048]</span> 
+ <li><span class="li-head">ssl_dh_bits</span> <b>(Alias name: ssl-dh-bits)</b>  Bit-size of diffie-hellman (dh) prime used in dhe-rsa negotiation (default = 2048). <span class="li-normal">type: str</span> <span class="li-normal">choices: [768, 1024, 1536, 2048]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable the explicit ftp proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable the explicit ftp proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">active_src_port</span> <b>(Alias name: active-src-port)</b>  Active src port. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, server]</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">incoming_ip6</span> <b>(Alias name: incoming-ip6)</b>  Incoming ip6. <span class="li-normal">type: str</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ipv6_status</span> <b>(Alias name: ipv6-status)</b>  Ipv6 status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -136,6 +154,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -144,8 +163,8 @@ Examples
       - name: Configure explicit FTP proxy settings.
         fortinet.fmgdevice.fmgd_ftpproxy_explicit:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>
@@ -161,6 +180,9 @@ Examples
             # ssl_cert: <list or string>
             # ssl_dh_bits: <value in [768, 1024, 1536, ...]>
             # status: <value in [disable, enable]>
+            # active_src_port: <value in [default, server]>
+            # incoming_ip6: <string>
+            # ipv6_status: <value in [disable, enable]>
 
 
 Return Values

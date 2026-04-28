@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -61,7 +61,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">allow_opcode</span> <b>(Alias name: allow-opcode)</b>  Allowed pcp opcode. <span class="li-normal">type: list</span> <span class="li-normal">choices: [map, peer, announce]</span> 
+ <li><span class="li-head">allow_opcode</span> <b>(Alias name: allow-opcode)</b>  Allowed pcp opcode. <span class="li-normal">type: list</span> <span class="li-normal">choices: [map, peer, announce]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -73,7 +73,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Enable to respond to arp requests for external ip (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Enable to respond to arp requests for external ip (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -145,7 +145,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">multicast_announcement</span> <b>(Alias name: multicast-announcement)</b>  Enable/disable multicast announcements. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">multicast_announcement</span> <b>(Alias name: multicast-announcement)</b>  Enable/disable multicast announcements. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
  <div id="label31" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -163,7 +163,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">third_party</span> <b>(Alias name: third-party)</b>  Allow/disallow third party option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disallow, allow]</span> 
+ <li><span class="li-head">third_party</span> <b>(Alias name: third-party)</b>  Allow/disallow third party option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disallow, allow]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -177,7 +177,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Enable/disable pcp server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable pcp server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -204,6 +204,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -212,8 +213,8 @@ Examples
       - name: Configure PCP server information.
         fortinet.fmgdevice.fmgd_system_pcpserver:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

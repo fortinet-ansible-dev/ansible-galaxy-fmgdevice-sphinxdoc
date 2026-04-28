@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -78,7 +78,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [TCP, UDP]</span> 
+ <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [TCP, UDP]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -92,7 +92,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Status of slb inbound security rules setting (read-only). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, pending, updating]</span> 
+ <li><span class="li-head">status</span> Status of slb inbound security rules setting (read-only). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, pending, updating]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -125,6 +125,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -133,8 +134,8 @@ Examples
       - name: Configure temporary security rules.
         fortinet.fmgdevice.fmgd_azure_vwanslb_temporarysecurityrules:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

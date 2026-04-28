@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -54,7 +54,7 @@ Parameters
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_icond</span> - Configure Industrial Connectivity. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">iec101_keepalive</span> <b>(Alias name: iec101-keepalive)</b>  Send periodic test frame for probing link status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">iec101_keepalive</span> <b>(Alias name: iec101-keepalive)</b>  Send periodic test frame for probing link status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -78,7 +78,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">iec101_mode</span> <b>(Alias name: iec101-mode)</b>  Link layer transmission procedure. <span class="li-normal">type: str</span> <span class="li-normal">choices: [balanced, unbalanced]</span> 
+ <li><span class="li-head">iec101_mode</span> <b>(Alias name: iec101-mode)</b>  Link layer transmission procedure. <span class="li-normal">type: str</span> <span class="li-normal">choices: [balanced, unbalanced]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -96,7 +96,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">iec101_use_ack_char</span> <b>(Alias name: iec101-use-ack-char)</b>  Use single character for ack. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">iec101_use_ack_char</span> <b>(Alias name: iec101-use-ack-char)</b>  Use single character for ack. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -138,7 +138,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">modbus_serial_mode</span> <b>(Alias name: modbus-serial-mode)</b>  Serial transmission mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [RTU, ASCII]</span> 
+ <li><span class="li-head">modbus_serial_mode</span> <b>(Alias name: modbus-serial-mode)</b>  Serial transmission mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [RTU, ASCII]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -162,13 +162,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable this connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">status</span> Enable/disable this connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tty_baudrate</span> <b>(Alias name: tty-baudrate)</b>  Tty baudrate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [200, 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 115200]</span> 
+ <li><span class="li-head">tty_baudrate</span> <b>(Alias name: tty-baudrate)</b>  Tty baudrate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [200, 300, 600, 1200, 2400, 4800, 9600, 19200, 38400, 115200]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -186,13 +186,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tty_flowcontrol</span> <b>(Alias name: tty-flowcontrol)</b>  Tty flowcontrol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, xon-xoff, hw]</span> 
+ <li><span class="li-head">tty_flowcontrol</span> <b>(Alias name: tty-flowcontrol)</b>  Tty flowcontrol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, xon-xoff, hw]</span>
  <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
  <div id="label45" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">tty_parity</span> <b>(Alias name: tty-parity)</b>  Tty parity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, odd, even]</span> 
+ <li><span class="li-head">tty_parity</span> <b>(Alias name: tty-parity)</b>  Tty parity. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, odd, even]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -204,7 +204,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">type</span> Connection type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [iec101-104, modbus-serial-tcp, raw]</span> 
+ <li><span class="li-head">type</span> Connection type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [iec101-104, modbus-serial-tcp, raw]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -231,6 +231,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -239,8 +240,8 @@ Examples
       - name: Configure Industrial Connectivity.
         fortinet.fmgdevice.fmgd_system_icond:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

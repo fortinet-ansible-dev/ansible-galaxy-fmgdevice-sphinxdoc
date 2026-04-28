@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -75,7 +75,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos, remote]</span> 
+ <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos, remote]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -126,6 +126,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -134,8 +135,8 @@ Examples
       - name: Service level agreement
         fortinet.fmgdevice.fmgd_system_sdwan_healthcheckfortiguard_sla:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

@@ -27,14 +27,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
 
 
 
@@ -55,16 +55,16 @@ Parameters
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_deviceupgrade</span> - Independent upgrades for managed devices. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Fortinet device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortigate, fortiswitch, fortiap, fortiextender]</span> 
+ <li><span class="li-head">device_type</span> <b>(Alias name: device-type)</b>  Fortinet device type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortigate, fortiswitch, fortiap, fortiextender, fortiproxy]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">failure_reason</span> <b>(Alias name: failure-reason)</b>  Upgrade failure reason. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, internal, timeout, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, node-failed, csf-tree-not-supported, firmware-changed]</span> 
+ <li><span class="li-head">failure_reason</span> <b>(Alias name: failure-reason)</b>  Upgrade failure reason. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, internal, timeout, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, node-failed, csf-tree-not-supported, firmware-changed, image-missing]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ha_reboot_controller</span> <b>(Alias name: ha-reboot-controller)</b>  Serial number of the fortigate unit that will control the reboot process for the federated upgrade of the ha cluster. <span class="li-normal">type: str</span>
@@ -90,46 +90,46 @@ Parameters
  <li><span class="li-head">maximum_minutes</span> <b>(Alias name: maximum-minutes)</b>  Maximum number of minutes to allow for immediate upgrade preparation. <span class="li-normal">type: int</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">serial</span> Serial number of the node to include. <span class="li-normal">type: str</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">setup_time</span> <b>(Alias name: setup-time)</b>  Upgrade preparation start time in utc (hh:mm yyyy/mm/dd utc). <span class="li-normal">type: list</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Current status of the upgrade. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, initialized, downloading, ready, cancelled, confirmed, done, failed, device-disconnected, staging, final-check, upgrade-devices, coordinating, dry-run-done]</span> 
+ <li><span class="li-head">status</span> Current status of the upgrade. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disabled, initialized, downloading, ready, cancelled, confirmed, done, failed, device-disconnected, staging, final-check, upgrade-devices, coordinating, dry-run-done]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">time</span> Scheduled upgrade execution time in utc (hh:mm yyyy/mm/dd utc). <span class="li-normal">type: list</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">timing</span> Run immediately or at a scheduled time. <span class="li-normal">type: str</span> <span class="li-normal">choices: [immediate, scheduled]</span> 
+ <li><span class="li-head">timing</span> Run immediately or at a scheduled time. <span class="li-normal">type: str</span> <span class="li-normal">choices: [immediate, scheduled]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">upgrade_path</span> <b>(Alias name: upgrade-path)</b>  Fortinet os image versions to upgrade through in major-minor-patch format, such as 7-0-4. <span class="li-normal">type: str</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ignore_signing_errors</span> <b>(Alias name: ignore-signing-errors)</b>  Allow/reject use of fortigate firmware images that are unsigned. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">ignore_signing_errors</span> <b>(Alias name: ignore-signing-errors)</b>  Allow/reject use of fortigate firmware images that are unsigned. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -159,6 +159,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">allow_download</span> <b>(Alias name: allow-download)</b>  Enable/disable download firmware images. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -180,6 +186,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -188,8 +195,8 @@ Examples
       - name: Independent upgrades for managed devices.
         fortinet.fmgdevice.fmgd_system_deviceupgrade:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>
@@ -212,6 +219,7 @@ Examples
             # next_path_index: <integer>
             # starter_admin: <string>
             # vdom: <list or string>
+            # allow_download: <value in [disable, enable]>
 
 
 Return Values

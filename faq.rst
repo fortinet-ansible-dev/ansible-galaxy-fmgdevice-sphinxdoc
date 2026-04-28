@@ -21,8 +21,12 @@ Frequently Asked Questions (FAQ)
 What You Need To Know About Logging. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Every module in the FortiManager Device Ansible Collection includes the input argument **enable_log**.
-When set to **true**, log data is appended to the file `/tmp/fortimanager.ansible.log`.
+There are two ways to enable logging for FortiManager Ansible Collection:
+
+- Set environment variable ``ANSIBLE_FMGDEVICE_ENABLE_LOG`` to True/true. `$export ANSIBLE_FMGDEVICE_ENABLE_LOG=True`
+- Set the input argument ``enable_log`` to True in your playbook. Every module in the FortiManager Device Ansible Collection includes the input argument **enable_log**.
+
+When log is enabled, log data is appended to the file `/tmp/fortimanager.ansible.log`.
 
 How To Deal With Task Result?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -67,13 +67,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">billing_period</span> <b>(Alias name: billing-period)</b>  <month, week, day> <span class="li-normal">type: str</span> <span class="li-normal">choices: [daily, weekly, monthly]</span> 
+ <li><span class="li-head">billing_period</span> <b>(Alias name: billing-period)</b>  <month, week, day> <span class="li-normal">type: str</span> <span class="li-normal">choices: [daily, weekly, monthly]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">billing_weekday</span> <b>(Alias name: billing-weekday)</b>  Lte modem billing weekday (mon - sun). <span class="li-normal">type: str</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span> 
+ <li><span class="li-head">billing_weekday</span> <b>(Alias name: billing-weekday)</b>  Lte modem billing weekday (mon - sun). <span class="li-normal">type: str</span> <span class="li-normal">choices: [sunday, monday, tuesday, wednesday, thursday, friday, saturday]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -109,13 +109,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">overage</span> Enable/disable allowance of data overage as configured by data-limit (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">overage</span> Enable/disable allowance of data overage as configured by data-limit (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">target_sim_slot</span> <b>(Alias name: target-sim-slot)</b>  Target sim slot <1 or 2> <span class="li-normal">type: str</span> <span class="li-normal">choices: [SIM-slot-1, SIM-slot-2]</span> 
+ <li><span class="li-head">target_sim_slot</span> <b>(Alias name: target-sim-slot)</b>  Target sim slot <1 or 2> <span class="li-normal">type: str</span> <span class="li-normal">choices: [SIM-slot-1, SIM-slot-2]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -142,6 +142,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -150,8 +151,8 @@ Examples
       - name: Configure data plan.
         fortinet.fmgdevice.fmgd_system_ltemodem_dataplan:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

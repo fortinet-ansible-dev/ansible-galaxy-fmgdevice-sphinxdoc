@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -56,7 +56,7 @@ Parameters
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_pcpserver_pools</span> - Configure PCP pools. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">allow_opcode</span> <b>(Alias name: allow-opcode)</b>  Allowed pcp opcode. <span class="li-normal">type: list</span> <span class="li-normal">choices: [map, peer, announce]</span> 
+ <li><span class="li-head">allow_opcode</span> <b>(Alias name: allow-opcode)</b>  Allowed pcp opcode. <span class="li-normal">type: list</span> <span class="li-normal">choices: [map, peer, announce]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -68,7 +68,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Enable to respond to arp requests for external ip (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">arp_reply</span> <b>(Alias name: arp-reply)</b>  Enable to respond to arp requests for external ip (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -140,7 +140,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">multicast_announcement</span> <b>(Alias name: multicast-announcement)</b>  Enable/disable multicast announcements. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">multicast_announcement</span> <b>(Alias name: multicast-announcement)</b>  Enable/disable multicast announcements. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -158,7 +158,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">third_party</span> <b>(Alias name: third-party)</b>  Allow/disallow third party option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disallow, allow]</span> 
+ <li><span class="li-head">third_party</span> <b>(Alias name: third-party)</b>  Allow/disallow third party option. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disallow, allow]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -191,6 +191,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -199,8 +200,8 @@ Examples
       - name: Configure PCP pools.
         fortinet.fmgdevice.fmgd_system_pcpserver_pools:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

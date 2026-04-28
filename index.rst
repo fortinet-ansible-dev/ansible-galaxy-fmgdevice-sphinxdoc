@@ -1,4 +1,4 @@
-Welcome to Fortinet FortiManager Device Ansible Collection documentation v1.0.0!
+Welcome to Fortinet FortiManager Device Ansible Collection documentation v1.1.0!
 ================================================================================
 
 The FortiManager Device Ansible Collection provides Ansible modules for configuring FortiManager devices.

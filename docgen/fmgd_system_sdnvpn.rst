@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -61,7 +61,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bgp_from</span> <b>(Alias name: bgp-from)</b>  Bgp source. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unset, config, cli]</span> 
+ <li><span class="li-head">bgp_from</span> <b>(Alias name: bgp-from)</b>  Bgp source. <span class="li-normal">type: str</span> <span class="li-normal">choices: [unset, config, cli]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -115,7 +115,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">nat_traversal</span> <b>(Alias name: nat-traversal)</b>  Enable/disable use for nat traversal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">nat_traversal</span> <b>(Alias name: nat-traversal)</b>  Enable/disable use for nat traversal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -133,13 +133,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">remote_type</span> <b>(Alias name: remote-type)</b>  Type of remote device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [vgw, tgw]</span> 
+ <li><span class="li-head">remote_type</span> <b>(Alias name: remote-type)</b>  Type of remote device. <span class="li-normal">type: str</span> <span class="li-normal">choices: [vgw, tgw]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">routing_type</span> <b>(Alias name: routing-type)</b>  Type of routing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, dynamic]</span> 
+ <li><span class="li-head">routing_type</span> <b>(Alias name: routing-type)</b>  Type of routing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [static, dynamic]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -226,6 +226,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -234,8 +235,8 @@ Examples
       - name: Configure public cloud VPN service.
         fortinet.fmgdevice.fmgd_system_sdnvpn:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

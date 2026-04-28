@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -56,7 +56,7 @@ Parameters
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">ztna_webportal</span> - Configure ztna web-portal. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">auth_portal</span> <b>(Alias name: auth-portal)</b>  Enable/disable authentication portal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">auth_portal</span> <b>(Alias name: auth-portal)</b>  Enable/disable authentication portal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -74,7 +74,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">clipboard</span> Enable to support rdp/vpc clipboard functionality. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">clipboard</span> Enable to support rdp/vpc clipboard functionality. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -86,7 +86,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">customize_forticlient_download_url</span> <b>(Alias name: customize-forticlient-download-url)</b>  Enable support of customized download url for forticlient. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">customize_forticlient_download_url</span> <b>(Alias name: customize-forticlient-download-url)</b>  Enable support of customized download url for forticlient. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -110,37 +110,37 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">display_bookmark</span> <b>(Alias name: display-bookmark)</b>  Enable to display the web portal bookmark widget. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">display_bookmark</span> <b>(Alias name: display-bookmark)</b>  Enable to display the web portal bookmark widget. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">display_history</span> <b>(Alias name: display-history)</b>  Enable to display the web portal user login history widget. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">display_history</span> <b>(Alias name: display-history)</b>  Enable to display the web portal user login history widget. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">display_status</span> <b>(Alias name: display-status)</b>  Enable to display the web portal status widget. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">display_status</span> <b>(Alias name: display-status)</b>  Enable to display the web portal status widget. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">focus_bookmark</span> <b>(Alias name: focus-bookmark)</b>  Enable to prioritize the placement of the bookmark section over the quick-connection section in the ztna web-portal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">focus_bookmark</span> <b>(Alias name: focus-bookmark)</b>  Enable to prioritize the placement of the bookmark section over the quick-connection section in the ztna web-portal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">forticlient_download</span> <b>(Alias name: forticlient-download)</b>  Enable/disable download option for forticlient. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">forticlient_download</span> <b>(Alias name: forticlient-download)</b>  Enable/disable download option for forticlient. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">forticlient_download_method</span> <b>(Alias name: forticlient-download-method)</b>  Forticlient download method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [direct, ssl-vpn]</span> 
+ <li><span class="li-head">forticlient_download_method</span> <b>(Alias name: forticlient-download-method)</b>  Forticlient download method. <span class="li-normal">type: str</span> <span class="li-normal">choices: [direct, ssl-vpn]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -158,7 +158,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">log_blocked_traffic</span> <b>(Alias name: log-blocked-traffic)</b>  Enable/disable logging of blocked traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">log_blocked_traffic</span> <b>(Alias name: log-blocked-traffic)</b>  Enable/disable logging of blocked traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -176,13 +176,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">policy_auth_sso</span> <b>(Alias name: policy-auth-sso)</b>  Enable policy sso authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">policy_auth_sso</span> <b>(Alias name: policy-auth-sso)</b>  Enable policy sso authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">theme</span> Web portal color scheme. <span class="li-normal">type: str</span> <span class="li-normal">choices: [melongene, mariner, neutrino, jade, graphite, dark-matter, onyx, eclipse, jet-stream, security-fabric]</span> 
+ <li><span class="li-head">theme</span> Web portal color scheme. <span class="li-normal">type: str</span> <span class="li-normal">choices: [melongene, mariner, neutrino, jade, graphite, dark-matter, onyx, eclipse, jet-stream, security-fabric]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
@@ -206,6 +206,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">bookmarks</span> Bookmarks. <span class="li-normal">type: list</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">llm_profile</span> <b>(Alias name: llm-profile)</b>  Llm profile. <span class="li-normal">type: list</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">llm_proxy</span> <b>(Alias name: llm-proxy)</b>  Llm proxy. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -227,6 +245,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -235,8 +254,8 @@ Examples
       - name: Configure ztna web-portal.
         fortinet.fmgdevice.fmgd_ztna_webportal:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>
@@ -268,6 +287,9 @@ Examples
             # vip: <list or string>
             # vip6: <list or string>
             # windows_forticlient_download_url: <string>
+            # bookmarks: <list or string>
+            # llm_profile: <list or string>
+            # llm_proxy: <value in [disable, enable]>
 
 
 Return Values

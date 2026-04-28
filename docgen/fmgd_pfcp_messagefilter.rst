@@ -27,14 +27,14 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
 ----------------------------------
 .. raw:: html
 
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
 
 
 
@@ -56,94 +56,94 @@ Parameters
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">pfcp_messagefilter</span> - Message filter for PFCP messages. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">association_release</span> <b>(Alias name: association-release)</b>  Allow or deny pfcp association release request (9) and pfcp association release response (10). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">association_release</span> <b>(Alias name: association-release)</b>  Allow or deny pfcp association release request (9) and pfcp association release response (10). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">association_setup</span> <b>(Alias name: association-setup)</b>  Allow or deny pfcp association setup request (5) and pfcp association setup response (6). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">association_setup</span> <b>(Alias name: association-setup)</b>  Allow or deny pfcp association setup request (5) and pfcp association setup response (6). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">association_update</span> <b>(Alias name: association-update)</b>  Allow or deny pfcp association update request (7) and pfcp association update response (8). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">association_update</span> <b>(Alias name: association-update)</b>  Allow or deny pfcp association update request (7) and pfcp association update response (8). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">heartbeat</span> Allow or deny pfcp heartbeat request (1) and pfcp heartbeat response (2). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">heartbeat</span> Allow or deny pfcp heartbeat request (1) and pfcp heartbeat response (2). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label6' href="javascript:ContentClick('label7', 'label6');" onmouseover="ContentPreview('label7');" onmouseout="ContentUnpreview('label7');" title="click to collapse or expand..."> more... </a>
  <div id="label7" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">name</span> Message filter name. <span class="li-normal">type: str</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">node_report</span> <b>(Alias name: node-report)</b>  Allow or deny pfcp node report request (12) and pfcp node report response (13). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">node_report</span> <b>(Alias name: node-report)</b>  Allow or deny pfcp node report request (12) and pfcp node report response (13). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pfd_management</span> <b>(Alias name: pfd-management)</b>  Allow or deny pfcp pfd management request (3) and pfcp pfd management response (4). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">pfd_management</span> <b>(Alias name: pfd-management)</b>  Allow or deny pfcp pfd management request (3) and pfcp pfd management response (4). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">session_deletion</span> <b>(Alias name: session-deletion)</b>  Allow or deny pfcp session deletion request (54) and pfcp session deletion response (55). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">session_deletion</span> <b>(Alias name: session-deletion)</b>  Allow or deny pfcp session deletion request (54) and pfcp session deletion response (55). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">session_establish</span> <b>(Alias name: session-establish)</b>  Allow or deny pfcp session establishment request (50) and pfcp session establishment response (51). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">session_establish</span> <b>(Alias name: session-establish)</b>  Allow or deny pfcp session establishment request (50) and pfcp session establishment response (51). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">session_modification</span> <b>(Alias name: session-modification)</b>  Allow or deny pfcp session modification request (52) and pfcp session modification response (53). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">session_modification</span> <b>(Alias name: session-modification)</b>  Allow or deny pfcp session modification request (52) and pfcp session modification response (53). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">session_report</span> <b>(Alias name: session-report)</b>  Allow or deny pfcp session report request (56) and pfcp session report response (57). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">session_report</span> <b>(Alias name: session-report)</b>  Allow or deny pfcp session report request (56) and pfcp session report response (57). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
  <div id="label21" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">session_set_deletion</span> <b>(Alias name: session-set-deletion)</b>  Allow or deny pfcp session set deletion request (14) and pfcp session set deletion response (15). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">session_set_deletion</span> <b>(Alias name: session-set-deletion)</b>  Allow or deny pfcp session set deletion request (14) and pfcp session set deletion response (15). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">unknown_message</span> <b>(Alias name: unknown-message)</b>  Allow or deny unknown messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">unknown_message</span> <b>(Alias name: unknown-message)</b>  Allow or deny unknown messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
  <div id="label25" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">unknown_message_allow_list</span> <b>(Alias name: unknown-message-allow-list)</b>  Allow list of unknown messages. <span class="li-normal">type: list</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">version_not_support</span> <b>(Alias name: version-not-support)</b>  Allow or deny pfcp version not supported response (11). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span> 
+ <li><span class="li-head">version_not_support</span> <b>(Alias name: version-not-support)</b>  Allow or deny pfcp version not supported response (11). <span class="li-normal">type: str</span> <span class="li-normal">choices: [deny, allow]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.9</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -167,6 +167,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -175,8 +176,8 @@ Examples
       - name: Message filter for PFCP messages.
         fortinet.fmgdevice.fmgd_pfcp_messagefilter:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

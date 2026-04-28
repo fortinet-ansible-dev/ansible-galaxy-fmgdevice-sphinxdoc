@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -56,7 +56,7 @@ Parameters
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_sdwan_healthcheckfortiguard</span> - SD-WAN status checking or health checking. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">addr_mode</span> <b>(Alias name: addr-mode)</b>  Address mode (ipv4 or ipv6). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4, ipv6]</span> 
+ <li><span class="li-head">addr_mode</span> <b>(Alias name: addr-mode)</b>  Address mode (ipv4 or ipv6). <span class="li-normal">type: str</span> <span class="li-normal">choices: [ipv4, ipv6]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -68,7 +68,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">detect_mode</span> <b>(Alias name: detect-mode)</b>  The mode determining how to detect the server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive, prefer-passive, remote, agent-based]</span> 
+ <li><span class="li-head">detect_mode</span> <b>(Alias name: detect-mode)</b>  The mode determining how to detect the server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive, prefer-passive, remote, agent-based]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -92,7 +92,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">embed_measured_health</span> <b>(Alias name: embed-measured-health)</b>  Enable/disable embedding measured health information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">embed_measured_health</span> <b>(Alias name: embed-measured-health)</b>  Enable/disable embedding measured health information. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -110,7 +110,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ftp_mode</span> <b>(Alias name: ftp-mode)</b>  Ftp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [passive, port]</span> 
+ <li><span class="li-head">ftp_mode</span> <b>(Alias name: ftp-mode)</b>  Ftp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [passive, port]</span>
  <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
  <div id="label19" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -152,7 +152,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mos_codec</span> <b>(Alias name: mos-codec)</b>  Codec to use for mos calculation (default = g711). <span class="li-normal">type: str</span> <span class="li-normal">choices: [g711, g722, g729]</span> 
+ <li><span class="li-head">mos_codec</span> <b>(Alias name: mos-codec)</b>  Codec to use for mos calculation (default = g711). <span class="li-normal">type: str</span> <span class="li-normal">choices: [g711, g722, g729]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -182,7 +182,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">probe_packets</span> <b>(Alias name: probe-packets)</b>  Enable/disable transmission of probe packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">probe_packets</span> <b>(Alias name: probe-packets)</b>  Enable/disable transmission of probe packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
  <div id="label43" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -194,13 +194,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocol used to determine if the fortigate can communicate with the server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, dns, tcp-connect, ftp, https]</span> 
+ <li><span class="li-head">protocol</span> Protocol used to determine if the fortigate can communicate with the server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ping, tcp-echo, udp-echo, http, twamp, dns, tcp-connect, ftp, https]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">quality_measured_method</span> <b>(Alias name: quality-measured-method)</b>  Method to measure the quality of tcp-connect. <span class="li-normal">type: str</span> <span class="li-normal">choices: [half-close, half-open]</span> 
+ <li><span class="li-head">quality_measured_method</span> <b>(Alias name: quality-measured-method)</b>  Method to measure the quality of tcp-connect. <span class="li-normal">type: str</span> <span class="li-normal">choices: [half-close, half-open]</span>
  <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
  <div id="label49" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -212,7 +212,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">security_mode</span> <b>(Alias name: security-mode)</b>  Twamp controller security mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, authentication]</span> 
+ <li><span class="li-head">security_mode</span> <b>(Alias name: security-mode)</b>  Twamp controller security mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, authentication]</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -248,7 +248,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos, remote]</span> 
+ <li><span class="li-head">link_cost_factor</span> <b>(Alias name: link-cost-factor)</b>  Criteria on which to base link selection. <span class="li-normal">type: list</span> <span class="li-normal">choices: [latency, jitter, packet-loss, mos, remote]</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -310,7 +310,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">system_dns</span> <b>(Alias name: system-dns)</b>  Enable/disable system dns as the probe server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">system_dns</span> <b>(Alias name: system-dns)</b>  Enable/disable system dns as the probe server. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -358,13 +358,13 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">update_cascade_interface</span> <b>(Alias name: update-cascade-interface)</b>  Enable/disable update cascade interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">update_cascade_interface</span> <b>(Alias name: update-cascade-interface)</b>  Enable/disable update cascade interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">update_static_route</span> <b>(Alias name: update-static-route)</b>  Enable/disable updating the static route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span> 
+ <li><span class="li-head">update_static_route</span> <b>(Alias name: update-static-route)</b>  Enable/disable updating the static route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -403,6 +403,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -411,8 +412,8 @@ Examples
       - name: SD-WAN status checking or health checking.
         fortinet.fmgdevice.fmgd_system_sdwan_healthcheckfortiguard:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

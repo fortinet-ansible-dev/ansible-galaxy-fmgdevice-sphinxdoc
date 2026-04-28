@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -68,7 +68,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">mode</span> Select ptp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [transparent-e2e, transparent-p2p]</span> 
+ <li><span class="li-head">mode</span> Select ptp mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [transparent-e2e, transparent-p2p]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -80,19 +80,19 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pdelay_req_interval</span> <b>(Alias name: pdelay-req-interval)</b>  Configure ptp peer delay request interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1sec, 2sec, 4sec, 8sec, 16sec, 32sec]</span> 
+ <li><span class="li-head">pdelay_req_interval</span> <b>(Alias name: pdelay-req-interval)</b>  Configure ptp peer delay request interval. <span class="li-normal">type: str</span> <span class="li-normal">choices: [1sec, 2sec, 4sec, 8sec, 16sec, 32sec]</span>
  <a id='label8' href="javascript:ContentClick('label9', 'label8');" onmouseover="ContentPreview('label9');" onmouseout="ContentUnpreview('label9');" title="click to collapse or expand..."> more... </a>
  <div id="label9" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ptp_profile</span> <b>(Alias name: ptp-profile)</b>  Configure ptp power profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [C37.238-2017]</span> 
+ <li><span class="li-head">ptp_profile</span> <b>(Alias name: ptp-profile)</b>  Configure ptp power profile. <span class="li-normal">type: str</span> <span class="li-normal">choices: [C37.238-2017]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">transport</span> Configure ptp transport mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [l2-mcast]</span> 
+ <li><span class="li-head">transport</span> Configure ptp transport mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [l2-mcast]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -119,6 +119,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -127,8 +128,8 @@ Examples
       - name: Global PTP profile.
         fortinet.fmgdevice.fmgd_switchcontroller_ptp_profile:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

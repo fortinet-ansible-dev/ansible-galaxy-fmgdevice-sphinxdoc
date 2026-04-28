@@ -27,7 +27,7 @@ Requirements
 ------------
 The below requirements are needed on the host that executes this module.
 
-- ansible>=2.15.0
+- ansible-core>=2.16.0
 
 
 FortiManager Version Compatibility
@@ -54,7 +54,7 @@ Parameters
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">azure_vwanslb</span> - Configure Azure vWAN slb setting. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">mode</span> Mode of vwan slb setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive]</span> 
+ <li><span class="li-head">mode</span> Mode of vwan slb setting. <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -90,7 +90,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [TCP, UDP]</span> 
+ <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [TCP, UDP]</span>
  <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
  <div id="label13" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -104,7 +104,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Status of slb inbound security rules setting (read-only). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, pending, updating]</span> 
+ <li><span class="li-head">status</span> Status of slb inbound security rules setting (read-only). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, pending, updating]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -154,7 +154,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [TCP, UDP]</span> 
+ <li><span class="li-head">protocol</span> Protocol. <span class="li-normal">type: str</span> <span class="li-normal">choices: [TCP, UDP]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -168,7 +168,7 @@ Parameters
  </li>
  </ul>
  </li>
- <li><span class="li-head">status</span> Status of slb inbound security rules setting (read-only). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, pending, updating]</span> 
+ <li><span class="li-head">status</span> Status of slb inbound security rules setting (read-only). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, pending, updating]</span>
  <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
  <div id="label37" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -203,6 +203,7 @@ Examples
   - name: Example playbook (generated based on argument schema)
     hosts: fortimanagers
     connection: httpapi
+    gather_facts: false
     vars:
       ansible_httpapi_use_ssl: true
       ansible_httpapi_validate_certs: false
@@ -211,8 +212,8 @@ Examples
       - name: Configure Azure vWAN slb setting.
         fortinet.fmgdevice.fmgd_azure_vwanslb:
           # bypass_validation: false
-          workspace_locking_adom: <value in [global, custom adom including root]>
-          workspace_locking_timeout: 300
+          # workspace_locking_adom: <global or your adom name>
+          # workspace_locking_timeout: 300
           # rc_succeeded: [0, -2, -3, ...]
           # rc_failed: [-2, -3, ...]
           device: <your own value>

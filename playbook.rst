@@ -17,24 +17,58 @@ Prepare host inventory
 In our case we create a file named ``hosts``:
 This file specifies one FortiManager instance and some variables the instance are using.
 
+With Standard User/password authentication
+----------
+
 ::
 
    [fortimanagers]
-   fortimanager01 ansible_host=192.168.190.130 ansible_user="admin" ansible_password="password"
+   # Storing authentication token in plain text file is a bad idea on a security point of view
+   # Please prefer ansible-vault or any encrypted mean to store sensitive data
+   fortimanager01 ansible_host=192.168.190.1 ansible_user="admin" ansible_password="password"
+   fortimanager02 ansible_host=192.168.190.2 ansible_user="admin" ansible_password="password"
 
    [fortimanagers:vars]
+   ansible_connection=httpapi
    ansible_network_os=fortinet.fmgdevice.fmgdevice
-   ansible_httpapi_use_ssl=true
-   ansible_httpapi_validate_certs=false
+   ansible_facts_modules=setup
    ansible_httpapi_port=443
+   ansible_httpapi_use_ssl=true
+   #  Disabling TLS certificate verification is a bad idea on security point of view, 
+   #  but if you use default certificates that are self-signed, you need to disable it.
+   #  Please use valid certificates for your production environments and keep certificate validation ON.
+   ansible_httpapi_validate_certs=false
+
+With REST API user token based authentication
+----------
+
+::
+
+   [fortimanagers]
+   # Storing authentication token in plain text file is a bad idea on a security point of view
+   # Please prefer ansible-vault or any encrypted mean to store sensitive data
+   fortimanager01 ansible_host=192.168.190.1 api_bearer_token="YOUR_GENERATED_API_KEY"
+   fortimanager02 ansible_host=192.168.190.2 api_bearer_token="YOUR_GENERATED_API_KEY"
+
+   [fortimanagers:vars]
+   ansible_connection=httpapi
+   ansible_network_os=fortinet.fmgdevice.fmgdevice
+   ansible_facts_modules=setup
+   ansible_httpapi_port=443
+   ansible_httpapi_use_ssl=true
+   #  Disabling TLS certificate verification is a bad idea on security point of view, 
+   #  but if you use default certificates that are self-signed, you need to disable it.
+   #  Please use valid certificates for your production environments and keep certificate validation ON.
+   ansible_httpapi_validate_certs=false
+  
 
 Write the playbook
 ~~~~~~~~~~~~~~~~~~
 
-An Example
+An Example with User/Password authentication
 ----------
 
-Create the file ``test.yml``, we write a playbook to collect FortiManager device data:
+Create the file ``test.yml``:
 
 ::
 
@@ -56,6 +90,36 @@ Create the file ``test.yml``, we write a playbook to collect FortiManager device
       - name: Display response
         debug:
           var: response
+
+
+An Example with REST API user token based authentication
+----------
+
+Create the file ``test.yml``:
+
+::
+
+  - name: Gathering fortimanager facts
+    hosts: fortimanagers
+    connection: httpapi
+    vars:
+      ansible_httpapi_session_key:
+        authorization: "bearer {{ api_bearer_token }}"
+      device_name: "XXXXXXX"
+      vdom_name: "root"
+    tasks:
+      - name: Gathering fortimanager fact
+        fortinet.fmgdevice.fmgd_fact:
+          facts:
+            selector: "alertemail_setting"
+            params:
+              device: "{{ device_name }}"
+              vdom: "{{ vdom_name }}"
+        register: response
+      - name: Display response
+        debug:
+          var: response
+
 
 Parameter Usages
 ----------------
