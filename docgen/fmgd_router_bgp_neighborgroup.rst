@@ -920,7 +920,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">shutdown</span> Enable/disable shutdown this neighbor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">shutdown</span> Enable/disable shutdown this neighbor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, graceful, graceful-soft]</span>
  <a id='label288' href="javascript:ContentClick('label289', 'label288');" onmouseover="ContentPreview('label289');" onmouseout="ContentUnpreview('label289');" title="click to collapse or expand..."> more... </a>
  <div id="label289" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -1022,6 +1022,60 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">use_sdwan</span> <b>(Alias name: use-sdwan)</b>  Use sdwan rules for bgp connection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label322' href="javascript:ContentClick('label323', 'label322');" onmouseover="ContentPreview('label323');" onmouseout="ContentUnpreview('label323');" title="click to collapse or expand..."> more... </a>
+ <div id="label323" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">adv_evpn_route</span> <b>(Alias name: adv-evpn-route)</b>  Types of evpn routes that can be advertised to this neighbor as ipv4 routes. <span class="li-normal">type: list</span> <span class="li-normal">choices: [type2, type5, local]</span>
+ <a id='label324' href="javascript:ContentClick('label325', 'label324');" onmouseover="ContentPreview('label325');" onmouseout="ContentUnpreview('label325');" title="click to collapse or expand..."> more... </a>
+ <div id="label325" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">display_options</span> <b>(Alias name: display-options)</b>  Display options. <span class="li-normal">type: int</span>
+ <a id='label326' href="javascript:ContentClick('label327', 'label326');" onmouseover="ContentPreview('label327');" onmouseout="ContentUnpreview('label327');" title="click to collapse or expand..."> more... </a>
+ <div id="label327" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">enforce_preferred_source</span> <b>(Alias name: enforce-preferred-source)</b>  Enable/disable enforce usage of the update-source as preferred source for ipv4 routes learned from this neighbor. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label328' href="javascript:ContentClick('label329', 'label328');" onmouseover="ContentPreview('label329');" onmouseout="ContentUnpreview('label329');" title="click to collapse or expand..."> more... </a>
+ <div id="label329" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">graceful_shutdown_community</span> <b>(Alias name: graceful-shutdown-community)</b>  Graceful shutdown community. <span class="li-normal">type: str</span>
+ <a id='label330' href="javascript:ContentClick('label331', 'label330');" onmouseover="ContentPreview('label331');" onmouseout="ContentUnpreview('label331');" title="click to collapse or expand..."> more... </a>
+ <div id="label331" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">graceful_shutdown_delay</span> <b>(Alias name: graceful-shutdown-delay)</b>  Delay in seconds before graceful shutdown ends. <span class="li-normal">type: int</span>
+ <a id='label332' href="javascript:ContentClick('label333', 'label332');" onmouseover="ContentPreview('label333');" onmouseout="ContentUnpreview('label333');" title="click to collapse or expand..."> more... </a>
+ <div id="label333" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">graceful_shutdown_local_preference</span> <b>(Alias name: graceful-shutdown-local-preference)</b>  Graceful shutdown local preference. <span class="li-normal">type: int</span>
+ <a id='label334' href="javascript:ContentClick('label335', 'label334');" onmouseover="ContentPreview('label335');" onmouseout="ContentUnpreview('label335');" title="click to collapse or expand..."> more... </a>
+ <div id="label335" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">next_hop_self_rr_vpnv4</span> <b>(Alias name: next-hop-self-rr-vpnv4)</b>  Enable/disable setting of the nexthops address to interfaces address for route-reflector vpnv4 routes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label336' href="javascript:ContentClick('label337', 'label336');" onmouseover="ContentPreview('label337');" onmouseout="ContentUnpreview('label337');" title="click to collapse or expand..."> more... </a>
+ <div id="label337" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">next_hop_self_rr_vpnv6</span> <b>(Alias name: next-hop-self-rr-vpnv6)</b>  Enable/disable setting of the nexthops address to interfaces address for route-reflector vpnv6 routes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label338' href="javascript:ContentClick('label339', 'label338');" onmouseover="ContentPreview('label339');" onmouseout="ContentUnpreview('label339');" title="click to collapse or expand..."> more... </a>
+ <div id="label339" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -1044,18 +1098,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: BGP neighbor group table.
         fortinet.fmgdevice.fmgd_router_bgp_neighborgroup:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -1087,22 +1133,10 @@ Examples
             # allowas_in6: <integer>
             # as_override: <value in [disable, enable]>
             # as_override6: <value in [disable, enable]>
-            # attribute_unchanged:
-            #   - "as-path"
-            #   - "med"
-            #   - "next-hop"
-            # attribute_unchanged_vpnv4:
-            #   - "as-path"
-            #   - "med"
-            #   - "next-hop"
-            # attribute_unchanged_vpnv6:
-            #   - "as-path"
-            #   - "med"
-            #   - "next-hop"
-            # attribute_unchanged6:
-            #   - "as-path"
-            #   - "med"
-            #   - "next-hop"
+            # attribute_unchanged: ["as-path", "med", "next-hop"]
+            # attribute_unchanged_vpnv4: ["as-path", "med", "next-hop"]
+            # attribute_unchanged_vpnv6: ["as-path", "med", "next-hop"]
+            # attribute_unchanged6: ["as-path", "med", "next-hop"]
             # auth_options: <list or string>
             # bfd: <value in [disable, enable]>
             # capability_default_originate: <value in [disable, enable]>
@@ -1216,7 +1250,7 @@ Examples
             # send_community_vpnv4: <value in [disable, standard, extended, ...]>
             # send_community_vpnv6: <value in [disable, standard, extended, ...]>
             # send_community6: <value in [disable, standard, extended, ...]>
-            # shutdown: <value in [disable, enable]>
+            # shutdown: <value in [disable, enable, graceful, ...]>
             # soft_reconfiguration: <value in [disable, enable]>
             # soft_reconfiguration_evpn: <value in [disable, enable]>
             # soft_reconfiguration_vpnv4: <value in [disable, enable]>
@@ -1233,6 +1267,15 @@ Examples
             # rr_attr_allow_change_vpnv4: <value in [disable, enable]>
             # rr_attr_allow_change_vpnv6: <value in [disable, enable]>
             # rr_attr_allow_change6: <value in [disable, enable]>
+            # use_sdwan: <value in [disable, enable]>
+            # adv_evpn_route: ["type2", "type5", "local"]
+            # display_options: <integer>
+            # enforce_preferred_source: <value in [disable, enable]>
+            # graceful_shutdown_community: <string>
+            # graceful_shutdown_delay: <integer>
+            # graceful_shutdown_local_preference: <integer>
+            # next_hop_self_rr_vpnv4: <value in [disable, enable]>
+            # next_hop_self_rr_vpnv6: <value in [disable, enable]>
 
 
 Return Values

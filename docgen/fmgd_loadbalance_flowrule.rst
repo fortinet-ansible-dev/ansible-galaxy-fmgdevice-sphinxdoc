@@ -209,28 +209,15 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Flow rule configuration
         fortinet.fmgdevice.fmgd_loadbalance_flowrule:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           state: present # <value in [present, absent]>
           loadbalance_flowrule:
             id: 0 # Required variable, integer
-            # action:
-            #   - "forward"
-            #   - "mirror-ingress"
-            #   - "stats"
-            #   - "drop"
-            #   - "mirror-egress"
+            # action: ["forward", "mirror-ingress", "stats", "drop", "mirror-egress"]
             # comment: <string>
             # dst_addr_ipv4: <list or string>
             # dst_addr_ipv6: <string>

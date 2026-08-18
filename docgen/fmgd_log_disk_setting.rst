@@ -175,7 +175,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">upload_destination</span> <b>(Alias name: upload-destination)</b>  The type of server to upload log files to. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ftp-server, fortianalyzer]</span>
+ <li><span class="li-head">upload_destination</span> <b>(Alias name: upload-destination)</b>  The type of server to upload log files to. <span class="li-normal">type: str</span> <span class="li-normal">choices: [ftp-server, fortianalyzer, sftp-server]</span>
  <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
  <div id="label41" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -241,6 +241,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">upload_file_format</span> <b>(Alias name: upload-file-format)</b>  Configure the file format to be used for log files prior to being uploaded. <span class="li-normal">type: str</span> <span class="li-normal">choices: [default, lz4]</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -263,18 +269,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Settings for local disk logging.
         fortinet.fmgdevice.fmgd_log_disk_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           log_disk_setting:
@@ -291,21 +289,15 @@ Examples
             # max_policy_packet_capture_size: <integer>
             # maximum_log_age: <integer>
             # report_quota: <integer>
-            # roll_day:
-            #   - "sunday"
-            #   - "monday"
-            #   - "tuesday"
-            #   - "wednesday"
-            #   - "thursday"
-            #   - "friday"
-            #   - "saturday"
+            # roll_day: ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday",
+            #            "saturday"]
             # roll_schedule: <value in [daily, weekly]>
             # roll_time: <string>
             # source_ip: <string>
             # status: <value in [disable, enable]>
             # upload: <value in [disable, enable]>
             # upload_delete_files: <value in [disable, enable]>
-            # upload_destination: <value in [ftp-server, fortianalyzer]>
+            # upload_destination: <value in [ftp-server, fortianalyzer, sftp-server]>
             # upload_ssl_conn: <value in [default, high, low, ...]>
             # uploaddir: <string>
             # uploadip: <string>
@@ -313,35 +305,13 @@ Examples
             # uploadport: <integer>
             # uploadsched: <value in [disable, enable]>
             # uploadtime: <integer>
-            # uploadtype:
-            #   - "traffic"
-            #   - "event"
-            #   - "virus"
-            #   - "webfilter"
-            #   - "attack"
-            #   - "spamfilter"
-            #   - "voip"
-            #   - "dlp"
-            #   - "app-ctrl"
-            #   - "netscan"
-            #   - "dlp-archive"
-            #   - "IPS"
-            #   - "anomaly"
-            #   - "waf"
-            #   - "gtp"
-            #   - "dns"
-            #   - "emailfilter"
-            #   - "ssh"
-            #   - "ssl"
-            #   - "cifs"
-            #   - "file-filter"
-            #   - "icap"
-            #   - "ztna"
-            #   - "http"
-            #   - "virtual-patch"
-            #   - "debug"
+            # uploadtype: ["traffic", "event", "virus", "webfilter", "attack", "spamfilter", "voip",
+            #              "dlp", "app-ctrl", "netscan", "dlp-archive", "IPS", "anomaly", "waf",
+            #              "gtp", "dns", "emailfilter", "ssh", "ssl", "cifs", "file-filter", "icap",
+            #              "ztna", "http", "virtual-patch", "debug"]
             # uploaduser: <string>
             # vrf_select: <integer>
+            # upload_file_format: <value in [default, lz4]>
 
 
 Return Values

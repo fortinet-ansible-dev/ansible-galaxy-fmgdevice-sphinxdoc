@@ -4,8 +4,8 @@
 
 .. _fmgd_llm_profile_chat:
 
-fmgd_llm_profile_chat -- Device vdom llm profile chat.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgd_llm_profile_chat -- LLM Proxy chat completions API (/v1/chat/completions).
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.1.0
 
@@ -54,7 +54,7 @@ Parameters
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">profile</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">llm_profile_chat</span> - Device vdom llm profile chat <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">llm_profile_chat</span> - LLM Proxy chat completions API <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">max_completion_tokens</span> <b>(Alias name: max-completion-tokens)</b>  Max completion tokens. <span class="li-normal">type: int</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -114,18 +114,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
-      - name: Device vdom llm profile chat
+      - name: LLM Proxy chat completions API
         fortinet.fmgdevice.fmgd_llm_profile_chat:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           profile: <your own value>

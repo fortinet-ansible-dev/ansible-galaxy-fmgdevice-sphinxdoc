@@ -530,18 +530,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure ZTNA traffic forward proxy.
         fortinet.fmgdevice.fmgd_ztna_trafficforwardproxy:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -570,12 +562,7 @@ Examples
             # ssl_cipher_suites:
             #   - cipher: <value in [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, ...]>
             #     priority: <integer>
-            #     versions:
-            #       - "ssl-3.0"
-            #       - "tls-1.0"
-            #       - "tls-1.1"
-            #       - "tls-1.2"
-            #       - "tls-1.3"
+            #     versions: ["ssl-3.0", "tls-1.0", "tls-1.1", "tls-1.2", "tls-1.3"]
             # ssl_client_fallback: <value in [disable, enable]>
             # ssl_client_rekey_count: <integer>
             # ssl_client_renegotiation: <value in [allow, deny, secure]>
@@ -603,12 +590,7 @@ Examples
             # ssl_server_cipher_suites:
             #   - cipher: <value in [TLS-RSA-WITH-RC4-128-MD5, TLS-RSA-WITH-RC4-128-SHA, TLS-RSA-WITH-DES-CBC-SHA, ...]>
             #     priority: <integer>
-            #     versions:
-            #       - "ssl-3.0"
-            #       - "tls-1.0"
-            #       - "tls-1.1"
-            #       - "tls-1.2"
-            #       - "tls-1.3"
+            #     versions: ["ssl-3.0", "tls-1.0", "tls-1.1", "tls-1.2", "tls-1.3"]
             # ssl_server_max_version: <value in [ssl-3.0, tls-1.0, tls-1.1, ...]>
             # ssl_server_min_version: <value in [ssl-3.0, tls-1.0, tls-1.1, ...]>
             # ssl_server_renegotiation: <value in [disable, enable]>

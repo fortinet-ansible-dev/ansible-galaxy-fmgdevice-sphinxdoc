@@ -158,7 +158,7 @@ Parameters
  <li><span class="li-head">prefer_senario</span> <b>(Alias name: prefer-senario)</b>  Prefer senario <span class="li-normal">type: str</span> <span class="li-normal">choices: [balance, prefer-speed, prefer-cache]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  </ul>
@@ -183,18 +183,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Designate cache-service for wan-optimization and webcache.
         fortinet.fmgdevice.fmgd_wanopt_cacheservice:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           wanopt_cacheservice:

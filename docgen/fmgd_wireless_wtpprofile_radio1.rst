@@ -581,7 +581,7 @@ Parameters
  <li><span class="li-head">spectrum_analysis</span> <b>(Alias name: spectrum-analysis)</b>  Enable/disable spectrum analysis to find interference that would negatively impact wireless performance. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, scan-only]</span>
  <a id='label174' href="javascript:ContentClick('label175', 'label174');" onmouseover="ContentPreview('label175');" onmouseout="ContentUnpreview('label175');" title="click to collapse or expand..."> more... </a>
  <div id="label175" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">ap_handoff</span> <b>(Alias name: ap-handoff)</b>  Enable/disable ap handoff of clients to other aps (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -614,6 +614,66 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">cca_threshold</span> <b>(Alias name: cca-threshold)</b>  Configure clear channel assessment (cca) threshold in dbm (-94 to -11, default = 0, 0 for unconfigured). <span class="li-normal">type: str</span>
+ <a id='label186' href="javascript:ContentClick('label187', 'label186');" onmouseover="ContentPreview('label187');" onmouseout="ContentUnpreview('label187');" title="click to collapse or expand..."> more... </a>
+ <div id="label187" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap_status</span> <b>(Alias name: vap-status)</b>  Enable/disable all configured ssids on this radio (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label188' href="javascript:ContentClick('label189', 'label188');" onmouseover="ContentPreview('label189');" onmouseout="ContentUnpreview('label189');" title="click to collapse or expand..."> more... </a>
+ <div id="label189" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap10</span> Virtual access point (vap) for wlan id 10 <span class="li-normal">type: str</span>
+ <a id='label190' href="javascript:ContentClick('label191', 'label190');" onmouseover="ContentPreview('label191');" onmouseout="ContentUnpreview('label191');" title="click to collapse or expand..."> more... </a>
+ <div id="label191" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap11</span> Virtual access point (vap) for wlan id 11 <span class="li-normal">type: str</span>
+ <a id='label192' href="javascript:ContentClick('label193', 'label192');" onmouseover="ContentPreview('label193');" onmouseout="ContentUnpreview('label193');" title="click to collapse or expand..."> more... </a>
+ <div id="label193" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap12</span> Virtual access point (vap) for wlan id 12 <span class="li-normal">type: str</span>
+ <a id='label194' href="javascript:ContentClick('label195', 'label194');" onmouseover="ContentPreview('label195');" onmouseout="ContentUnpreview('label195');" title="click to collapse or expand..."> more... </a>
+ <div id="label195" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap13</span> Virtual access point (vap) for wlan id 13 <span class="li-normal">type: str</span>
+ <a id='label196' href="javascript:ContentClick('label197', 'label196');" onmouseover="ContentPreview('label197');" onmouseout="ContentUnpreview('label197');" title="click to collapse or expand..."> more... </a>
+ <div id="label197" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap14</span> Virtual access point (vap) for wlan id 14 <span class="li-normal">type: str</span>
+ <a id='label198' href="javascript:ContentClick('label199', 'label198');" onmouseover="ContentPreview('label199');" onmouseout="ContentUnpreview('label199');" title="click to collapse or expand..."> more... </a>
+ <div id="label199" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap15</span> Virtual access point (vap) for wlan id 15 <span class="li-normal">type: str</span>
+ <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
+ <div id="label201" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap16</span> Virtual access point (vap) for wlan id 16 <span class="li-normal">type: str</span>
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap9</span> Virtual access point (vap) for wlan id 9 <span class="li-normal">type: str</span>
+ <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
+ <div id="label205" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -636,18 +696,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configuration options for radio 1.
         fortinet.fmgdevice.fmgd_wireless_wtpprofile_radio1:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           wtp_profile: <your own value>
@@ -668,35 +720,13 @@ Examples
             # auto_power_level: <value in [disable, enable]>
             # auto_power_low: <integer>
             # auto_power_target: <string>
-            # band:
-            #   - "802.11a"
-            #   - "802.11b"
-            #   - "802.11g"
-            #   - "802.11n"
-            #   - "802.11n-5G"
-            #   - "802.11n,g-only"
-            #   - "802.11g-only"
-            #   - "802.11n-only"
-            #   - "802.11n-5G-only"
-            #   - "802.11ac"
-            #   - "802.11ac,n-only"
-            #   - "802.11ac-only"
-            #   - "802.11ax-5G"
-            #   - "802.11ax,ac-only"
-            #   - "802.11ax,ac,n-only"
-            #   - "802.11ax-5G-only"
-            #   - "802.11ax"
-            #   - "802.11ax,n-only"
-            #   - "802.11ax,n,g-only"
-            #   - "802.11ax-only"
-            #   - "802.11ac-2G"
-            #   - "802.11ax-6G"
-            #   - "802.11n-2G"
-            #   - "802.11ac-5G"
-            #   - "802.11ax-2G"
-            #   - "802.11be-2G"
-            #   - "802.11be-5G"
-            #   - "802.11be-6G"
+            # band: ["802.11a", "802.11b", "802.11g", "802.11n", "802.11n-5G", "802.11n,g-only",
+            #        "802.11g-only", "802.11n-only", "802.11n-5G-only", "802.11ac",
+            #        "802.11ac,n-only", "802.11ac-only", "802.11ax-5G", "802.11ax,ac-only",
+            #        "802.11ax,ac,n-only", "802.11ax-5G-only", "802.11ax", "802.11ax,n-only",
+            #        "802.11ax,n,g-only", "802.11ax-only", "802.11ac-2G", "802.11ax-6G",
+            #        "802.11n-2G", "802.11ac-5G", "802.11ax-2G", "802.11be-2G", "802.11be-5G",
+            #        "802.11be-6G"]
             # band_5g_type: <value in [5g-full, 5g-high, 5g-low]>
             # bandwidth_admission_control: <value in [disable, enable]>
             # bandwidth_capacity: <integer>
@@ -726,12 +756,8 @@ Examples
             # power_level: <integer>
             # power_mode: <value in [dBm, percentage]>
             # power_value: <integer>
-            # powersave_optimize:
-            #   - "tim"
-            #   - "ac-vo"
-            #   - "no-obss-scan"
-            #   - "no-11b-rate"
-            #   - "client-rate-follow"
+            # powersave_optimize: ["tim", "ac-vo", "no-obss-scan", "no-11b-rate",
+            #                      "client-rate-follow"]
             # protection_mode: <value in [rtscts, ctsonly, disable]>
             # radio_id: <integer>
             # rts_threshold: <integer>
@@ -758,12 +784,7 @@ Examples
             # sam_test: <value in [ping, iperf]>
             # sam_username: <string>
             # short_guard_interval: <value in [disable, enable]>
-            # transmit_optimize:
-            #   - "disable"
-            #   - "power-save"
-            #   - "aggr-limit"
-            #   - "retry-limit"
-            #   - "send-bar"
+            # transmit_optimize: ["disable", "power-save", "aggr-limit", "retry-limit", "send-bar"]
             # vap_all: <value in [disable, enable, tunnel, ...]>
             # vap1: <string>
             # vap2: <string>
@@ -783,6 +804,16 @@ Examples
             # d80211mc: <value in [disable, enable]>
             # ap_sniffer_chan_width: <value in [320MHz, 240MHz, 160MHz, ...]>
             # ai_darrp_support: <value in [disable, enable]>
+            # cca_threshold: <string>
+            # vap_status: <value in [disable, enable]>
+            # vap10: <string>
+            # vap11: <string>
+            # vap12: <string>
+            # vap13: <string>
+            # vap14: <string>
+            # vap15: <string>
+            # vap16: <string>
+            # vap9: <string>
 
 
 Return Values

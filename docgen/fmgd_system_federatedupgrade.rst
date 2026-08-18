@@ -60,7 +60,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">failure_reason</span> <b>(Alias name: failure-reason)</b>  Reason for upgrade failure. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, internal, timeout, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, node-failed, csf-tree-not-supported, firmware-changed, image-missing]</span>
+ <li><span class="li-head">failure_reason</span> <b>(Alias name: failure-reason)</b>  Reason for upgrade failure. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, internal, timeout, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, node-failed, csf-tree-not-supported, firmware-changed, image-missing, suspension-timeout]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -152,7 +152,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">failure_reason</span> <b>(Alias name: failure-reason)</b>  Upgrade failure reason. <span class="li-normal">type: str</span> <span class="li-normal">choices: [timeout, none, internal, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, csf-tree-not-supported, firmware-changed, node-failed, image-missing]</span>
+ <li><span class="li-head">failure_reason</span> <b>(Alias name: failure-reason)</b>  Upgrade failure reason. <span class="li-normal">type: str</span> <span class="li-normal">choices: [timeout, none, internal, device-type-unsupported, download-failed, device-missing, version-unavailable, staging-failed, reboot-failed, device-not-reconnected, node-not-ready, no-final-confirmation, no-confirmation-query, config-error-log-nonempty, csf-tree-not-supported, firmware-changed, node-failed, image-missing, suspension-timeout]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
@@ -161,7 +161,7 @@ Parameters
  <li><span class="li-head">coordinating_fortiproxy</span> <b>(Alias name: coordinating-fortiproxy)</b>  Coordinating fortiproxy. <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">allow_download</span> <b>(Alias name: allow-download)</b>  Enable/disable download firmware images. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -230,18 +230,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Coordinate federated upgrades within the Security Fabric.
         fortinet.fmgdevice.fmgd_system_federatedupgrade:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_federatedupgrade:
             # failure_device: <string>

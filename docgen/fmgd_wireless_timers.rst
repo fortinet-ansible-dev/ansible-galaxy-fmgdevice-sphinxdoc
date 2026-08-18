@@ -210,6 +210,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">keep_alive_interval</span> <b>(Alias name: keep-alive-interval)</b>  Time between data keep alive message sent by the managed wtp, ap, or fortiap (1 - 255 sec, default = 0 which means the interval is derived from the echo-interval setting). <span class="li-normal">type: int</span>
+ <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
+ <div id="label53" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">max_retransmit_interval</span> <b>(Alias name: max-retransmit-interval)</b>  Maximal time to retransmit a control packet by the managed wtp, ap, or fortiap (2 - 255 sec, default = 0 which means the interval is derived from the echo-interval setting). <span class="li-normal">type: int</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -232,18 +244,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure CAPWAP timers.
         fortinet.fmgdevice.fmgd_wireless_timers:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           wireless_timers:
             # ap_reboot_wait_interval1: <integer>
@@ -272,6 +276,8 @@ Examples
             # wids_entry_cleanup: <integer>
             # sta_offline_cleanup: <integer>
             # sta_offline_ip2mac_cleanup: <integer>
+            # keep_alive_interval: <integer>
+            # max_retransmit_interval: <integer>
 
 
 Return Values

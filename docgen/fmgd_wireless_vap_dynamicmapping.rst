@@ -1303,7 +1303,7 @@ Parameters
  <li><span class="li-head">_intf_role</span> Intf role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [lan, wan, dmz, undefined]</span> <span class="li-normal">default: lan</span>
  <a id='label414' href="javascript:ContentClick('label415', 'label414');" onmouseover="ContentPreview('label415');" onmouseout="ContentUnpreview('label415');" title="click to collapse or expand..."> more... </a>
  <div id="label415" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.6 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">called_station_id_type</span> <b>(Alias name: called-station-id-type)</b>  The format type of radius attribute called-station-id (default = mac). <span class="li-normal">type: str</span> <span class="li-normal">choices: [mac, ip, apname]</span>
@@ -1327,55 +1327,55 @@ Parameters
  <li><span class="li-head">_intf_ip6_send_adv</span> <b>(Alias name: _intf_ip6-send-adv)</b>  Intf ip6 send adv. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label422' href="javascript:ContentClick('label423', 'label422');" onmouseover="ContentPreview('label423');" onmouseout="ContentUnpreview('label423');" title="click to collapse or expand..."> more... </a>
  <div id="label423" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">ip6_prefix_list</span> <b>(Alias name: ip6-prefix-list)</b>  Ip6 prefix list. <span class="li-normal">type: list</span>
  <a id='label424' href="javascript:ContentClick('label425', 'label424');" onmouseover="ContentPreview('label425');" onmouseout="ContentUnpreview('label425');" title="click to collapse or expand..."> more... </a>
  <div id="label425" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">autonomous_flag</span> <b>(Alias name: autonomous-flag)</b>  Autonomous flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label426' href="javascript:ContentClick('label427', 'label426');" onmouseover="ContentPreview('label427');" onmouseout="ContentUnpreview('label427');" title="click to collapse or expand..."> more... </a>
  <div id="label427" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dnssl</span> Dnssl. <span class="li-normal">type: list</span>
  <a id='label428' href="javascript:ContentClick('label429', 'label428');" onmouseover="ContentPreview('label429');" onmouseout="ContentUnpreview('label429');" title="click to collapse or expand..."> more... </a>
  <div id="label429" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">onlink_flag</span> <b>(Alias name: onlink-flag)</b>  Onlink flag. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label430' href="javascript:ContentClick('label431', 'label430');" onmouseover="ContentPreview('label431');" onmouseout="ContentUnpreview('label431');" title="click to collapse or expand..."> more... </a>
  <div id="label431" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">preferred_life_time</span> <b>(Alias name: preferred-life-time)</b>  Preferred life time. <span class="li-normal">type: int</span>
  <a id='label432' href="javascript:ContentClick('label433', 'label432');" onmouseover="ContentPreview('label433');" onmouseout="ContentUnpreview('label433');" title="click to collapse or expand..."> more... </a>
  <div id="label433" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">prefix</span> Prefix. <span class="li-normal">type: str</span>
  <a id='label434' href="javascript:ContentClick('label435', 'label434');" onmouseover="ContentPreview('label435');" onmouseout="ContentUnpreview('label435');" title="click to collapse or expand..."> more... </a>
  <div id="label435" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">rdnss</span> Rdnss. <span class="li-normal">type: list</span>
  <a id='label436' href="javascript:ContentClick('label437', 'label436');" onmouseover="ContentPreview('label437');" onmouseout="ContentUnpreview('label437');" title="click to collapse or expand..."> more... </a>
  <div id="label437" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">valid_life_time</span> <b>(Alias name: valid-life-time)</b>  Valid life time. <span class="li-normal">type: int</span>
  <a id='label438' href="javascript:ContentClick('label439', 'label438');" onmouseover="ContentPreview('label439');" onmouseout="ContentUnpreview('label439');" title="click to collapse or expand..."> more... </a>
  <div id="label439" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.10 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1396,6 +1396,30 @@ Parameters
  <a id='label444' href="javascript:ContentClick('label445', 'label444');" onmouseover="ContentPreview('label445');" onmouseout="ContentUnpreview('label445');" title="click to collapse or expand..."> more... </a>
  <div id="label445" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">dhcp_option82_delimiter</span> <b>(Alias name: dhcp-option82-delimiter)</b>  Dhcp option 82 field delimiter. <span class="li-normal">type: str</span>
+ <a id='label446' href="javascript:ContentClick('label447', 'label446');" onmouseover="ContentPreview('label447');" onmouseout="ContentUnpreview('label447');" title="click to collapse or expand..."> more... </a>
+ <div id="label447" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">captive_portal_dynamic_redirect_url</span> <b>(Alias name: captive-portal-dynamic-redirect-url)</b>  Enable/disable captive portal dynamic redirect url (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label448' href="javascript:ContentClick('label449', 'label448');" onmouseover="ContentPreview('label449');" onmouseout="ContentUnpreview('label449');" title="click to collapse or expand..."> more... </a>
+ <div id="label449" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">radius_auth_surviv_intv</span> <b>(Alias name: radius-auth-surviv-intv)</b>  Radius authentication survivability cache timeout interval in seconds (3600 - 864000, default = 86400). <span class="li-normal">type: int</span>
+ <a id='label450' href="javascript:ContentClick('label451', 'label450');" onmouseover="ContentPreview('label451');" onmouseout="ContentUnpreview('label451');" title="click to collapse or expand..."> more... </a>
+ <div id="label451" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">radius_auth_survivability</span> <b>(Alias name: radius-auth-survivability)</b>  Enable/disable radius authentication survivability (default = disable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label452' href="javascript:ContentClick('label453', 'label452');" onmouseover="ContentPreview('label453');" onmouseout="ContentUnpreview('label453');" title="click to collapse or expand..."> more... </a>
+ <div id="label453" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1420,18 +1444,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure Virtual Access Points
         fortinet.fmgdevice.fmgd_wireless_vap_dynamicmapping:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           vap: <your own value>
@@ -1440,21 +1456,9 @@ Examples
             # d80211v: <value in [disable, enable]>
             # _centmgmt: <value in [disable, enable]>
             # _dhcp_svr_id: <list or string>
-            # _intf_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
-            #   - "radius-acct"
-            #   - "probe-response"
-            #   - "capwap"
-            #   - "dnp"
-            #   - "ftm"
-            #   - "fabric"
-            #   - "speed-test"
+            # _intf_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm",
+            #                     "radius-acct", "probe-response", "capwap", "dnp", "ftm", "fabric",
+            #                     "speed-test"]
             # _intf_device_access_list: <list or string>
             # _intf_device_identification: <value in [disable, enable]>
             # _intf_device_netscan: <value in [disable, enable]>
@@ -1466,16 +1470,8 @@ Examples
             # _intf_dhcp6_relay_type: <value in [regular]>
             # _intf_ip: <list or string>
             # _intf_ip6_address: <string>
-            # _intf_ip6_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "any"
-            #   - "fgfm"
-            #   - "capwap"
+            # _intf_ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "any",
+            #                         "fgfm", "capwap"]
             # _intf_listen_forticlient_connection: <value in [disable, enable]>
             # _is_factory_setting: <value in [disable, enable, ext]>
             # _scope:
@@ -1483,9 +1479,7 @@ Examples
             #     vdom: <string>
             # access_control_list: <list or string>
             # acct_interim_interval: <integer>
-            # additional_akms:
-            #   - "akm6"
-            #   - "akm24"
+            # additional_akms: ["akm6", "akm24"]
             # address_group: <list or string>
             # address_group_policy: <value in [disable, allow, deny]>
             # akm24_only: <value in [disable, enable]>
@@ -1499,32 +1493,13 @@ Examples
             # auth: <value in [radius, usergroup, psk]>
             # auth_cert: <list or string>
             # auth_portal_addr: <string>
-            # beacon_advertising:
-            #   - "name"
-            #   - "model"
-            #   - "serial-number"
+            # beacon_advertising: ["name", "model", "serial-number"]
             # beacon_protection: <value in [disable, enable]>
             # broadcast_ssid: <value in [disable, enable]>
-            # broadcast_suppression:
-            #   - "dhcp"
-            #   - "arp"
-            #   - "dhcp2"
-            #   - "arp2"
-            #   - "netbios-ns"
-            #   - "netbios-ds"
-            #   - "arp3"
-            #   - "dhcp-up"
-            #   - "dhcp-down"
-            #   - "arp-known"
-            #   - "arp-unknown"
-            #   - "arp-reply"
-            #   - "ipv6"
-            #   - "dhcp-starvation"
-            #   - "arp-poison"
-            #   - "all-other-mc"
-            #   - "all-other-bc"
-            #   - "arp-proxy"
-            #   - "dhcp-ucast"
+            # broadcast_suppression: ["dhcp", "arp", "dhcp2", "arp2", "netbios-ns", "netbios-ds",
+            #                         "arp3", "dhcp-up", "dhcp-down", "arp-known", "arp-unknown",
+            #                         "arp-reply", "ipv6", "dhcp-starvation", "arp-poison",
+            #                         "all-other-mc", "all-other-bc", "arp-proxy", "dhcp-ucast"]
             # bss_color_partial: <value in [disable, enable]>
             # bstm_disassociation_imminent: <value in [disable, enable]>
             # bstm_load_balancing_disassoc_timer: <integer>
@@ -1569,16 +1544,9 @@ Examples
             # intra_vap_privacy: <value in [disable, enable]>
             # ip: <list or string>
             # ips_sensor: <list or string>
-            # ipv6_rules:
-            #   - "drop-icmp6ra"
-            #   - "drop-icmp6rs"
-            #   - "drop-llmnr6"
-            #   - "drop-icmp6mld2"
-            #   - "drop-dhcp6s"
-            #   - "drop-dhcp6c"
-            #   - "ndp-proxy"
-            #   - "drop-ns-dad"
-            #   - "drop-ns-nondad"
+            # ipv6_rules: ["drop-icmp6ra", "drop-icmp6rs", "drop-llmnr6", "drop-icmp6mld2",
+            #              "drop-dhcp6s", "drop-dhcp6c", "ndp-proxy", "drop-ns-dad",
+            #              "drop-ns-nondad"]
             # key: <list or string>
             # keyindex: <integer>
             # l3_roaming: <value in [disable, enable]>
@@ -1618,10 +1586,7 @@ Examples
             # neighbor_report_dual_band: <value in [disable, enable]>
             # okc: <value in [disable, enable]>
             # osen: <value in [disable, enable]>
-            # owe_groups:
-            #   - "19"
-            #   - "20"
-            #   - "21"
+            # owe_groups: ["19", "20", "21"]
             # owe_transition: <value in [disable, enable]>
             # owe_transition_ssid: <string>
             # passphrase: <list or string>
@@ -1650,213 +1615,42 @@ Examples
             # radius_mac_mpsk_auth: <value in [disable, enable]>
             # radius_mac_mpsk_timeout: <integer>
             # radius_server: <list or string>
-            # rates_11a:
-            #   - "1"
-            #   - "1-basic"
-            #   - "2"
-            #   - "2-basic"
-            #   - "5.5"
-            #   - "5.5-basic"
-            #   - "6"
-            #   - "6-basic"
-            #   - "9"
-            #   - "9-basic"
-            #   - "12"
-            #   - "12-basic"
-            #   - "18"
-            #   - "18-basic"
-            #   - "24"
-            #   - "24-basic"
-            #   - "36"
-            #   - "36-basic"
-            #   - "48"
-            #   - "48-basic"
-            #   - "54"
-            #   - "54-basic"
-            #   - "11"
-            #   - "11-basic"
+            # rates_11a: ["1", "1-basic", "2", "2-basic", "5.5", "5.5-basic", "6", "6-basic", "9",
+            #             "9-basic", "12", "12-basic", "18", "18-basic", "24", "24-basic", "36",
+            #             "36-basic", "48", "48-basic", "54", "54-basic", "11", "11-basic"]
             # rates_11ac_mcs_map: <string>
-            # rates_11ac_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/1"
-            #   - "mcs9/1"
-            #   - "mcs0/2"
-            #   - "mcs1/2"
-            #   - "mcs2/2"
-            #   - "mcs3/2"
-            #   - "mcs4/2"
-            #   - "mcs5/2"
-            #   - "mcs6/2"
-            #   - "mcs7/2"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/1"
-            #   - "mcs11/1"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            # rates_11ac_ss34:
-            #   - "mcs0/3"
-            #   - "mcs1/3"
-            #   - "mcs2/3"
-            #   - "mcs3/3"
-            #   - "mcs4/3"
-            #   - "mcs5/3"
-            #   - "mcs6/3"
-            #   - "mcs7/3"
-            #   - "mcs8/3"
-            #   - "mcs9/3"
-            #   - "mcs0/4"
-            #   - "mcs1/4"
-            #   - "mcs2/4"
-            #   - "mcs3/4"
-            #   - "mcs4/4"
-            #   - "mcs5/4"
-            #   - "mcs6/4"
-            #   - "mcs7/4"
-            #   - "mcs8/4"
-            #   - "mcs9/4"
-            #   - "mcs10/3"
-            #   - "mcs11/3"
-            #   - "mcs10/4"
-            #   - "mcs11/4"
+            # rates_11ac_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1",
+            #                   "mcs6/1", "mcs7/1", "mcs8/1", "mcs9/1", "mcs0/2", "mcs1/2",
+            #                   "mcs2/2", "mcs3/2", "mcs4/2", "mcs5/2", "mcs6/2", "mcs7/2",
+            #                   "mcs8/2", "mcs9/2", "mcs10/1", "mcs11/1", "mcs10/2", "mcs11/2"]
+            # rates_11ac_ss34: ["mcs0/3", "mcs1/3", "mcs2/3", "mcs3/3", "mcs4/3", "mcs5/3",
+            #                   "mcs6/3", "mcs7/3", "mcs8/3", "mcs9/3", "mcs0/4", "mcs1/4",
+            #                   "mcs2/4", "mcs3/4", "mcs4/4", "mcs5/4", "mcs6/4", "mcs7/4",
+            #                   "mcs8/4", "mcs9/4", "mcs10/3", "mcs11/3", "mcs10/4", "mcs11/4"]
             # rates_11ax_mcs_map: <string>
-            # rates_11ax_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/1"
-            #   - "mcs9/1"
-            #   - "mcs10/1"
-            #   - "mcs11/1"
-            #   - "mcs0/2"
-            #   - "mcs1/2"
-            #   - "mcs2/2"
-            #   - "mcs3/2"
-            #   - "mcs4/2"
-            #   - "mcs5/2"
-            #   - "mcs6/2"
-            #   - "mcs7/2"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            # rates_11ax_ss34:
-            #   - "mcs0/3"
-            #   - "mcs1/3"
-            #   - "mcs2/3"
-            #   - "mcs3/3"
-            #   - "mcs4/3"
-            #   - "mcs5/3"
-            #   - "mcs6/3"
-            #   - "mcs7/3"
-            #   - "mcs8/3"
-            #   - "mcs9/3"
-            #   - "mcs10/3"
-            #   - "mcs11/3"
-            #   - "mcs0/4"
-            #   - "mcs1/4"
-            #   - "mcs2/4"
-            #   - "mcs3/4"
-            #   - "mcs4/4"
-            #   - "mcs5/4"
-            #   - "mcs6/4"
-            #   - "mcs7/4"
-            #   - "mcs8/4"
-            #   - "mcs9/4"
-            #   - "mcs10/4"
-            #   - "mcs11/4"
+            # rates_11ax_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1",
+            #                   "mcs6/1", "mcs7/1", "mcs8/1", "mcs9/1", "mcs10/1", "mcs11/1",
+            #                   "mcs0/2", "mcs1/2", "mcs2/2", "mcs3/2", "mcs4/2", "mcs5/2",
+            #                   "mcs6/2", "mcs7/2", "mcs8/2", "mcs9/2", "mcs10/2", "mcs11/2"]
+            # rates_11ax_ss34: ["mcs0/3", "mcs1/3", "mcs2/3", "mcs3/3", "mcs4/3", "mcs5/3",
+            #                   "mcs6/3", "mcs7/3", "mcs8/3", "mcs9/3", "mcs10/3", "mcs11/3",
+            #                   "mcs0/4", "mcs1/4", "mcs2/4", "mcs3/4", "mcs4/4", "mcs5/4",
+            #                   "mcs6/4", "mcs7/4", "mcs8/4", "mcs9/4", "mcs10/4", "mcs11/4"]
             # rates_11be_mcs_map: <string>
             # rates_11be_mcs_map_160: <string>
             # rates_11be_mcs_map_320: <string>
-            # rates_11bg:
-            #   - "1"
-            #   - "1-basic"
-            #   - "2"
-            #   - "2-basic"
-            #   - "5.5"
-            #   - "5.5-basic"
-            #   - "6"
-            #   - "6-basic"
-            #   - "9"
-            #   - "9-basic"
-            #   - "12"
-            #   - "12-basic"
-            #   - "18"
-            #   - "18-basic"
-            #   - "24"
-            #   - "24-basic"
-            #   - "36"
-            #   - "36-basic"
-            #   - "48"
-            #   - "48-basic"
-            #   - "54"
-            #   - "54-basic"
-            #   - "11"
-            #   - "11-basic"
-            # rates_11n_ss12:
-            #   - "mcs0/1"
-            #   - "mcs1/1"
-            #   - "mcs2/1"
-            #   - "mcs3/1"
-            #   - "mcs4/1"
-            #   - "mcs5/1"
-            #   - "mcs6/1"
-            #   - "mcs7/1"
-            #   - "mcs8/2"
-            #   - "mcs9/2"
-            #   - "mcs10/2"
-            #   - "mcs11/2"
-            #   - "mcs12/2"
-            #   - "mcs13/2"
-            #   - "mcs14/2"
-            #   - "mcs15/2"
-            # rates_11n_ss34:
-            #   - "mcs16/3"
-            #   - "mcs17/3"
-            #   - "mcs18/3"
-            #   - "mcs19/3"
-            #   - "mcs20/3"
-            #   - "mcs21/3"
-            #   - "mcs22/3"
-            #   - "mcs23/3"
-            #   - "mcs24/4"
-            #   - "mcs25/4"
-            #   - "mcs26/4"
-            #   - "mcs27/4"
-            #   - "mcs28/4"
-            #   - "mcs29/4"
-            #   - "mcs30/4"
-            #   - "mcs31/4"
+            # rates_11bg: ["1", "1-basic", "2", "2-basic", "5.5", "5.5-basic", "6", "6-basic", "9",
+            #              "9-basic", "12", "12-basic", "18", "18-basic", "24", "24-basic", "36",
+            #              "36-basic", "48", "48-basic", "54", "54-basic", "11", "11-basic"]
+            # rates_11n_ss12: ["mcs0/1", "mcs1/1", "mcs2/1", "mcs3/1", "mcs4/1", "mcs5/1", "mcs6/1",
+            #                  "mcs7/1", "mcs8/2", "mcs9/2", "mcs10/2", "mcs11/2", "mcs12/2",
+            #                  "mcs13/2", "mcs14/2", "mcs15/2"]
+            # rates_11n_ss34: ["mcs16/3", "mcs17/3", "mcs18/3", "mcs19/3", "mcs20/3", "mcs21/3",
+            #                  "mcs22/3", "mcs23/3", "mcs24/4", "mcs25/4", "mcs26/4", "mcs27/4",
+            #                  "mcs28/4", "mcs29/4", "mcs30/4", "mcs31/4"]
             # roaming_acct_interim_update: <value in [disable, enable]>
-            # sae_groups:
-            #   - "1"
-            #   - "2"
-            #   - "5"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
+            # sae_groups: ["1", "2", "5", "14", "15", "16", "17", "18", "19", "20", "21", "27",
+            #              "28", "29", "30", "31"]
             # sae_h2e_only: <value in [disable, enable]>
             # sae_hnp_only: <value in [disable, enable]>
             # sae_password: <list or string>
@@ -1910,6 +1704,10 @@ Examples
             # _intf_vrf: <integer>
             # captive_network_assistant_bypass: <value in [disable, enable]>
             # mlo: <value in [disable, enable]>
+            # dhcp_option82_delimiter: <string>
+            # captive_portal_dynamic_redirect_url: <value in [disable, enable]>
+            # radius_auth_surviv_intv: <integer>
+            # radius_auth_survivability: <value in [disable, enable]>
 
 
 Return Values

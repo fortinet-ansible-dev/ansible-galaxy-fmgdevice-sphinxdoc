@@ -182,6 +182,36 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.6.2</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">security_exempt_list</span> <b>(Alias name: security-exempt-list)</b>  Name of security exempt list. <span class="li-normal">type: list</span>
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">security_external_web</span> <b>(Alias name: security-external-web)</b>  Url of external authentication web server. <span class="li-normal">type: str</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">security_groups</span> <b>(Alias name: security-groups)</b>  User groups that can authenticate with the captive portal. <span class="li-normal">type: list</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">security_mode</span> <b>(Alias name: security-mode)</b>  Turn on captive portal authentication for this wi-fi interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, captive-portal]</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">security_redirect_url</span> <b>(Alias name: security-redirect-url)</b>  Optional url for redirecting users after they pass captive portal authentication. <span class="li-normal">type: str</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -204,30 +234,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: FortiExtender wifi vap configuration.
         fortinet.fmgdevice.fmgd_extensioncontroller_extendervap:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
           extensioncontroller_extendervap:
             name: "your value" # Required variable, string
-            # allowaccess:
-            #   - "http"
-            #   - "ssh"
-            #   - "telnet"
-            #   - "snmp"
-            #   - "https"
-            #   - "ping"
+            # allowaccess: ["http", "ssh", "telnet", "snmp", "https", "ping"]
             # auth_server_address: <string>
             # auth_server_port: <integer>
             # auth_server_secret: <string>
@@ -247,6 +263,11 @@ Examples
             # start_ip: <string>
             # target_wake_time: <value in [disable, enable]>
             # type: <value in [local-vap, lan-ext-vap]>
+            # security_exempt_list: <list or string>
+            # security_external_web: <string>
+            # security_groups: <list or string>
+            # security_mode: <value in [none, captive-portal]>
+            # security_redirect_url: <string>
 
 
 Return Values

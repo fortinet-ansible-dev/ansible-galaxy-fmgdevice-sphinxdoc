@@ -156,13 +156,13 @@ Parameters
  <li><span class="li-head">filter_type</span> <b>(Alias name: filter-type)</b>  Include/exclude logs that match the filter. <span class="li-normal">type: str</span> <span class="li-normal">choices: [include, exclude]</span>
  <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
  <div id="label33" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">filter</span> Fortianalyzer cloud log filter. <span class="li-normal">type: str</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">http_transaction</span> <b>(Alias name: http-transaction)</b>  Enable/disable log http transaction messages. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -199,18 +199,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Override filters for FortiAnalyzer Cloud.
         fortinet.fmgdevice.fmgd_log_fortianalyzercloud_overridefilter:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           log_fortianalyzercloud_overridefilter:

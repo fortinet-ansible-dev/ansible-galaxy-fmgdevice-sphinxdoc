@@ -913,7 +913,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vdom_type</span> <b>(Alias name: vdom-type)</b>  Vdom type (traffic, lan-extension or admin). <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, admin, lan-extension]</span>
+ <li><span class="li-head">vdom_type</span> <b>(Alias name: vdom-type)</b>  Vdom type (traffic, lan-extension or admin). <span class="li-normal">type: str</span> <span class="li-normal">choices: [traffic, admin, lan-extension, chassis-admin]</span>
  <a id='label286' href="javascript:ContentClick('label287', 'label286');" onmouseover="ContentPreview('label287');" onmouseout="ContentUnpreview('label287');" title="click to collapse or expand..."> more... </a>
  <div id="label287" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -964,25 +964,25 @@ Parameters
  <li><span class="li-head">gui_dynamic_profile_display</span> <b>(Alias name: gui-dynamic-profile-display)</b>  Enable/disable radius single sign on (rsso) on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label302' href="javascript:ContentClick('label303', 'label302');" onmouseover="ContentPreview('label303');" onmouseout="ContentUnpreview('label303');" title="click to collapse or expand..."> more... </a>
  <div id="label303" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">gui_replacement_message_groups</span> <b>(Alias name: gui-replacement-message-groups)</b>  Enable/disable replacement message groups on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label304' href="javascript:ContentClick('label305', 'label304');" onmouseover="ContentPreview('label305');" onmouseout="ContentUnpreview('label305');" title="click to collapse or expand..."> more... </a>
  <div id="label305" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">gui_domain_ip_reputation</span> <b>(Alias name: gui-domain-ip-reputation)</b>  Enable/disable domain and ip reputation on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label306' href="javascript:ContentClick('label307', 'label306');" onmouseover="ContentPreview('label307');" onmouseout="ContentUnpreview('label307');" title="click to collapse or expand..."> more... </a>
  <div id="label307" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">gui_multiple_utm_profiles</span> <b>(Alias name: gui-multiple-utm-profiles)</b>  Enable/disable multiple utm profiles on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label308' href="javascript:ContentClick('label309', 'label308');" onmouseover="ContentPreview('label309');" onmouseout="ContentUnpreview('label309');" title="click to collapse or expand..."> more... </a>
  <div id="label309" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">implicit_allow_dns</span> <b>(Alias name: implicit-allow-dns)</b>  Enable/disable implicitly allowing dns traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -1024,7 +1024,7 @@ Parameters
  <li><span class="li-head">ses_denied_multicast_traffic</span> <b>(Alias name: ses-denied-multicast-traffic)</b>  Enable/disable including denied multicast session in the session table. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label322' href="javascript:ContentClick('label323', 'label322');" onmouseover="ContentPreview('label323');" onmouseout="ContentUnpreview('label323');" title="click to collapse or expand..."> more... </a>
  <div id="label323" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.4 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">dhcp_proxy_vrf_select</span> <b>(Alias name: dhcp-proxy-vrf-select)</b>  Vrf id used for connection to server. <span class="li-normal">type: int</span>
@@ -1054,7 +1054,7 @@ Parameters
  <li><span class="li-head">intree_ses_best_route</span> <b>(Alias name: intree-ses-best-route)</b>  Force the intree session to always use the best route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [force, disable]</span>
  <a id='label332' href="javascript:ContentClick('label333', 'label332');" onmouseover="ContentPreview('label333');" onmouseout="ContentUnpreview('label333');" title="click to collapse or expand..."> more... </a>
  <div id="label333" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">gui_fortitelemetry</span> <b>(Alias name: gui-fortitelemetry)</b>  Enable/disable fortitelemetry on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -1072,25 +1072,85 @@ Parameters
  <li><span class="li-head">forward_domain</span> <b>(Alias name: forward-domain)</b>  Forward domain. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label338' href="javascript:ContentClick('label339', 'label338');" onmouseover="ContentPreview('label339');" onmouseout="ContentUnpreview('label339');" title="click to collapse or expand..."> more... </a>
  <div id="label339" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">wccp_local_route</span> <b>(Alias name: wccp-local-route)</b>  Wccp local route. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label340' href="javascript:ContentClick('label341', 'label340');" onmouseover="ContentPreview('label341');" onmouseout="ContentUnpreview('label341');" title="click to collapse or expand..."> more... </a>
  <div id="label341" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">gui_dlp</span> <b>(Alias name: gui-dlp)</b>  Enable/disable dlp on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label342' href="javascript:ContentClick('label343', 'label342');" onmouseover="ContentPreview('label343');" onmouseout="ContentUnpreview('label343');" title="click to collapse or expand..."> more... </a>
  <div id="label343" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">lan_extension_controller_port</span> <b>(Alias name: lan-extension-controller-port)</b>  Controller port to connect. <span class="li-normal">type: int</span>
  <a id='label344' href="javascript:ContentClick('label345', 'label344');" onmouseover="ContentPreview('label345');" onmouseout="ContentUnpreview('label345');" title="click to collapse or expand..."> more... </a>
  <div id="label345" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ike_extra_ports</span> <b>(Alias name: ike-extra-ports)</b>  Extra udp ports for the ike daemon to listen on other than 500 and 4500 (maximum 3). <span class="li-normal">type: list</span>
+ <a id='label346' href="javascript:ContentClick('label347', 'label346');" onmouseover="ContentPreview('label347');" onmouseout="ContentUnpreview('label347');" title="click to collapse or expand..."> more... </a>
+ <div id="label347" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">src_check_reply</span> <b>(Alias name: src-check-reply)</b>  Enable/disable source verification for reply packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label348' href="javascript:ContentClick('label349', 'label348');" onmouseover="ContentPreview('label349');" onmouseout="ContentUnpreview('label349');" title="click to collapse or expand..."> more... </a>
+ <div id="label349" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gtp_fgsp_s10_only</span> <b>(Alias name: gtp-fgsp-s10-only)</b>  Enable/disable synchronization over fgsp of only gtp tunnels created by the s10 interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label350' href="javascript:ContentClick('label351', 'label350');" onmouseover="ContentPreview('label351');" onmouseout="ContentUnpreview('label351');" title="click to collapse or expand..."> more... </a>
+ <div id="label351" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_advanced_switch_features</span> <b>(Alias name: gui-advanced-switch-features)</b>  Enable/disable advanced switching features on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label352' href="javascript:ContentClick('label353', 'label352');" onmouseover="ContentPreview('label353');" onmouseout="ContentUnpreview('label353');" title="click to collapse or expand..."> more... </a>
+ <div id="label353" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_policy_custom_tags</span> <b>(Alias name: gui-policy-custom-tags)</b>  Enable/disable allow configuring custom tags for polices on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label354' href="javascript:ContentClick('label355', 'label354');" onmouseover="ContentPreview('label355');" onmouseout="ContentUnpreview('label355');" title="click to collapse or expand..."> more... </a>
+ <div id="label355" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_reverse_connector</span> <b>(Alias name: gui-reverse-connector)</b>  Enable/disable enable ztna reverse proxy connector on the gui. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label356' href="javascript:ContentClick('label357', 'label356');" onmouseover="ContentPreview('label357');" onmouseout="ContentUnpreview('label357');" title="click to collapse or expand..."> more... </a>
+ <div id="label357" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ike_proposal_visibility</span> <b>(Alias name: ike-proposal-visibility)</b>  Enable/disable display only recommended proposals in ipsec tunnel configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [recommended, all]</span>
+ <a id='label358' href="javascript:ContentClick('label359', 'label358');" onmouseover="ContentPreview('label359');" onmouseout="ContentUnpreview('label359');" title="click to collapse or expand..."> more... </a>
+ <div id="label359" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ike_tcp_service</span> <b>(Alias name: ike-tcp-service)</b>  Enable/disable ike tcp service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label360' href="javascript:ContentClick('label361', 'label360');" onmouseover="ContentPreview('label361');" onmouseout="ContentUnpreview('label361');" title="click to collapse or expand..."> more... </a>
+ <div id="label361" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ike_tls_service</span> <b>(Alias name: ike-tls-service)</b>  Enable/disable ike tls service. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label362' href="javascript:ContentClick('label363', 'label362');" onmouseover="ContentPreview('label363');" onmouseout="ContentUnpreview('label363');" title="click to collapse or expand..."> more... </a>
+ <div id="label363" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vrf_local_ip_isolation</span> <b>(Alias name: vrf-local-ip-isolation)</b>  Enable/disable vrf local ip address isolation. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label364' href="javascript:ContentClick('label365', 'label364');" onmouseover="ContentPreview('label365');" onmouseout="ContentUnpreview('label365');" title="click to collapse or expand..."> more... </a>
+ <div id="label365" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -1115,18 +1175,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure VDOM settings.
         fortinet.fmgdevice.fmgd_system_settings:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           system_settings:
@@ -1273,12 +1325,8 @@ Examples
             # trap_session_flag: <value in [udp-both, udp-reply, tcpudp-both, ...]>
             # utf8_spam_tagging: <value in [disable, enable]>
             # v4_ecmp_mode: <value in [source-ip-based, weight-based, usage-based, ...]>
-            # vdom_type: <value in [traffic, admin, lan-extension]>
-            # vpn_stats_log:
-            #   - "ipsec"
-            #   - "pptp"
-            #   - "l2tp"
-            #   - "ssl"
+            # vdom_type: <value in [traffic, admin, lan-extension, ...]>
+            # vpn_stats_log: ["ipsec", "pptp", "l2tp", "ssl"]
             # vpn_stats_period: <integer>
             # wccp_cache_engine: <value in [disable, enable]>
             # gui_endpoint_control_advanced: <value in [disable, enable]>
@@ -1292,10 +1340,7 @@ Examples
             # implicit_allow_dns: <value in [disable, enable]>
             # gui_per_policy_disclaimer: <value in [disable, enable]>
             # consolidated_firewall_mode: <value in [disable, enable]>
-            # motherboard_traffic_forwarding:
-            #   - "icmp"
-            #   - "admin"
-            #   - "auth"
+            # motherboard_traffic_forwarding: ["icmp", "admin", "auth"]
             # gui_gtp: <value in [disable, enable]>
             # nonat_eif_key_sel: <value in [dip-only, dip-dport, dip-dport-proto]>
             # ses_denied_multicast_traffic: <value in [disable, enable]>
@@ -1310,6 +1355,16 @@ Examples
             # wccp_local_route: <value in [disable, enable]>
             # gui_dlp: <value in [disable, enable]>
             # lan_extension_controller_port: <integer>
+            # ike_extra_ports: <list or integer>
+            # src_check_reply: <value in [disable, enable]>
+            # gtp_fgsp_s10_only: <value in [disable, enable]>
+            # gui_advanced_switch_features: <value in [disable, enable]>
+            # gui_policy_custom_tags: <value in [disable, enable]>
+            # gui_reverse_connector: <value in [disable, enable]>
+            # ike_proposal_visibility: <value in [recommended, all]>
+            # ike_tcp_service: <value in [disable, enable]>
+            # ike_tls_service: <value in [disable, enable]>
+            # vrf_local_ip_isolation: <value in [disable, enable]>
 
 
 Return Values

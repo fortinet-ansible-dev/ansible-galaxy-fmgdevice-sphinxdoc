@@ -264,6 +264,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">max_vap_per_radio</span> <b>(Alias name: max-vap-per-radio)</b>  Maximum number of ssids supported on the radio (default = 8). <span class="li-normal">type: str</span> <span class="li-normal">choices: [8, 16]</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -286,34 +292,19 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure wireless controller global settings.
         fortinet.fmgdevice.fmgd_wireless_global:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           wireless_global:
             # acd_process_count: <integer>
             # ap_log_server: <value in [disable, enable]>
             # ap_log_server_ip: <string>
             # ap_log_server_port: <integer>
-            # control_message_offload:
-            #   - "ebp-frame"
-            #   - "aeroscout-tag"
-            #   - "ap-list"
-            #   - "sta-list"
-            #   - "sta-cap-list"
-            #   - "stats"
-            #   - "aeroscout-mu"
-            #   - "sta-health"
-            #   - "spectral-analysis"
+            # control_message_offload: ["ebp-frame", "aeroscout-tag", "ap-list", "sta-list",
+            #                           "sta-cap-list", "stats", "aeroscout-mu", "sta-health",
+            #                           "spectral-analysis"]
             # data_ethernet_II: <value in [disable, enable]>
             # dfs_lab_test: <value in [disable, enable]>
             # discovery_mc_addr: <string>
@@ -344,6 +335,7 @@ Examples
             # max_sta_offline: <integer>
             # max_sta_offline_ip2mac: <integer>
             # discovery_mc_addr6: <string>
+            # max_vap_per_radio: <value in [8, 16]>
 
 
 Return Values

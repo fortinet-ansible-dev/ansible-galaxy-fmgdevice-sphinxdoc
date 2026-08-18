@@ -142,7 +142,7 @@ Parameters
  <li><span class="li-head">dns_over_tls</span> <b>(Alias name: dns-over-tls)</b>  Enable/disable/enforce dns over tls. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, enforce]</span>
  <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
  <div id="label29" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">source_ip_interface</span> <b>(Alias name: source-ip-interface)</b>  Ip address of the specified interface as the source ip address. <span class="li-normal">type: list</span>
@@ -179,18 +179,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure DNS servers for a non-management VDOM.
         fortinet.fmgdevice.fmgd_system_vdomdns:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           system_vdomdns:
@@ -201,10 +193,7 @@ Examples
             # ip6_primary: <string>
             # ip6_secondary: <string>
             # primary: <string>
-            # protocol:
-            #   - "cleartext"
-            #   - "dot"
-            #   - "doh"
+            # protocol: ["cleartext", "dot", "doh"]
             # secondary: <string>
             # server_hostname: <list or string>
             # server_select_method: <value in [least-rtt, failover]>

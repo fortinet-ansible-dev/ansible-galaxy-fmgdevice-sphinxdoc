@@ -464,18 +464,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: SD-WAN status checking or health checking.
         fortinet.fmgdevice.fmgd_system_sdwan_healthcheck:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -513,13 +505,8 @@ Examples
             #   - id: <integer>
             #     jitter_threshold: <integer>
             #     latency_threshold: <integer>
-            #     link_cost_factor:
-            #       - "latency"
-            #       - "jitter"
-            #       - "packet-loss"
-            #       - "mos"
-            #       - "remote"
-            #       - "custom-profile-1"
+            #     link_cost_factor: ["latency", "jitter", "packet-loss", "mos", "remote",
+            #                        "custom-profile-1"]
             #     mos_threshold: <string>
             #     packetloss_threshold: <integer>
             #     priority_in_sla: <integer>

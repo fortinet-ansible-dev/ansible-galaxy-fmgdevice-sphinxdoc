@@ -136,6 +136,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">admin_policy</span> <b>(Alias name: admin-policy)</b>  Fortiswitchs admin security-policy applied to all switch on this fortilink interface. <span class="li-normal">type: list</span>
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -158,18 +164,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure integrated FortiLink settings for FortiSwitch.
         fortinet.fmgdevice.fmgd_switchcontroller_fortilinksettings:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -187,6 +185,7 @@ Examples
             #   onboarding_vlan: <list or string>
             #   parent_key: <string>
             #   bounce_nac_port: <value in [disable, enable]>
+            # admin_policy: <list or string>
 
 
 Return Values

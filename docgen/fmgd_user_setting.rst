@@ -241,18 +241,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure user authentication setting.
         fortinet.fmgdevice.fmgd_user_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           user_setting:
@@ -277,11 +269,7 @@ Examples
             # auth_ssl_sigalgs: <value in [no-rsa-pss, all]>
             # auth_timeout: <integer>
             # auth_timeout_type: <value in [idle-timeout, hard-timeout, new-session]>
-            # auth_type:
-            #   - "http"
-            #   - "https"
-            #   - "ftp"
-            #   - "telnet"
+            # auth_type: ["http", "https", "ftp", "telnet"]
             # default_user_password_policy: <list or string>
             # per_policy_disclaimer: <value in [disable, enable]>
             # radius_ses_timeout_act: <value in [hard-timeout, ignore-timeout]>

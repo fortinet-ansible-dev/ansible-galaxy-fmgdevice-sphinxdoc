@@ -62,7 +62,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">802_3_tlvs</span> <b>(Alias name: 802.3-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [max-frame-size, power-negotiation]</span>
+ <li><span class="li-head">802_3_tlvs</span> <b>(Alias name: 802.3-tlvs)</b>  Transmitted ieee 802. <span class="li-normal">type: list</span> <span class="li-normal">choices: [max-frame-size, power-negotiation, eee-negotiation]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -276,28 +276,17 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiSwitch LLDP profiles.
         fortinet.fmgdevice.fmgd_switchcontroller_lldpprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_lldpprofile:
             name: "your value" # Required variable, string
-            # 802_1_tlvs:
-            #   - "port-vlan-id"
-            # 802_3_tlvs:
-            #   - "max-frame-size"
-            #   - "power-negotiation"
+            # 802_1_tlvs: ["port-vlan-id"]
+            # 802_3_tlvs: ["max-frame-size", "power-negotiation", "eee-negotiation"]
             # auto_isl: <value in [disable, enable]>
             # auto_isl_auth: <value in [legacy, strict, relax]>
             # auto_isl_auth_encrypt: <value in [none, mixed, must]>
@@ -326,11 +315,8 @@ Examples
             #     status: <value in [disable, enable]>
             #     vlan: <integer>
             #     vlan_intf: <list or string>
-            # med_tlvs:
-            #   - "inventory-management"
-            #   - "network-policy"
-            #   - "power-management"
-            #   - "location-identification"
+            # med_tlvs: ["inventory-management", "network-policy", "power-management",
+            #            "location-identification"]
 
 
 Return Values

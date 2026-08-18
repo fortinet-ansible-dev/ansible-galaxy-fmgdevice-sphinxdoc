@@ -285,6 +285,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">csr_include_device_sn</span> <b>(Alias name: csr-include-device-sn)</b>  Enable/disable inclusion of device serial number in csr (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -307,18 +313,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: VPN certificate setting.
         fortinet.fmgdevice.fmgd_vpn_certificate_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           vpn_certificate_setting:
@@ -360,6 +358,7 @@ Examples
             # ssl_ocsp_source_ip: <string>
             # strict_crl_check: <value in [disable, enable]>
             # vrf_select: <integer>
+            # csr_include_device_sn: <value in [disable, enable]>
 
 
 Return Values

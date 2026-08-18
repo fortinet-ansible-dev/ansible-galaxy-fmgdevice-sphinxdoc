@@ -67,7 +67,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">events</span> Snmp notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, fm-conf-change, ips-signature, ips-anomaly, temperature-high, voltage-alert, av-virus, av-oversize, av-pattern, av-fragmented, ha-hb-failure, fan-failure, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, fm-if-change, power-supply-failure, amc-bypass, faz-disconnect, bgp-established, bgp-backward-transition, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, ips-fail-open, load-balance-real-server-down, device-new, enter-intf-bypass, exit-intf-bypass, per-cpu-high, power-blade-down, confsync_failure, dhcp, pool-usage, power-redundancy-degrade, power-redundancy-failure, ospf-nbr-state-change, ospf-virtnbr-state-change, disk-failure, disk-overload, faz-main-failover, faz-alt-failover, slbc, faz, power-supply, ippool, interface, security_level_change, cert-expiry, dio, sensor, bfd]</span>
+ <li><span class="li-head">events</span> Snmp notifications (traps) to send. <span class="li-normal">type: list</span> <span class="li-normal">choices: [cpu-high, mem-low, log-full, intf-ip, vpn-tun-up, vpn-tun-down, ha-switch, fm-conf-change, ips-signature, ips-anomaly, temperature-high, voltage-alert, av-virus, av-oversize, av-pattern, av-fragmented, ha-hb-failure, fan-failure, ha-member-up, ha-member-down, ent-conf-change, av-conserve, av-bypass, av-oversize-passed, av-oversize-blocked, ips-pkg-update, fm-if-change, power-supply-failure, amc-bypass, faz-disconnect, bgp-established, bgp-backward-transition, wc-ap-up, wc-ap-down, fswctl-session-up, fswctl-session-down, ips-fail-open, load-balance-real-server-down, device-new, enter-intf-bypass, exit-intf-bypass, per-cpu-high, power-blade-down, confsync_failure, dhcp, pool-usage, power-redundancy-degrade, power-redundancy-failure, ospf-nbr-state-change, ospf-virtnbr-state-change, disk-failure, disk-overload, faz-main-failover, faz-alt-failover, slbc, faz, power-supply, ippool, interface, security_level_change, cert-expiry, dio, sensor, bfd, fsso]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -215,89 +215,32 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: SNMP user configuration.
         fortinet.fmgdevice.fmgd_system_snmp_user:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           state: present # <value in [present, absent]>
           system_snmp_user:
             name: "your value" # Required variable, string
             # auth_proto: <value in [md5, sha, sha224, ...]>
             # auth_pwd: <list or string>
-            # events:
-            #   - "cpu-high"
-            #   - "mem-low"
-            #   - "log-full"
-            #   - "intf-ip"
-            #   - "vpn-tun-up"
-            #   - "vpn-tun-down"
-            #   - "ha-switch"
-            #   - "fm-conf-change"
-            #   - "ips-signature"
-            #   - "ips-anomaly"
-            #   - "temperature-high"
-            #   - "voltage-alert"
-            #   - "av-virus"
-            #   - "av-oversize"
-            #   - "av-pattern"
-            #   - "av-fragmented"
-            #   - "ha-hb-failure"
-            #   - "fan-failure"
-            #   - "ha-member-up"
-            #   - "ha-member-down"
-            #   - "ent-conf-change"
-            #   - "av-conserve"
-            #   - "av-bypass"
-            #   - "av-oversize-passed"
-            #   - "av-oversize-blocked"
-            #   - "ips-pkg-update"
-            #   - "fm-if-change"
-            #   - "power-supply-failure"
-            #   - "amc-bypass"
-            #   - "faz-disconnect"
-            #   - "bgp-established"
-            #   - "bgp-backward-transition"
-            #   - "wc-ap-up"
-            #   - "wc-ap-down"
-            #   - "fswctl-session-up"
-            #   - "fswctl-session-down"
-            #   - "ips-fail-open"
-            #   - "load-balance-real-server-down"
-            #   - "device-new"
-            #   - "enter-intf-bypass"
-            #   - "exit-intf-bypass"
-            #   - "per-cpu-high"
-            #   - "power-blade-down"
-            #   - "confsync_failure"
-            #   - "dhcp"
-            #   - "pool-usage"
-            #   - "power-redundancy-degrade"
-            #   - "power-redundancy-failure"
-            #   - "ospf-nbr-state-change"
-            #   - "ospf-virtnbr-state-change"
-            #   - "disk-failure"
-            #   - "disk-overload"
-            #   - "faz-main-failover"
-            #   - "faz-alt-failover"
-            #   - "slbc"
-            #   - "faz"
-            #   - "power-supply"
-            #   - "ippool"
-            #   - "interface"
-            #   - "security_level_change"
-            #   - "cert-expiry"
-            #   - "dio"
-            #   - "sensor"
-            #   - "bfd"
+            # events: ["cpu-high", "mem-low", "log-full", "intf-ip", "vpn-tun-up", "vpn-tun-down",
+            #          "ha-switch", "fm-conf-change", "ips-signature", "ips-anomaly",
+            #          "temperature-high", "voltage-alert", "av-virus", "av-oversize", "av-pattern",
+            #          "av-fragmented", "ha-hb-failure", "fan-failure", "ha-member-up",
+            #          "ha-member-down", "ent-conf-change", "av-conserve", "av-bypass",
+            #          "av-oversize-passed", "av-oversize-blocked", "ips-pkg-update",
+            #          "fm-if-change", "power-supply-failure", "amc-bypass", "faz-disconnect",
+            #          "bgp-established", "bgp-backward-transition", "wc-ap-up", "wc-ap-down",
+            #          "fswctl-session-up", "fswctl-session-down", "ips-fail-open",
+            #          "load-balance-real-server-down", "device-new", "enter-intf-bypass",
+            #          "exit-intf-bypass", "per-cpu-high", "power-blade-down", "confsync_failure",
+            #          "dhcp", "pool-usage", "power-redundancy-degrade", "power-redundancy-failure",
+            #          "ospf-nbr-state-change", "ospf-virtnbr-state-change", "disk-failure",
+            #          "disk-overload", "faz-main-failover", "faz-alt-failover", "slbc", "faz",
+            #          "power-supply", "ippool", "interface", "security_level_change",
+            #          "cert-expiry", "dio", "sensor", "bfd", "fsso"]
             # ha_direct: <value in [disable, enable]>
             # mib_view: <list or string>
             # notify_hosts: <list or string>

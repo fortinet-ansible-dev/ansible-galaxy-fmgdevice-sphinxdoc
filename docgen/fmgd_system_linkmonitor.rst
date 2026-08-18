@@ -289,13 +289,13 @@ Parameters
  <li><span class="li-head">ha_priority</span> <b>(Alias name: ha-priority)</b>  Ha election priority (1 - 50). <span class="li-normal">type: int</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.11 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.7 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">timeout</span> Detection request timeout (1 - 255 sec, default = 1). <span class="li-normal">type: int</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  </ul>
@@ -320,18 +320,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure Link Health Monitor.
         fortinet.fmgdevice.fmgd_system_linkmonitor:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -353,14 +345,7 @@ Examples
             # port: <integer>
             # probe_count: <integer>
             # probe_timeout: <integer>
-            # protocol:
-            #   - "ping"
-            #   - "tcp-echo"
-            #   - "udp-echo"
-            #   - "http"
-            #   - "twamp"
-            #   - "ping6"
-            #   - "https"
+            # protocol: ["ping", "tcp-echo", "udp-echo", "http", "twamp", "ping6", "https"]
             # recoverytime: <integer>
             # route: <list or string>
             # security_mode: <value in [none, authentication]>
@@ -370,13 +355,7 @@ Examples
             #   - dst: <string>
             #     id: <integer>
             #     port: <integer>
-            #     protocol:
-            #       - "ping"
-            #       - "tcp-echo"
-            #       - "udp-echo"
-            #       - "http"
-            #       - "twamp"
-            #       - "https"
+            #     protocol: ["ping", "tcp-echo", "udp-echo", "http", "twamp", "https"]
             #     weight: <integer>
             # server_type: <value in [static, dynamic]>
             # service_detection: <value in [disable, enable]>

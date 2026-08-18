@@ -4,8 +4,8 @@
 
 .. _fmgd_llm_server:
 
-fmgd_llm_server -- Device vdom llm server.
-++++++++++++++++++++++++++++++++++++++++++
+fmgd_llm_server -- Configure LLM Proxy servers.
++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.1.0
 
@@ -54,7 +54,7 @@ Parameters
  <li><span class="li-head">workspace_locking_timeout</span> - The maximum time in seconds to wait for other users to release workspace lock. <span class="li-normal">type: integer</span> <span class="li-required">required: false</span>  <span class="li-normal">default: 300</span> </li>
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">llm_server</span> - Device vdom llm server <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">llm_server</span> - Configure LLM Proxy servers. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">accept_custom_model</span> <b>(Alias name: accept-custom-model)</b>  Accept custom model. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -174,18 +174,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
-      - name: Device vdom llm server
+      - name: Configure LLM Proxy servers.
         fortinet.fmgdevice.fmgd_llm_server:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>

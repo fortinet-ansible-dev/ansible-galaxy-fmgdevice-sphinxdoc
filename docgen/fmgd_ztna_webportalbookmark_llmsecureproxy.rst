@@ -4,8 +4,8 @@
 
 .. _fmgd_ztna_webportalbookmark_llmsecureproxy:
 
-fmgd_ztna_webportalbookmark_llmsecureproxy -- Device vdom ztna web portal bookmark llm secure proxy.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+fmgd_ztna_webportalbookmark_llmsecureproxy -- LLM secure proxy.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. versionadded:: 1.1.0
 
@@ -54,7 +54,7 @@ Parameters
  <li><span class="li-head">device</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">vdom</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">web_portal_bookmark</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
- <li><span class="li-head">ztna_webportalbookmark_llmsecureproxy</span> - Device vdom ztna web portal bookmark llm secure proxy <span class="li-normal">type: dict</span></li>
+ <li><span class="li-head">ztna_webportalbookmark_llmsecureproxy</span> - LLM secure proxy. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
  <li><span class="li-head">all_llm_servers</span> <b>(Alias name: all-llm-servers)</b>  All llm servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
@@ -90,18 +90,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
-      - name: Device vdom ztna web portal bookmark llm secure proxy
+      - name: LLM secure proxy.
         fortinet.fmgdevice.fmgd_ztna_webportalbookmark_llmsecureproxy:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           web_portal_bookmark: <your own value>

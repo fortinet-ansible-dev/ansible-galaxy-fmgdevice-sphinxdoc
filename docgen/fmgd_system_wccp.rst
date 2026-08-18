@@ -216,18 +216,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure WCCP.
         fortinet.fmgdevice.fmgd_system_wccp:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -246,13 +238,8 @@ Examples
             # password: <list or string>
             # ports: <list or integer>
             # ports_defined: <value in [source, destination]>
-            # primary_hash:
-            #   - "src-ip"
-            #   - "dst-ip"
-            #   - "src-port"
-            #   - "dst-port"
-            #   - "ports-defined"
-            #   - "ports-source"
+            # primary_hash: ["src-ip", "dst-ip", "src-port", "dst-port", "ports-defined",
+            #                "ports-source"]
             # priority: <integer>
             # protocol: <integer>
             # return_method: <value in [GRE, L2, any]>

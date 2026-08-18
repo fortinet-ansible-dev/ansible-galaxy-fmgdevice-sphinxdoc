@@ -194,6 +194,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">legacy_server_mode</span> <b>(Alias name: legacy-server-mode)</b>  Legacy test server selection. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
+ <div id="label47" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">update_bandwidth_limit_unit</span> <b>(Alias name: update-bandwidth-limit-unit)</b>  Set the update bandwidth limits by values in kbps or percentages of interfaces bandwidth. <span class="li-normal">type: str</span> <span class="li-normal">choices: [value, percentage]</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -216,18 +228,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Speed test schedule for each interface.
         fortinet.fmgdevice.fmgd_system_speedtestschedule:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -255,6 +259,8 @@ Examples
             # retries: <integer>
             # update_interface_shaping: <value in [disable, enable]>
             # expected_inbandwidth_minimum: <integer>
+            # legacy_server_mode: <value in [disable, enable]>
+            # update_bandwidth_limit_unit: <value in [value, percentage]>
 
 
 Return Values

@@ -187,18 +187,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: VDOM wireless controller configuration.
         fortinet.fmgdevice.fmgd_wireless_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           wireless_setting:
@@ -210,15 +202,11 @@ Examples
             # device_idle: <integer>
             # device_weight: <integer>
             # duplicate_ssid: <value in [disable, enable]>
-            # fake_ssid_action:
-            #   - "log"
-            #   - "suppress"
+            # fake_ssid_action: ["log", "suppress"]
             # fapc_compatibility: <value in [disable, enable]>
             # firmware_provision_on_authorization: <value in [disable, enable]>
             # offending_ssid:
-            #   - action:
-            #       - "log"
-            #       - "suppress"
+            #   - action: ["log", "suppress"]
             #     id: <integer>
             #     ssid_pattern: <string>
             # phishing_ssid_detect: <value in [disable, enable]>

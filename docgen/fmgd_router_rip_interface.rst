@@ -138,18 +138,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: RIP interface configuration.
         fortinet.fmgdevice.fmgd_router_rip_interface:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -159,12 +151,8 @@ Examples
             # auth_mode: <value in [none, md5, text]>
             # auth_string: <list or string>
             # flags: <integer>
-            # receive_version:
-            #   - "1"
-            #   - "2"
-            # send_version:
-            #   - "1"
-            #   - "2"
+            # receive_version: ["1", "2"]
+            # send_version: ["1", "2"]
             # send_version2_broadcast: <value in [disable, enable]>
             # split_horizon: <value in [poisoned, regular]>
             # split_horizon_status: <value in [disable, enable]>

@@ -88,7 +88,7 @@ Parameters
  <li><span class="li-head">packet_capture</span> <b>(Alias name: packet-capture)</b>  Packet capture configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  </ul>
@@ -113,18 +113,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Custom firewall permission.
         fortinet.fmgdevice.fmgd_system_accprofile_fwgrppermission:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           accprofile: <your own value>
           system_accprofile_fwgrppermission:

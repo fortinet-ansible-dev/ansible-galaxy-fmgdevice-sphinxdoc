@@ -222,19 +222,25 @@ Parameters
  <li><span class="li-head">allow_multiple_interfaces</span> <b>(Alias name: allow-multiple-interfaces)</b>  Enable/disable multiple fortilink interfaces for redundant connections between a managed fortiswitch and fortigate. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">switch_on_deauth</span> <b>(Alias name: switch-on-deauth)</b>  No-operation/factory-reset the managed fortiswitch on deauthorization. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no-op, factory-reset]</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.6 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.6 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">firewall_auth_user_hold_period</span> <b>(Alias name: firewall-auth-user-hold-period)</b>  Time period in minutes to hold firewall authenticated mac users (5 - 1440, default = 5, disable = 0). <span class="li-normal">type: int</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">switch_custom_cmd</span> <b>(Alias name: switch-custom-cmd)</b>  Configure push method for switch bound custom command. <span class="li-normal">type: str</span> <span class="li-normal">choices: [on-replay, on-any]</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -259,18 +265,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiSwitch global settings.
         fortinet.fmgdevice.fmgd_switchcontroller_global:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           switchcontroller_global:
@@ -279,17 +277,9 @@ Examples
             #   - command_entry: <string>
             #     command_name: <list or string>
             # default_virtual_switch_vlan: <list or string>
-            # dhcp_option82_circuit_id:
-            #   - "intfname"
-            #   - "vlan"
-            #   - "hostname"
-            #   - "mode"
-            #   - "description"
+            # dhcp_option82_circuit_id: ["intfname", "vlan", "hostname", "mode", "description"]
             # dhcp_option82_format: <value in [ascii, legacy]>
-            # dhcp_option82_remote_id:
-            #   - "mac"
-            #   - "hostname"
-            #   - "ip"
+            # dhcp_option82_remote_id: ["mac", "hostname", "ip"]
             # dhcp_server_access_list: <value in [disable, enable]>
             # dhcp_snoop_client_db_exp: <integer>
             # dhcp_snoop_client_req: <value in [drop-untrusted, forward-untrusted]>
@@ -305,18 +295,14 @@ Examples
             # mac_violation_timer: <integer>
             # quarantine_mode: <value in [by-vlan, by-redirect]>
             # sn_dns_resolution: <value in [disable, enable]>
-            # update_user_device:
-            #   - "mac-cache"
-            #   - "lldp"
-            #   - "dhcp-snooping"
-            #   - "l2-db"
-            #   - "l3-db"
+            # update_user_device: ["mac-cache", "lldp", "dhcp-snooping", "l2-db", "l3-db"]
             # vlan_all_mode: <value in [defined, all]>
             # vlan_identity: <value in [description, name]>
             # vlan_optimization: <value in [disable, enable, prune, ...]>
             # allow_multiple_interfaces: <value in [disable, enable]>
             # switch_on_deauth: <value in [no-op, factory-reset]>
             # firewall_auth_user_hold_period: <integer>
+            # switch_custom_cmd: <value in [on-replay, on-any]>
 
 
 Return Values

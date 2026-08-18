@@ -84,7 +84,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssh_kex_algo</span> <b>(Alias name: ssh-kex-algo)</b>  Select one or more ssh kex algorithms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [diffie-hellman-group1-sha1, diffie-hellman-group14-sha1, diffie-hellman-group-exchange-sha1, diffie-hellman-group-exchange-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group14-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512]</span>
+ <li><span class="li-head">ssh_kex_algo</span> <b>(Alias name: ssh-kex-algo)</b>  Select one or more ssh kex algorithms. <span class="li-normal">type: list</span> <span class="li-normal">choices: [diffie-hellman-group1-sha1, diffie-hellman-group14-sha1, diffie-hellman-group-exchange-sha1, diffie-hellman-group-exchange-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group14-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, mlkem768x25519-sha256]</span>
  <a id='label10' href="javascript:ContentClick('label11', 'label10');" onmouseover="ContentPreview('label11');" onmouseout="ContentUnpreview('label11');" title="click to collapse or expand..."> more... </a>
  <div id="label11" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -118,78 +118,36 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure SSH config.
         fortinet.fmgdevice.fmgd_system_sshconfig:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_sshconfig:
-            # ssh_enc_algo:
-            #   - "chacha20-poly1305@openssh.com"
-            #   - "aes128-ctr"
-            #   - "aes192-ctr"
-            #   - "aes256-ctr"
-            #   - "arcfour256"
-            #   - "arcfour128"
-            #   - "aes128-cbc"
-            #   - "3des-cbc"
-            #   - "blowfish-cbc"
-            #   - "cast128-cbc"
-            #   - "aes192-cbc"
-            #   - "aes256-cbc"
-            #   - "arcfour"
-            #   - "rijndael-cbc@lysator.liu.se"
-            #   - "aes128-gcm@openssh.com"
-            #   - "aes256-gcm@openssh.com"
+            # ssh_enc_algo: ["chacha20-poly1305@openssh.com", "aes128-ctr", "aes192-ctr",
+            #                "aes256-ctr", "arcfour256", "arcfour128", "aes128-cbc", "3des-cbc",
+            #                "blowfish-cbc", "cast128-cbc", "aes192-cbc", "aes256-cbc", "arcfour",
+            #                "rijndael-cbc@lysator.liu.se", "aes128-gcm@openssh.com",
+            #                "aes256-gcm@openssh.com"]
             # ssh_hsk: <string>
-            # ssh_hsk_algo:
-            #   - "ssh-rsa"
-            #   - "ecdsa-sha2-nistp521"
-            #   - "rsa-sha2-256"
-            #   - "rsa-sha2-512"
-            #   - "ssh-ed25519"
-            #   - "ecdsa-sha2-nistp384"
-            #   - "ecdsa-sha2-nistp256"
+            # ssh_hsk_algo: ["ssh-rsa", "ecdsa-sha2-nistp521", "rsa-sha2-256", "rsa-sha2-512",
+            #                "ssh-ed25519", "ecdsa-sha2-nistp384", "ecdsa-sha2-nistp256"]
             # ssh_hsk_override: <value in [disable, enable]>
             # ssh_hsk_password: <list or string>
-            # ssh_kex_algo:
-            #   - "diffie-hellman-group1-sha1"
-            #   - "diffie-hellman-group14-sha1"
-            #   - "diffie-hellman-group-exchange-sha1"
-            #   - "diffie-hellman-group-exchange-sha256"
-            #   - "curve25519-sha256@libssh.org"
-            #   - "ecdh-sha2-nistp256"
-            #   - "ecdh-sha2-nistp384"
-            #   - "ecdh-sha2-nistp521"
-            #   - "diffie-hellman-group14-sha256"
-            #   - "diffie-hellman-group16-sha512"
-            #   - "diffie-hellman-group18-sha512"
-            # ssh_mac_algo:
-            #   - "hmac-md5"
-            #   - "hmac-md5-etm@openssh.com"
-            #   - "hmac-md5-96"
-            #   - "hmac-md5-96-etm@openssh.com"
-            #   - "hmac-sha1"
-            #   - "hmac-sha1-etm@openssh.com"
-            #   - "hmac-sha2-256"
-            #   - "hmac-sha2-256-etm@openssh.com"
-            #   - "hmac-sha2-512"
-            #   - "hmac-sha2-512-etm@openssh.com"
-            #   - "hmac-ripemd160"
-            #   - "hmac-ripemd160@openssh.com"
-            #   - "hmac-ripemd160-etm@openssh.com"
-            #   - "umac-64@openssh.com"
-            #   - "umac-128@openssh.com"
-            #   - "umac-64-etm@openssh.com"
-            #   - "umac-128-etm@openssh.com"
+            # ssh_kex_algo: ["diffie-hellman-group1-sha1", "diffie-hellman-group14-sha1",
+            #                "diffie-hellman-group-exchange-sha1",
+            #                "diffie-hellman-group-exchange-sha256", "curve25519-sha256@libssh.org",
+            #                "ecdh-sha2-nistp256", "ecdh-sha2-nistp384", "ecdh-sha2-nistp521",
+            #                "diffie-hellman-group14-sha256", "diffie-hellman-group16-sha512",
+            #                "diffie-hellman-group18-sha512", "mlkem768x25519-sha256"]
+            # ssh_mac_algo: ["hmac-md5", "hmac-md5-etm@openssh.com", "hmac-md5-96",
+            #                "hmac-md5-96-etm@openssh.com", "hmac-sha1",
+            #                "hmac-sha1-etm@openssh.com", "hmac-sha2-256",
+            #                "hmac-sha2-256-etm@openssh.com", "hmac-sha2-512",
+            #                "hmac-sha2-512-etm@openssh.com", "hmac-ripemd160",
+            #                "hmac-ripemd160@openssh.com", "hmac-ripemd160-etm@openssh.com",
+            #                "umac-64@openssh.com", "umac-128@openssh.com",
+            #                "umac-64-etm@openssh.com", "umac-128-etm@openssh.com"]
 
 
 Return Values

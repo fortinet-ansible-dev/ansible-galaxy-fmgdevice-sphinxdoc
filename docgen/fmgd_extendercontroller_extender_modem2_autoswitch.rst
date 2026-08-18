@@ -107,7 +107,7 @@ Parameters
  <li><span class="li-head">status</span> Fortiextender automatic switch status. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
  <div id="label17" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  </ul>
@@ -132,18 +132,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: FortiExtender auto switch configuration.
         fortinet.fmgdevice.fmgd_extendercontroller_extender_modem2_autoswitch:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           extender: <your own value>
@@ -153,9 +145,7 @@ Examples
             # disconnect_period: <integer>
             # disconnect_threshold: <integer>
             # signal: <value in [disable, enable]>
-            # switch_back:
-            #   - "time"
-            #   - "timer"
+            # switch_back: ["time", "timer"]
             # switch_back_time: <string>
             # switch_back_timer: <integer>
             # status: <value in [disable, enable]>

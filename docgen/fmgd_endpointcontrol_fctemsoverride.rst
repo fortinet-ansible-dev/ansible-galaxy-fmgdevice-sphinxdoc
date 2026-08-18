@@ -62,7 +62,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">capabilities</span> List of ems capabilities. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, single-vdom-connector, client-avatars, fgt-sysinfo-api, ztna-server-info, used-tags]</span>
+ <li><span class="li-head">capabilities</span> List of ems capabilities. <span class="li-normal">type: list</span> <span class="li-normal">choices: [fabric-auth, silent-approval, websocket, websocket-malware, push-ca-certs, common-tags-api, tenant-id, single-vdom-connector, client-avatars, fgt-sysinfo-api, ztna-server-info, used-tags, crl, tag-def]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -246,37 +246,20 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiClient Enterprise Management Server
         fortinet.fmgdevice.fmgd_endpointcontrol_fctemsoverride:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
           endpointcontrol_fctemsoverride:
             ems_id: 0 # Required variable, integer
             # call_timeout: <integer>
-            # capabilities:
-            #   - "fabric-auth"
-            #   - "silent-approval"
-            #   - "websocket"
-            #   - "websocket-malware"
-            #   - "push-ca-certs"
-            #   - "common-tags-api"
-            #   - "tenant-id"
-            #   - "single-vdom-connector"
-            #   - "client-avatars"
-            #   - "fgt-sysinfo-api"
-            #   - "ztna-server-info"
-            #   - "used-tags"
+            # capabilities: ["fabric-auth", "silent-approval", "websocket", "websocket-malware",
+            #                "push-ca-certs", "common-tags-api", "tenant-id",
+            #                "single-vdom-connector", "client-avatars", "fgt-sysinfo-api",
+            #                "ztna-server-info", "used-tags", "crl", "tag-def"]
             # certificate_fingerprint: <string>
             # cloud_authentication_access_key: <string>
             # dirty_reason: <value in [none, mismatched-ems-sn]>

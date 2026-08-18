@@ -676,208 +676,246 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">link_group_monitor</span> <b>(Alias name: link-group-monitor)</b>  Link groups to check for port monitoring. <span class="li-normal">type: list</span>
+ <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
+ <div id="label207" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">vcluster_status</span> <b>(Alias name: vcluster-status)</b>  Enable/disable virtual cluster for virtual clustering. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label206' href="javascript:ContentClick('label207', 'label206');" onmouseover="ContentPreview('label207');" onmouseout="ContentUnpreview('label207');" title="click to collapse or expand..."> more... </a>
- <div id="label207" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">weight</span> Weight-round-robin weight for each cluster unit. <span class="li-normal">type: list</span>
  <a id='label208' href="javascript:ContentClick('label209', 'label208');" onmouseover="ContentPreview('label209');" onmouseout="ContentUnpreview('label209');" title="click to collapse or expand..."> more... </a>
  <div id="label209" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pingserver_slave_force_reset</span> <b>(Alias name: pingserver-slave-force-reset)</b>  Enable to force the cluster to negotiate after a remote ip monitoring failover. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">weight</span> Weight-round-robin weight for each cluster unit. <span class="li-normal">type: list</span>
  <a id='label210' href="javascript:ContentClick('label211', 'label210');" onmouseover="ContentPreview('label211');" onmouseout="ContentUnpreview('label211');" title="click to collapse or expand..."> more... </a>
  <div id="label211" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">uninterruptible_upgrade</span> <b>(Alias name: uninterruptible-upgrade)</b>  Enable to upgrade a cluster without blocking network traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">pingserver_slave_force_reset</span> <b>(Alias name: pingserver-slave-force-reset)</b>  Enable to force the cluster to negotiate after a remote ip monitoring failover. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label212' href="javascript:ContentClick('label213', 'label212');" onmouseover="ContentPreview('label213');" onmouseout="ContentUnpreview('label213');" title="click to collapse or expand..."> more... </a>
  <div id="label213" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vdom</span> Vdoms in virtual cluster 1. <span class="li-normal">type: list</span>
+ <li><span class="li-head">uninterruptible_upgrade</span> <b>(Alias name: uninterruptible-upgrade)</b>  Enable to upgrade a cluster without blocking network traffic. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label214' href="javascript:ContentClick('label215', 'label214');" onmouseover="ContentPreview('label215');" onmouseout="ContentUnpreview('label215');" title="click to collapse or expand..."> more... </a>
  <div id="label215" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">minimum_worker_threshold</span> <b>(Alias name: minimum-worker-threshold)</b>  The minimum number of operating workers to cause a content clustering chassis failover. <span class="li-normal">type: int</span>
+ <li><span class="li-head">vdom</span> Vdoms in virtual cluster 1. <span class="li-normal">type: list</span>
  <a id='label216' href="javascript:ContentClick('label217', 'label216');" onmouseover="ContentPreview('label217');" onmouseout="ContentUnpreview('label217');" title="click to collapse or expand..."> more... </a>
  <div id="label217" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vcluster2</span> Enable/disable virtual cluster 2 for virtual clustering. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">minimum_worker_threshold</span> <b>(Alias name: minimum-worker-threshold)</b>  The minimum number of operating workers to cause a content clustering chassis failover. <span class="li-normal">type: int</span>
  <a id='label218' href="javascript:ContentClick('label219', 'label218');" onmouseover="ContentPreview('label219');" onmouseout="ContentUnpreview('label219');" title="click to collapse or expand..."> more... </a>
  <div id="label219" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">secondary_vcluster</span> <b>(Alias name: secondary-vcluster)</b>  Secondary vcluster. <span class="li-normal">type: dict</span>
+ <li><span class="li-head">vcluster2</span> Enable/disable virtual cluster 2 for virtual clustering. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label220' href="javascript:ContentClick('label221', 'label220');" onmouseover="ContentPreview('label221');" onmouseout="ContentUnpreview('label221');" title="click to collapse or expand..."> more... </a>
  <div id="label221" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">monitor</span> Interfaces to check for port monitoring (or link failure). <span class="li-normal">type: list</span>
+ </li>
+ <li><span class="li-head">secondary_vcluster</span> <b>(Alias name: secondary-vcluster)</b>  Secondary vcluster. <span class="li-normal">type: dict</span>
  <a id='label222' href="javascript:ContentClick('label223', 'label222');" onmouseover="ContentPreview('label223');" onmouseout="ContentUnpreview('label223');" title="click to collapse or expand..."> more... </a>
  <div id="label223" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">override</span> Enable and increase the priority of the unit that should always be primary. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <ul class="ul-self">
+ <li><span class="li-head">monitor</span> Interfaces to check for port monitoring (or link failure). <span class="li-normal">type: list</span>
  <a id='label224' href="javascript:ContentClick('label225', 'label224');" onmouseover="ContentPreview('label225');" onmouseout="ContentUnpreview('label225');" title="click to collapse or expand..."> more... </a>
  <div id="label225" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">override_wait_time</span> <b>(Alias name: override-wait-time)</b>  Delay negotiating if override is enabled (0 - 3600 sec). <span class="li-normal">type: int</span>
+ <li><span class="li-head">override</span> Enable and increase the priority of the unit that should always be primary. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label226' href="javascript:ContentClick('label227', 'label226');" onmouseover="ContentPreview('label227');" onmouseout="ContentUnpreview('label227');" title="click to collapse or expand..."> more... </a>
  <div id="label227" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pingserver_failover_threshold</span> <b>(Alias name: pingserver-failover-threshold)</b>  Remote ip monitoring failover threshold (0 - 50). <span class="li-normal">type: int</span>
+ <li><span class="li-head">override_wait_time</span> <b>(Alias name: override-wait-time)</b>  Delay negotiating if override is enabled (0 - 3600 sec). <span class="li-normal">type: int</span>
  <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
  <div id="label229" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pingserver_monitor_interface</span> <b>(Alias name: pingserver-monitor-interface)</b>  Interfaces to check for remote ip monitoring. <span class="li-normal">type: list</span>
+ <li><span class="li-head">pingserver_failover_threshold</span> <b>(Alias name: pingserver-failover-threshold)</b>  Remote ip monitoring failover threshold (0 - 50). <span class="li-normal">type: int</span>
  <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
  <div id="label231" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pingserver_secondary_force_reset</span> <b>(Alias name: pingserver-secondary-force-reset)</b>  Enable to force the cluster to negotiate after a remote ip monitoring failover. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">pingserver_monitor_interface</span> <b>(Alias name: pingserver-monitor-interface)</b>  Interfaces to check for remote ip monitoring. <span class="li-normal">type: list</span>
  <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
  <div id="label233" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">priority</span> Increase the priority to select the primary unit (0 - 255). <span class="li-normal">type: int</span>
+ <li><span class="li-head">pingserver_secondary_force_reset</span> <b>(Alias name: pingserver-secondary-force-reset)</b>  Enable to force the cluster to negotiate after a remote ip monitoring failover. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
  <div id="label235" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vcluster_id</span> <b>(Alias name: vcluster-id)</b>  Vcluster id. <span class="li-normal">type: int</span>
+ <li><span class="li-head">priority</span> Increase the priority to select the primary unit (0 - 255). <span class="li-normal">type: int</span>
  <a id='label236' href="javascript:ContentClick('label237', 'label236');" onmouseover="ContentPreview('label237');" onmouseout="ContentUnpreview('label237');" title="click to collapse or expand..."> more... </a>
  <div id="label237" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vdom</span> Vdoms in virtual cluster 2. <span class="li-normal">type: list</span>
+ <li><span class="li-head">vcluster_id</span> <b>(Alias name: vcluster-id)</b>  Vcluster id. <span class="li-normal">type: int</span>
  <a id='label238' href="javascript:ContentClick('label239', 'label238');" onmouseover="ContentPreview('label239');" onmouseout="ContentUnpreview('label239');" title="click to collapse or expand..."> more... </a>
  <div id="label239" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pingserver_slave_force_reset</span> <b>(Alias name: pingserver-slave-force-reset)</b>  Enable to force the cluster to negotiate after a remote ip monitoring failover. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">vdom</span> Vdoms in virtual cluster 2. <span class="li-normal">type: list</span>
  <a id='label240' href="javascript:ContentClick('label241', 'label240');" onmouseover="ContentPreview('label241');" onmouseout="ContentUnpreview('label241');" title="click to collapse or expand..."> more... </a>
  <div id="label241" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">pingserver_slave_force_reset</span> <b>(Alias name: pingserver-slave-force-reset)</b>  Enable to force the cluster to negotiate after a remote ip monitoring failover. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
+ <div id="label243" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">secondary_switch_standby</span> <b>(Alias name: secondary-switch-standby)</b>  Enable to force content clustering subordinate unit standby mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label242' href="javascript:ContentClick('label243', 'label242');" onmouseover="ContentPreview('label243');" onmouseout="ContentUnpreview('label243');" title="click to collapse or expand..."> more... </a>
- <div id="label243" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">vcluster_id</span> <b>(Alias name: vcluster-id)</b>  Vcluster id. <span class="li-normal">type: int</span>
  <a id='label244' href="javascript:ContentClick('label245', 'label244');" onmouseover="ContentPreview('label245');" onmouseout="ContentUnpreview('label245');" title="click to collapse or expand..."> more... </a>
  <div id="label245" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">slave_switch_standby</span> <b>(Alias name: slave-switch-standby)</b>  Enable to force content clustering subordinate unit standby mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">vcluster_id</span> <b>(Alias name: vcluster-id)</b>  Vcluster id. <span class="li-normal">type: int</span>
  <a id='label246' href="javascript:ContentClick('label247', 'label246');" onmouseover="ContentPreview('label247');" onmouseout="ContentUnpreview('label247');" title="click to collapse or expand..."> more... </a>
  <div id="label247" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">frup</span> Enable/disable fortinet redundant utm protocol <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">slave_switch_standby</span> <b>(Alias name: slave-switch-standby)</b>  Enable to force content clustering subordinate unit standby mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label248' href="javascript:ContentClick('label249', 'label248');" onmouseover="ContentPreview('label249');" onmouseout="ContentUnpreview('label249');" title="click to collapse or expand..."> more... </a>
  <div id="label249" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">frup</span> Enable/disable fortinet redundant utm protocol <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
+ <div id="label251" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">frup_settings</span> <b>(Alias name: frup-settings)</b>  Frup settings. <span class="li-normal">type: dict</span>
- <a id='label250' href="javascript:ContentClick('label251', 'label250');" onmouseover="ContentPreview('label251');" onmouseout="ContentUnpreview('label251');" title="click to collapse or expand..."> more... </a>
- <div id="label251" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
+ <div id="label253" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  <ul class="ul-self">
  <li><span class="li-head">active_interface</span> <b>(Alias name: active-interface)</b>  Frup active interface <span class="li-normal">type: list</span>
- <a id='label252' href="javascript:ContentClick('label253', 'label252');" onmouseover="ContentPreview('label253');" onmouseout="ContentUnpreview('label253');" title="click to collapse or expand..."> more... </a>
- <div id="label253" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <a id='label254' href="javascript:ContentClick('label255', 'label254');" onmouseover="ContentPreview('label255');" onmouseout="ContentUnpreview('label255');" title="click to collapse or expand..."> more... </a>
+ <div id="label255" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">active_switch_port</span> <b>(Alias name: active-switch-port)</b>  Frup active switch port list <span class="li-normal">type: str</span> <span class="li-normal">choices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]</span>
- <a id='label254' href="javascript:ContentClick('label255', 'label254');" onmouseover="ContentPreview('label255');" onmouseout="ContentUnpreview('label255');" title="click to collapse or expand..."> more... </a>
- <div id="label255" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
+ <div id="label257" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">backup_interface</span> <b>(Alias name: backup-interface)</b>  Frup backup interface <span class="li-normal">type: list</span>
- <a id='label256' href="javascript:ContentClick('label257', 'label256');" onmouseover="ContentPreview('label257');" onmouseout="ContentUnpreview('label257');" title="click to collapse or expand..."> more... </a>
- <div id="label257" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
+ <div id="label259" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">inter_cluster_session_sync</span> <b>(Alias name: inter-cluster-session-sync)</b>  Enable/disable synchronization of sessions among ha clusters. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label258' href="javascript:ContentClick('label259', 'label258');" onmouseover="ContentPreview('label259');" onmouseout="ContentUnpreview('label259');" title="click to collapse or expand..."> more... </a>
- <div id="label259" style="display:none">
+ <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
+ <div id="label261" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
  <li><span class="li-head">auto_virtual_mac_interface</span> <b>(Alias name: auto-virtual-mac-interface)</b>  The physical interface that will be assigned an auto-generated virtual mac address. <span class="li-normal">type: list</span>
- <a id='label260' href="javascript:ContentClick('label261', 'label260');" onmouseover="ContentPreview('label261');" onmouseout="ContentUnpreview('label261');" title="click to collapse or expand..."> more... </a>
- <div id="label261" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">backup_hbdev</span> <b>(Alias name: backup-hbdev)</b>  Backup heartbeat interfaces. <span class="li-normal">type: list</span>
  <a id='label262' href="javascript:ContentClick('label263', 'label262');" onmouseover="ContentPreview('label263');" onmouseout="ContentUnpreview('label263');" title="click to collapse or expand..."> more... </a>
  <div id="label263" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">check_secondary_dev_health</span> <b>(Alias name: check-secondary-dev-health)</b>  Enable/disable secondary dev health check for session load-balance in ha a-a mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">backup_hbdev</span> <b>(Alias name: backup-hbdev)</b>  Backup heartbeat interfaces. <span class="li-normal">type: list</span>
  <a id='label264' href="javascript:ContentClick('label265', 'label264');" onmouseover="ContentPreview('label265');" onmouseout="ContentUnpreview('label265');" title="click to collapse or expand..."> more... </a>
  <div id="label265" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">primary_hold_before_reboot</span> <b>(Alias name: primary-hold-before-reboot)</b>  Primary hold before reboot. <span class="li-normal">type: int</span>
+ <li><span class="li-head">check_secondary_dev_health</span> <b>(Alias name: check-secondary-dev-health)</b>  Enable/disable secondary dev health check for session load-balance in ha a-a mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label266' href="javascript:ContentClick('label267', 'label266');" onmouseover="ContentPreview('label267');" onmouseout="ContentUnpreview('label267');" title="click to collapse or expand..."> more... </a>
  <div id="label267" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">primary_hold_before_reboot</span> <b>(Alias name: primary-hold-before-reboot)</b>  Primary hold before reboot. <span class="li-normal">type: int</span>
+ <a id='label268' href="javascript:ContentClick('label269', 'label268');" onmouseover="ContentPreview('label269');" onmouseout="ContentUnpreview('label269');" title="click to collapse or expand..."> more... </a>
+ <div id="label269" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">sequential_upgrade</span> <b>(Alias name: sequential-upgrade)</b>  Sequential upgrade. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label268' href="javascript:ContentClick('label269', 'label268');" onmouseover="ContentPreview('label269');" onmouseout="ContentUnpreview('label269');" title="click to collapse or expand..."> more... </a>
- <div id="label269" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
+ <div id="label271" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">bounce_intf_upon_failover</span> <b>(Alias name: bounce-intf-upon-failover)</b>  Enable/disable notification of kernel to bring down and up all monitored interfaces. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label270' href="javascript:ContentClick('label271', 'label270');" onmouseover="ContentPreview('label271');" onmouseout="ContentUnpreview('label271');" title="click to collapse or expand..."> more... </a>
- <div id="label271" style="display:none">
+ <a id='label272' href="javascript:ContentClick('label273', 'label272');" onmouseover="ContentPreview('label273');" onmouseout="ContentUnpreview('label273');" title="click to collapse or expand..."> more... </a>
+ <div id="label273" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">link_group</span> <b>(Alias name: link-group)</b>  Link group. <span class="li-normal">type: list</span>
+ <a id='label274' href="javascript:ContentClick('label275', 'label274');" onmouseover="ContentPreview('label275');" onmouseout="ContentUnpreview('label275');" title="click to collapse or expand..."> more... </a>
+ <div id="label275" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ <ul class="ul-self">
+ <li><span class="li-head">member</span> Member interface in this link group. <span class="li-normal">type: list</span>
+ <a id='label276' href="javascript:ContentClick('label277', 'label276');" onmouseover="ContentPreview('label277');" onmouseout="ContentUnpreview('label277');" title="click to collapse or expand..."> more... </a>
+ <div id="label277" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">min_members</span> <b>(Alias name: min-members)</b>  Minimum number of members that must be up before this link group is considered up. <span class="li-normal">type: int</span>
+ <a id='label278' href="javascript:ContentClick('label279', 'label278');" onmouseover="ContentPreview('label279');" onmouseout="ContentUnpreview('label279');" title="click to collapse or expand..."> more... </a>
+ <div id="label279" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">name</span> Name. <span class="li-normal">type: str</span>
+ <a id='label280' href="javascript:ContentClick('label281', 'label280');" onmouseover="ContentPreview('label281');" onmouseout="ContentUnpreview('label281');" title="click to collapse or expand..."> more... </a>
+ <div id="label281" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ </ul>
+ </li>
+ <li><span class="li-head">link_group_monitor</span> <b>(Alias name: link-group-monitor)</b>  Link groups to check for port monitoring. <span class="li-normal">type: list</span>
+ <a id='label282' href="javascript:ContentClick('label283', 'label282');" onmouseover="ContentPreview('label283');" onmouseout="ContentUnpreview('label283');" title="click to collapse or expand..."> more... </a>
+ <div id="label283" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -902,18 +940,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure HA.
         fortinet.fmgdevice.fmgd_system_ha:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_ha:
             # arps: <integer>
@@ -955,22 +985,11 @@ Examples
             # hw_session_sync_delay: <integer>
             # hw_session_sync_dev: <list or string>
             # imap_proxy_threshold: <string>
-            # ipsec_phase2_proposal:
-            #   - "aes128-sha1"
-            #   - "aes128-sha256"
-            #   - "aes128-sha384"
-            #   - "aes128-sha512"
-            #   - "aes192-sha1"
-            #   - "aes192-sha256"
-            #   - "aes192-sha384"
-            #   - "aes192-sha512"
-            #   - "aes256-sha1"
-            #   - "aes256-sha256"
-            #   - "aes256-sha384"
-            #   - "aes256-sha512"
-            #   - "aes128gcm"
-            #   - "aes256gcm"
-            #   - "chacha20poly1305"
+            # ipsec_phase2_proposal: ["aes128-sha1", "aes128-sha256", "aes128-sha384",
+            #                         "aes128-sha512", "aes192-sha1", "aes192-sha256",
+            #                         "aes192-sha384", "aes192-sha512", "aes256-sha1",
+            #                         "aes256-sha256", "aes256-sha384", "aes256-sha512",
+            #                         "aes128gcm", "aes256gcm", "chacha20poly1305"]
             # key: <list or string>
             # l2ep_eth_type: <string>
             # link_failed_signal: <value in [disable, enable]>
@@ -1034,6 +1053,7 @@ Examples
             #     vcluster_id: <integer>
             #     vdom: <list or string>
             #     pingserver_slave_force_reset: <value in [disable, enable]>
+            #     link_group_monitor: <list or string>
             # vcluster_status: <value in [disable, enable]>
             # weight: <list or string>
             # pingserver_slave_force_reset: <value in [disable, enable]>
@@ -1067,6 +1087,11 @@ Examples
             # primary_hold_before_reboot: <integer>
             # sequential_upgrade: <value in [disable, enable]>
             # bounce_intf_upon_failover: <value in [disable, enable]>
+            # link_group:
+            #   - member: <list or string>
+            #     min_members: <integer>
+            #     name: <string>
+            # link_group_monitor: <list or string>
 
 
 Return Values

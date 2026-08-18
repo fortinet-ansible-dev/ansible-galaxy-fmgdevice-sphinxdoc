@@ -195,7 +195,7 @@ Parameters
  <li><span class="li-head">dns_over_tls</span> <b>(Alias name: dns-over-tls)</b>  Enable/disable/enforce dns over tls. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, enforce]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">hostname_limit</span> <b>(Alias name: hostname-limit)</b>  Limit of the number of hostname table entries (0 - 50000). <span class="li-normal">type: int</span>
@@ -250,18 +250,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure DNS.
         fortinet.fmgdevice.fmgd_system_dns:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_dns:
             # alt_primary: <string>
@@ -279,10 +271,7 @@ Examples
             # ip6_secondary: <string>
             # log: <value in [disable, error, all]>
             # primary: <string>
-            # protocol:
-            #   - "cleartext"
-            #   - "dot"
-            #   - "doh"
+            # protocol: ["cleartext", "dot", "doh"]
             # retry: <integer>
             # secondary: <string>
             # server_hostname: <list or string>

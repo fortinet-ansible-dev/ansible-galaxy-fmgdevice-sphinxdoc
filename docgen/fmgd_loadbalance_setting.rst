@@ -284,6 +284,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.2</code></p>
  </div>
  </li>
+ <li><span class="li-head">gtpu_isf_teid_load_balance</span> <b>(Alias name: gtpu-isf-teid-load-balance)</b>  Enable/disable gtpu teid load balance on isf (only apply on bcm isf on fims) <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -306,30 +312,15 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Load balance setting
         fortinet.fmgdevice.fmgd_loadbalance_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           loadbalance_setting:
             # base_ctrl_interface_mode: <integer>
             # base_ctrl_network: <list or string>
-            # base_mgmt_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
+            # base_mgmt_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm"]
             # base_mgmt_interface_mode: <integer>
             # base_mgmt_internal_mac: <string>
             # base_mgmt_internal_network: <list or string>
@@ -365,6 +356,7 @@ Examples
             #     weight: <integer>
             # neighbor_entry_sync: <value in [disable, enable]>
             # ipsec_load_balance: <value in [disable, enable]>
+            # gtpu_isf_teid_load_balance: <value in [disable, enable]>
 
 
 Return Values

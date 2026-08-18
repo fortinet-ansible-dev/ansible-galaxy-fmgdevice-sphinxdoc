@@ -605,7 +605,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">speed</span> Switch port speed; default and available settings depend on hardware. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full, 1000auto, 40000full, 1000fiber, 10000, 40000, auto-module, 100FX-half, 100FX-full, 100000full, 2500full, 25000full, 50000full, 40000auto, 10000cr, 10000sr, 100000sr4, 100000cr4, 25000cr4, 25000sr4, 5000full, 2500auto, 5000auto, 1000full-fiber, 40000sr4, 40000cr4, 25000cr, 25000sr, 50000cr, 50000sr, sgmii-auto]</span>
+ <li><span class="li-head">speed</span> Switch port speed; default and available settings depend on hardware. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 10full, 10half, 100full, 100half, 1000full, 10000full, 1000auto, 40000full, 1000fiber, 10000, 40000, auto-module, 100FX-half, 100FX-full, 100000full, 2500full, 25000full, 50000full, 40000auto, 10000cr, 10000sr, 100000sr4, 100000cr4, 25000cr4, 25000sr4, 5000full, 2500auto, 5000auto, 1000full-fiber, 40000sr4, 40000cr4, 25000cr, 25000sr, 50000cr, 50000sr, sgmii-auto, detect-by-module]</span>
  <a id='label182' href="javascript:ContentClick('label183', 'label182');" onmouseover="ContentPreview('label183');" onmouseout="ContentUnpreview('label183');" title="click to collapse or expand..."> more... </a>
  <div id="label183" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -743,6 +743,30 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">eee_tx_idle_time</span> <b>(Alias name: eee-tx-idle-time)</b>  Time in which the transmitter is in low power idle (lpi) before transitioning to the refresh state in microseconds (0 - 2560, default = 60). <span class="li-normal">type: int</span>
+ <a id='label228' href="javascript:ContentClick('label229', 'label228');" onmouseover="ContentPreview('label229');" onmouseout="ContentUnpreview('label229');" title="click to collapse or expand..."> more... </a>
+ <div id="label229" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">eee_tx_wake_time</span> <b>(Alias name: eee-tx-wake-time)</b>  Time for the transmitter to transition from low power idle (lpi) to its normal operating state in microseconds (0 - 2560, default = 30). <span class="li-normal">type: int</span>
+ <a id='label230' href="javascript:ContentClick('label231', 'label230');" onmouseover="ContentPreview('label231');" onmouseout="ContentUnpreview('label231');" title="click to collapse or expand..."> more... </a>
+ <div id="label231" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">energy_efficient_ethernet</span> <b>(Alias name: energy-efficient-ethernet)</b>  Enable/disable energy efficient events. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label232' href="javascript:ContentClick('label233', 'label232');" onmouseover="ContentPreview('label233');" onmouseout="ContentUnpreview('label233');" title="click to collapse or expand..."> more... </a>
+ <div id="label233" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">poe_max_power_mode</span> <b>(Alias name: poe-max-power-mode)</b>  Poe maximum power mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [class-based, 30W, 60W]</span>
+ <a id='label234' href="javascript:ContentClick('label235', 'label234');" onmouseover="ContentPreview('label235');" onmouseout="ContentUnpreview('label235');" title="click to collapse or expand..."> more... </a>
+ <div id="label235" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -765,18 +789,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Managed-switch port list.
         fortinet.fmgdevice.fmgd_switchcontroller_managedswitch_ports:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           managed_switch: <your own value>
@@ -896,6 +912,10 @@ Examples
             # log_mac_event: <value in [disable, enable]>
             # pd_capable: <integer>
             # qnq: <list or string>
+            # eee_tx_idle_time: <integer>
+            # eee_tx_wake_time: <integer>
+            # energy_efficient_ethernet: <value in [disable, enable]>
+            # poe_max_power_mode: <value in [class-based, 30W, 60W]>
 
 
 Return Values

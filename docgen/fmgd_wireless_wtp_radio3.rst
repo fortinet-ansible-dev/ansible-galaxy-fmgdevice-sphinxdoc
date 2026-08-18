@@ -209,13 +209,85 @@ Parameters
  <li><span class="li-head">spectrum_analysis</span> <b>(Alias name: spectrum-analysis)</b>  Enable/disable spectrum analysis to find interference that would negatively impact wireless performance. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable, scan-only]</span>
  <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
  <div id="label51" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">override_analysis</span> <b>(Alias name: override-analysis)</b>  Enable to override the wtp profile spectrum analysis configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label52' href="javascript:ContentClick('label53', 'label52');" onmouseover="ContentPreview('label53');" onmouseout="ContentUnpreview('label53');" title="click to collapse or expand..."> more... </a>
  <div id="label53" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">cca_threshold</span> <b>(Alias name: cca-threshold)</b>  Configure clear channel assessment (cca) threshold in dbm (-94 to -11, default = 0, 0 for unconfigured). <span class="li-normal">type: str</span>
+ <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
+ <div id="label55" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">override_cca_threshold</span> <b>(Alias name: override-cca-threshold)</b>  Enable to override wtp profile cca threshold enable/disable settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
+ <div id="label57" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">override_vap_status</span> <b>(Alias name: override-vap-status)</b>  Enable to override wtp profile virtual access point (vap) enable/disable settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
+ <div id="label59" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap_status</span> <b>(Alias name: vap-status)</b>  Enable/disable all configured ssids on this radio (default = enable). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
+ <div id="label61" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap10</span> Virtual access point (vap) for wlan id 10 <span class="li-normal">type: str</span>
+ <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
+ <div id="label63" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap11</span> Virtual access point (vap) for wlan id 11 <span class="li-normal">type: str</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap12</span> Virtual access point (vap) for wlan id 12 <span class="li-normal">type: str</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap13</span> Virtual access point (vap) for wlan id 13 <span class="li-normal">type: str</span>
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap14</span> Virtual access point (vap) for wlan id 14 <span class="li-normal">type: str</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap15</span> Virtual access point (vap) for wlan id 15 <span class="li-normal">type: str</span>
+ <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
+ <div id="label73" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap16</span> Virtual access point (vap) for wlan id 16 <span class="li-normal">type: str</span>
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vap9</span> Virtual access point (vap) for wlan id 9 <span class="li-normal">type: str</span>
+ <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
+ <div id="label77" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -240,18 +312,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configuration options for radio 3.
         fortinet.fmgdevice.fmgd_wireless_wtp_radio3:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           wtp: <your own value>
@@ -260,35 +324,13 @@ Examples
             # auto_power_level: <value in [disable, enable]>
             # auto_power_low: <integer>
             # auto_power_target: <string>
-            # band:
-            #   - "802.11a"
-            #   - "802.11b"
-            #   - "802.11g"
-            #   - "802.11n"
-            #   - "802.11n-5G"
-            #   - "802.11n,g-only"
-            #   - "802.11g-only"
-            #   - "802.11n-only"
-            #   - "802.11n-5G-only"
-            #   - "802.11ac"
-            #   - "802.11ac,n-only"
-            #   - "802.11ac-only"
-            #   - "802.11ax-5G"
-            #   - "802.11ax,ac-only"
-            #   - "802.11ax,ac,n-only"
-            #   - "802.11ax-5G-only"
-            #   - "802.11ax"
-            #   - "802.11ax,n-only"
-            #   - "802.11ax,n,g-only"
-            #   - "802.11ax-only"
-            #   - "802.11ac-2G"
-            #   - "802.11ax-6G"
-            #   - "802.11n-2G"
-            #   - "802.11ac-5G"
-            #   - "802.11ax-2G"
-            #   - "802.11be-2G"
-            #   - "802.11be-5G"
-            #   - "802.11be-6G"
+            # band: ["802.11a", "802.11b", "802.11g", "802.11n", "802.11n-5G", "802.11n,g-only",
+            #        "802.11g-only", "802.11n-only", "802.11n-5G-only", "802.11ac",
+            #        "802.11ac,n-only", "802.11ac-only", "802.11ax-5G", "802.11ax,ac-only",
+            #        "802.11ax,ac,n-only", "802.11ax-5G-only", "802.11ax", "802.11ax,n-only",
+            #        "802.11ax,n,g-only", "802.11ax-only", "802.11ac-2G", "802.11ax-6G",
+            #        "802.11n-2G", "802.11ac-5G", "802.11ax-2G", "802.11be-2G", "802.11be-5G",
+            #        "802.11be-6G"]
             # channel: <list or string>
             # drma_manual_mode: <value in [ap, monitor, ncf, ...]>
             # override_band: <value in [disable, enable]>
@@ -311,6 +353,18 @@ Examples
             # vaps: <list or string>
             # spectrum_analysis: <value in [disable, enable, scan-only]>
             # override_analysis: <value in [disable, enable]>
+            # cca_threshold: <string>
+            # override_cca_threshold: <value in [disable, enable]>
+            # override_vap_status: <value in [disable, enable]>
+            # vap_status: <value in [disable, enable]>
+            # vap10: <string>
+            # vap11: <string>
+            # vap12: <string>
+            # vap13: <string>
+            # vap14: <string>
+            # vap15: <string>
+            # vap16: <string>
+            # vap9: <string>
 
 
 Return Values

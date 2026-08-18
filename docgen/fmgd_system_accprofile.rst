@@ -160,7 +160,7 @@ Parameters
  <li><span class="li-head">packet_capture</span> <b>(Alias name: packet-capture)</b>  Packet capture configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
  <div id="label35" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  </ul>
@@ -432,7 +432,7 @@ Parameters
  <li><span class="li-head">spamfilter</span> Antispam filter and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">telemetry</span> Telemetry profile and settings. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
@@ -464,31 +464,31 @@ Parameters
  <li><span class="li-head">admingrp</span> Administrator access to add, remove, and edit admin accounts and access profiles. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">certgrp</span> Administrator access to the certificate configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">routegrp</span> Administrator access to the routing configuration. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">mntgrp</span> Administrator access to maintenance commands including reset to factory defaults, format log disk, reboot, restore, and shutdown. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">updategrp</span> Administrator access to the fortiguard configuration and requesting fortiguard updates. <span class="li-normal">type: str</span> <span class="li-normal">choices: [none, read, read-write]</span>
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">secfabgrp_permission</span> <b>(Alias name: secfabgrp-permission)</b>  Secfabgrp permission. <span class="li-normal">type: dict</span>
@@ -517,6 +517,30 @@ Parameters
  </li>
  </ul>
  </li>
+ <li><span class="li-head">gui_ai_assistant</span> <b>(Alias name: gui-ai-assistant)</b>  Enable/disable permission to use ai assistant. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label150' href="javascript:ContentClick('label151', 'label150');" onmouseover="ContentPreview('label151');" onmouseout="ContentUnpreview('label151');" title="click to collapse or expand..."> more... </a>
+ <div id="label151" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_custom_theme</span> <b>(Alias name: gui-custom-theme)</b>  Custom theme that overrides the default fortigate theme. <span class="li-normal">type: list</span>
+ <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
+ <div id="label153" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_theme</span> <b>(Alias name: gui-theme)</b>  Predefined theme that overrides the default fortigate theme. <span class="li-normal">type: str</span> <span class="li-normal">choices: [melongene, mariner, neutrino, jade, graphite, dark-matter, onyx, eclipse, retro, jet-stream, security-fabric, none]</span>
+ <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
+ <div id="label155" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_theme_type</span> <b>(Alias name: gui-theme-type)</b>  Use predefined themes or custom themes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [predefined, custom]</span>
+ <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
+ <div id="label157" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -539,18 +563,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure access profiles for system administrators.
         fortinet.fmgdevice.fmgd_system_accprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           state: present # <value in [present, absent]>
           system_accprofile:
@@ -629,6 +645,10 @@ Examples
             #   csffoo: <value in [none, read, read-write]>
             #   csfsys: <value in [none, read, read-write]>
             #   mmsgtp: <value in [none, read, read-write]>
+            # gui_ai_assistant: <value in [disable, enable]>
+            # gui_custom_theme: <list or string>
+            # gui_theme: <value in [melongene, mariner, neutrino, ...]>
+            # gui_theme_type: <value in [predefined, custom]>
 
 
 Return Values

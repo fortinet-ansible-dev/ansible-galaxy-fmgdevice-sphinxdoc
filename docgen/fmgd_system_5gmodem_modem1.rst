@@ -200,6 +200,18 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">esim</span> Enable/disable esim on slot-2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label48' href="javascript:ContentClick('label49', 'label48');" onmouseover="ContentPreview('label49');" onmouseout="ContentUnpreview('label49');" title="click to collapse or expand..."> more... </a>
+ <div id="label49" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.11 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gps_antenna_type</span> <b>(Alias name: gps-antenna-type)</b>  Gps antenna type used on the gnss port (default = passive). <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive]</span>
+ <a id='label50' href="javascript:ContentClick('label51', 'label50');" onmouseover="ContentPreview('label51');" onmouseout="ContentUnpreview('label51');" title="click to collapse or expand..."> more... </a>
+ <div id="label51" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -222,18 +234,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure 5G Modem1.
         fortinet.fmgdevice.fmgd_system_5gmodem_modem1:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_5gmodem_modem1:
             # carrier_config: <value in [manual, auto-gcf, auto-ptcrb]>
@@ -260,6 +264,8 @@ Examples
             # sim2_data_plan: <list or string>
             # sim2_pin: <list or string>
             # status: <value in [online, low-power]>
+            # esim: <value in [disable, enable]>
+            # gps_antenna_type: <value in [active, passive]>
 
 
 Return Values

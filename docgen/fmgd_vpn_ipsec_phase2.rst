@@ -230,7 +230,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">proposal</span> Phase2 proposal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [null-md5, null-sha1, des-null, 3des-null, des-md5, des-sha1, 3des-md5, 3des-sha1, aes128-md5, aes128-sha1, aes192-md5, aes192-sha1, aes256-md5, aes256-sha1, aes128-null, aes192-null, aes256-null, null-sha256, des-sha256, 3des-sha256, aes128-sha256, aes192-sha256, aes256-sha256, des-sha384, des-sha512, 3des-sha384, 3des-sha512, aes128-sha384, aes128-sha512, aes192-sha384, aes192-sha512, aes256-sha384, aes256-sha512, null-sha384, null-sha512, aria128-null, aria128-md5, aria128-sha1, aria128-sha256, aria128-sha384, aria128-sha512, aria192-null, aria192-md5, aria192-sha1, aria192-sha256, aria192-sha384, aria192-sha512, aria256-null, aria256-md5, aria256-sha1, aria256-sha256, aria256-sha384, aria256-sha512, seed-null, seed-md5, seed-sha1, seed-sha256, seed-sha384, seed-sha512, aes128gcm, aes256gcm, chacha20poly1305]</span>
+ <li><span class="li-head">proposal</span> Phase2 proposal. <span class="li-normal">type: str</span> <span class="li-normal">choices: [null-md5, null-sha1, des-null, 3des-null, des-md5, des-sha1, 3des-md5, 3des-sha1, aes128-md5, aes128-sha1, aes192-md5, aes192-sha1, aes256-md5, aes256-sha1, aes128-null, aes192-null, aes256-null, null-sha256, des-sha256, 3des-sha256, aes128-sha256, aes192-sha256, aes256-sha256, des-sha384, des-sha512, 3des-sha384, 3des-sha512, aes128-sha384, aes128-sha512, aes192-sha384, aes192-sha512, aes256-sha384, aes256-sha512, null-sha384, null-sha512, aria128-null, aria128-md5, aria128-sha1, aria128-sha256, aria128-sha384, aria128-sha512, aria192-null, aria192-md5, aria192-sha1, aria192-sha256, aria192-sha384, aria192-sha512, aria256-null, aria256-md5, aria256-sha1, aria256-sha256, aria256-sha384, aria256-sha512, seed-null, seed-md5, seed-sha1, seed-sha256, seed-sha384, seed-sha512, aes128gcm, aes256gcm, chacha20poly1305, sm4-sm3]</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -332,43 +332,43 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke1</span> Phase2 addke1 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke1</span> Phase2 addke1 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke2</span> Phase2 addke2 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke2</span> Phase2 addke2 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke3</span> Phase2 addke3 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke3</span> Phase2 addke3 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke4</span> Phase2 addke4 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke4</span> Phase2 addke4 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke5</span> Phase2 addke5 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke5</span> Phase2 addke5 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
  <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke6</span> Phase2 addke6 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke6</span> Phase2 addke6 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">addke7</span> Phase2 addke7 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37]</span>
+ <li><span class="li-head">addke7</span> Phase2 addke7 group. <span class="li-normal">type: list</span> <span class="li-normal">choices: [0, 1080, 1081, 1082, 1083, 1084, 1085, 1089, 1090, 1091, 1092, 1093, 1094, 35, 36, 37, none, ml-kem-512, ml-kem-768, ml-kem-1024, kyber512, kyber768, kyber1024, frodo-l1, frodo-l3, frodo-l5, bike-l1, bike-l3, bike-l5, hqc128, hqc192, hqc256]</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.0 -> latest</code></p>
@@ -396,18 +396,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure VPN autokey tunnel.
         fortinet.fmgdevice.fmgd_vpn_ipsec_phase2:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -417,24 +409,8 @@ Examples
             # auto_negotiate: <value in [disable, enable]>
             # comments: <string>
             # dhcp_ipsec: <value in [disable, enable]>
-            # dhgrp:
-            #   - "1"
-            #   - "2"
-            #   - "5"
-            #   - "14"
-            #   - "15"
-            #   - "16"
-            #   - "17"
-            #   - "18"
-            #   - "19"
-            #   - "20"
-            #   - "21"
-            #   - "27"
-            #   - "28"
-            #   - "29"
-            #   - "30"
-            #   - "31"
-            #   - "32"
+            # dhgrp: ["1", "2", "5", "14", "15", "16", "17", "18", "19", "20", "21", "27", "28",
+            #         "29", "30", "31", "32"]
             # diffserv: <value in [disable, enable]>
             # diffservcode: <string>
             # dst_addr_type: <value in [subnet, range, ip, ...]>
@@ -475,125 +451,34 @@ Examples
             # src_subnet: <list or string>
             # src_subnet6: <string>
             # use_natip: <value in [disable, enable]>
-            # addke1:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke2:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke3:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke4:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke5:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke6:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
-            # addke7:
-            #   - "0"
-            #   - "1080"
-            #   - "1081"
-            #   - "1082"
-            #   - "1083"
-            #   - "1084"
-            #   - "1085"
-            #   - "1089"
-            #   - "1090"
-            #   - "1091"
-            #   - "1092"
-            #   - "1093"
-            #   - "1094"
-            #   - "35"
-            #   - "36"
-            #   - "37"
+            # addke1: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
+            # addke2: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
+            # addke3: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
+            # addke4: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
+            # addke5: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
+            # addke6: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
+            # addke7: ["0", "1080", "1081", "1082", "1083", "1084", "1085", "1089", "1090", "1091",
+            #          "1092", "1093", "1094", "35", "36", "37", "none", "ml-kem-512", "ml-kem-768",
+            #          "ml-kem-1024", "kyber512", "kyber768", "kyber1024", "frodo-l1", "frodo-l3",
+            #          "frodo-l5", "bike-l1", "bike-l3", "bike-l5", "hqc128", "hqc192", "hqc256"]
 
 
 Return Values

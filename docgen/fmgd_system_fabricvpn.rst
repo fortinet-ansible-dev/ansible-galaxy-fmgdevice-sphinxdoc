@@ -218,48 +218,60 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
- </ul>
- </li>
- <li><span class="li-head">policy_rule</span> <b>(Alias name: policy-rule)</b>  Policy creation rule. <span class="li-normal">type: str</span> <span class="li-normal">choices: [health-check, manual, auto]</span>
+ <li><span class="li-head">overlay_tunnel_block_ipam</span> <b>(Alias name: overlay-tunnel-block-ipam)</b>  Source for the overlay tunnel, obtained from the firewall addresses managed by ipam <span class="li-normal">type: list</span>
  <a id='label54' href="javascript:ContentClick('label55', 'label54');" onmouseover="ContentPreview('label55');" onmouseout="ContentUnpreview('label55');" title="click to collapse or expand..."> more... </a>
  <div id="label55" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">populated</span> Populated the setting in tables. <span class="li-normal">type: int</span>
+ </ul>
+ </li>
+ <li><span class="li-head">policy_rule</span> <b>(Alias name: policy-rule)</b>  Policy creation rule. <span class="li-normal">type: str</span> <span class="li-normal">choices: [health-check, manual, auto, fabric]</span>
  <a id='label56' href="javascript:ContentClick('label57', 'label56');" onmouseover="ContentPreview('label57');" onmouseout="ContentUnpreview('label57');" title="click to collapse or expand..."> more... </a>
  <div id="label57" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">psksecret</span> Pre-shared secret for advpn. <span class="li-normal">type: list</span>
+ <li><span class="li-head">populated</span> Populated the setting in tables. <span class="li-normal">type: int</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sdwan_zone</span> <b>(Alias name: sdwan-zone)</b>  Reference to created sd-wan zone. <span class="li-normal">type: list</span>
+ <li><span class="li-head">psksecret</span> Pre-shared secret for advpn. <span class="li-normal">type: list</span>
  <a id='label60' href="javascript:ContentClick('label61', 'label60');" onmouseover="ContentPreview('label61');" onmouseout="ContentUnpreview('label61');" title="click to collapse or expand..."> more... </a>
  <div id="label61" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable fabric vpn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">sdwan_zone</span> <b>(Alias name: sdwan-zone)</b>  Reference to created sd-wan zone. <span class="li-normal">type: list</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sync_mode</span> <b>(Alias name: sync-mode)</b>  Setting synchronised by fabric or manual. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">status</span> Enable/disable fabric vpn. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
  <div id="label65" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">vpn_role</span> <b>(Alias name: vpn-role)</b>  Fabric vpn role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hub, spoke]</span>
+ <li><span class="li-head">sync_mode</span> <b>(Alias name: sync-mode)</b>  Setting synchronised by fabric or manual. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
  <div id="label67" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">vpn_role</span> <b>(Alias name: vpn-role)</b>  Fabric vpn role. <span class="li-normal">type: str</span> <span class="li-normal">choices: [hub, spoke]</span>
+ <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
+ <div id="label69" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">loopback_address_block_ipam</span> <b>(Alias name: loopback-address-block-ipam)</b>  Ipam firewall address that will be used for hubs loopback address. <span class="li-normal">type: list</span>
+ <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
+ <div id="label71" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -284,18 +296,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Setup for self orchestrated fabric auto discovery VPN.
         fortinet.fmgdevice.fmgd_system_fabricvpn:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_fabricvpn:
             # advertised_subnets:
@@ -325,13 +329,15 @@ Examples
             #     route_policy: <list or string>
             #     sdwan_member: <list or string>
             #     ipsec_network_id: <integer>
-            # policy_rule: <value in [health-check, manual, auto]>
+            #     overlay_tunnel_block_ipam: <list or string>
+            # policy_rule: <value in [health-check, manual, auto, ...]>
             # populated: <integer>
             # psksecret: <list or string>
             # sdwan_zone: <list or string>
             # status: <value in [disable, enable]>
             # sync_mode: <value in [disable, enable]>
             # vpn_role: <value in [hub, spoke]>
+            # loopback_address_block_ipam: <list or string>
 
 
 Return Values

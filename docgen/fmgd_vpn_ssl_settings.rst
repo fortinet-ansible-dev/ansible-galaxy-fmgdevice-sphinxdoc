@@ -372,7 +372,7 @@ Parameters
  <li><span class="li-head">route_source_interface</span> <b>(Alias name: route-source-interface)</b>  Enable/disable to allow ssl vpn sessions to bypass routing and bind to the incoming interface. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.0</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">servercert</span> Name of the server certificate to be used for ssl vpns. <span class="li-normal">type: str</span>
@@ -438,19 +438,19 @@ Parameters
  <li><span class="li-head">tlsv1_0</span> <b>(Alias name: tlsv1-0)</b>  Enable/disable tlsv1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">tlsv1_1</span> <b>(Alias name: tlsv1-1)</b>  Enable/disable tlsv1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">tlsv1_2</span> <b>(Alias name: tlsv1-2)</b>  Enable/disable tlsv1. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
  <div id="label131" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v7.2.1</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">tlsv1_3</span> <b>(Alias name: tlsv1-3)</b>  Tlsv1 3. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -534,7 +534,7 @@ Parameters
  <li><span class="li-head">ssl_big_buffer</span> <b>(Alias name: ssl-big-buffer)</b>  Disable using the big sslv3 buffer feature to save memory and force higher security. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
  <div id="label159" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v6.2.6 -> v6.2.13</code>, <code class="docutils literal notranslate">v6.4.2 -> v6.4.15</code>, <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code></p>
  </div>
  </li>
  <li><span class="li-head">client_sigalgs</span> <b>(Alias name: client-sigalgs)</b>  Set signature algorithms related to client authentication. <span class="li-normal">type: str</span> <span class="li-normal">choices: [no-rsa-pss, all]</span>
@@ -649,18 +649,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure SSL VPN.
         fortinet.fmgdevice.fmgd_vpn_ssl_settings:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           vpn_ssl_settings:
@@ -683,25 +675,9 @@ Examples
             #     user_peer: <string>
             #     users: <list or string>
             # auto_tunnel_static_route: <value in [disable, enable]>
-            # banned_cipher:
-            #   - "RSA"
-            #   - "DH"
-            #   - "DHE"
-            #   - "ECDH"
-            #   - "ECDHE"
-            #   - "DSS"
-            #   - "ECDSA"
-            #   - "AES"
-            #   - "AESGCM"
-            #   - "CAMELLIA"
-            #   - "3DES"
-            #   - "SHA1"
-            #   - "SHA256"
-            #   - "SHA384"
-            #   - "STATIC"
-            #   - "CHACHA20"
-            #   - "ARIA"
-            #   - "AESCCM"
+            # banned_cipher: ["RSA", "DH", "DHE", "ECDH", "ECDHE", "DSS", "ECDSA", "AES", "AESGCM",
+            #                 "CAMELLIA", "3DES", "SHA1", "SHA256", "SHA384", "STATIC", "CHACHA20",
+            #                 "ARIA", "AESCCM"]
             # check_referer: <value in [disable, enable]>
             # default_portal: <string>
             # deflate_compression_level: <integer>
@@ -763,12 +739,9 @@ Examples
             # sslv3: <value in [disable, enable]>
             # ssl_big_buffer: <value in [disable, enable]>
             # client_sigalgs: <value in [no-rsa-pss, all]>
-            # ciphersuite:
-            #   - "TLS-AES-128-GCM-SHA256"
-            #   - "TLS-AES-256-GCM-SHA384"
-            #   - "TLS-CHACHA20-POLY1305-SHA256"
-            #   - "TLS-AES-128-CCM-SHA256"
-            #   - "TLS-AES-128-CCM-8-SHA256"
+            # ciphersuite: ["TLS-AES-128-GCM-SHA256", "TLS-AES-256-GCM-SHA384",
+            #               "TLS-CHACHA20-POLY1305-SHA256", "TLS-AES-128-CCM-SHA256",
+            #               "TLS-AES-128-CCM-8-SHA256"]
             # dual_stack_mode: <value in [disable, enable]>
             # tunnel_addr_assigned_method: <value in [first-available, round-robin]>
             # browser_language_detection: <value in [disable, enable]>
@@ -781,23 +754,9 @@ Examples
             # dtls_heartbeat_interval: <integer>
             # server_hostname: <string>
             # remote_https_cert_check: <value in [no-check, warn-on-error, reject-on-error]>
-            # tls_groups:
-            #   - "P-521"
-            #   - "P-384"
-            #   - "P-256"
-            #   - "ML-KEM512"
-            #   - "ML-KEM768"
-            #   - "ML-KEM1024"
-            #   - "P-384-MLKEM1024"
-            #   - "P-256-MLKEM768"
-            #   - "X25519-MLKEM768"
-            #   - "X448"
-            #   - "X25519"
-            #   - "FFDHE2048"
-            #   - "FFDHE3072"
-            #   - "FFDHE4096"
-            #   - "FFDHE6144"
-            #   - "FFDHE8192"
+            # tls_groups: ["P-521", "P-384", "P-256", "ML-KEM512", "ML-KEM768", "ML-KEM1024",
+            #              "P-384-MLKEM1024", "P-256-MLKEM768", "X25519-MLKEM768", "X448", "X25519",
+            #              "FFDHE2048", "FFDHE3072", "FFDHE4096", "FFDHE6144", "FFDHE8192"]
 
 
 Return Values

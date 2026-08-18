@@ -218,26 +218,15 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure report page.
         fortinet.fmgdevice.fmgd_report_layout_page:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           layout: <your own value>
           report_layout_page:
-            # column_break_before:
-            #   - "heading1"
-            #   - "heading2"
-            #   - "heading3"
+            # column_break_before: ["heading1", "heading2", "heading3"]
             # footer:
             #   footer_item:
             #     - content: <string>
@@ -256,13 +245,8 @@ Examples
             #       style: <list or string>
             #       type: <value in [text, image]>
             #   style: <list or string>
-            # options:
-            #   - "header-on-first-page"
-            #   - "footer-on-first-page"
-            # page_break_before:
-            #   - "heading1"
-            #   - "heading2"
-            #   - "heading3"
+            # options: ["header-on-first-page", "footer-on-first-page"]
+            # page_break_before: ["heading1", "heading2", "heading3"]
             # paper: <value in [a4, letter]>
 
 

@@ -91,6 +91,66 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">gui_custom_theme</span> <b>(Alias name: gui-custom-theme)</b>  Custom theme that overrides the default fortigate theme. <span class="li-normal">type: list</span>
+ <a id='label12' href="javascript:ContentClick('label13', 'label12');" onmouseover="ContentPreview('label13');" onmouseout="ContentUnpreview('label13');" title="click to collapse or expand..."> more... </a>
+ <div id="label13" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_dashboard_id</span> <b>(Alias name: gui-dashboard-id)</b>  Gui dashboard id. <span class="li-normal">type: int</span>
+ <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
+ <div id="label15" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_llm_provider</span> <b>(Alias name: gui-llm-provider)</b>  Select the llm provider. <span class="li-normal">type: str</span> <span class="li-normal">choices: [fortiai, openai]</span>
+ <a id='label16' href="javascript:ContentClick('label17', 'label16');" onmouseover="ContentPreview('label17');" onmouseout="ContentUnpreview('label17');" title="click to collapse or expand..."> more... </a>
+ <div id="label17" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_theme</span> <b>(Alias name: gui-theme)</b>  Predefined theme that overrides the default fortigate theme. <span class="li-normal">type: str</span> <span class="li-normal">choices: [melongene, mariner, neutrino, jade, graphite, dark-matter, onyx, eclipse, retro, jet-stream, security-fabric, none]</span>
+ <a id='label18' href="javascript:ContentClick('label19', 'label18');" onmouseover="ContentPreview('label19');" onmouseout="ContentUnpreview('label19');" title="click to collapse or expand..."> more... </a>
+ <div id="label19" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gui_theme_type</span> <b>(Alias name: gui-theme-type)</b>  Use predefined themes or custom themes. <span class="li-normal">type: str</span> <span class="li-normal">choices: [predefined, custom]</span>
+ <a id='label20' href="javascript:ContentClick('label21', 'label20');" onmouseover="ContentPreview('label21');" onmouseout="ContentUnpreview('label21');" title="click to collapse or expand..."> more... </a>
+ <div id="label21" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">openai_api_key</span> <b>(Alias name: openai-api-key)</b>  Openai api key. <span class="li-normal">type: list</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">openai_api_key_part2</span> <b>(Alias name: openai-api-key-part2)</b>  Openai api key part 2 for excess length. <span class="li-normal">type: list</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">openai_model</span> <b>(Alias name: openai-model)</b>  Openai model. <span class="li-normal">type: str</span>
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">openai_org_id</span> <b>(Alias name: openai-org-id)</b>  Openai organization id. <span class="li-normal">type: str</span>
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">openai_project_id</span> <b>(Alias name: openai-project-id)</b>  Openai project id. <span class="li-normal">type: str</span>
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -113,18 +173,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiCloud SSO admin users.
         fortinet.fmgdevice.fmgd_system_ssofortigatecloudadmin:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           state: present # <value in [present, absent]>
           system_ssofortigatecloudadmin:
@@ -134,6 +186,16 @@ Examples
             # gui_ignore_invalid_signature_version: <string>
             # gui_ignore_release_overview_version: <string>
             # vdom: <list or string>
+            # gui_custom_theme: <list or string>
+            # gui_dashboard_id: <integer>
+            # gui_llm_provider: <value in [fortiai, openai]>
+            # gui_theme: <value in [melongene, mariner, neutrino, ...]>
+            # gui_theme_type: <value in [predefined, custom]>
+            # openai_api_key: <list or string>
+            # openai_api_key_part2: <list or string>
+            # openai_model: <string>
+            # openai_org_id: <string>
+            # openai_project_id: <string>
 
 
 Return Values

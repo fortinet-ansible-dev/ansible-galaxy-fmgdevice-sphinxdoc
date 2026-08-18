@@ -96,7 +96,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query]</span>
+ <li><span class="li-head">server_type</span> <b>(Alias name: server-type)</b>  Fortiguard service type. <span class="li-normal">type: list</span> <span class="li-normal">choices: [update, rating, iot-query, iot-collect, vpatch-query, iotv-query]</span>
  <a id='label14' href="javascript:ContentClick('label15', 'label14');" onmouseover="ContentPreview('label15');" onmouseout="ContentUnpreview('label15');" title="click to collapse or expand..."> more... </a>
  <div id="label15" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -278,6 +278,12 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">use_default_servers_as_main</span> <b>(Alias name: use-default-servers-as-main)</b>  Enable/disable use of the public fortiguard servers as main servers. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
+ <div id="label75" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -300,18 +306,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure central management.
         fortinet.fmgdevice.fmgd_system_centralmanagement:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_centralmanagement:
             # include_default_servers: <value in [disable, enable]>
@@ -321,12 +319,8 @@ Examples
             #     id: <integer>
             #     server_address: <string>
             #     server_address6: <string>
-            #     server_type:
-            #       - "update"
-            #       - "rating"
-            #       - "iot-query"
-            #       - "iot-collect"
-            #       - "vpatch-query"
+            #     server_type: ["update", "rating", "iot-query", "iot-collect", "vpatch-query",
+            #                   "iotv-query"]
             # ltefw_upgrade_time: <string>
             # vdom: <list or string>
             # allow_remote_firmware_upgrade: <value in [disable, enable]>
@@ -356,6 +350,7 @@ Examples
             # modem_upgrade_time: <string>
             # vrf_select: <integer>
             # fmg_update_http_header: <value in [disable, enable]>
+            # use_default_servers_as_main: <value in [disable, enable]>
 
 
 Return Values

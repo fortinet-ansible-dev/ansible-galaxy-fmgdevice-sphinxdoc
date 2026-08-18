@@ -232,7 +232,7 @@ Parameters
  <li><span class="li-head">rest_api_performance</span> <b>(Alias name: rest-api-performance)</b>  Enable/disable rest api memory and performance stats in rest-api-get/set logs. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label58' href="javascript:ContentClick('label59', 'label58');" onmouseover="ContentPreview('label59');" onmouseout="ContentUnpreview('label59');" title="click to collapse or expand..."> more... </a>
  <div id="label59" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">zone_name</span> <b>(Alias name: zone-name)</b>  Enable/disable zone name logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
@@ -244,7 +244,19 @@ Parameters
  <li><span class="li-head">web_svc_perf</span> <b>(Alias name: web-svc-perf)</b>  Enable/disable web-svc performance logging. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label62' href="javascript:ContentClick('label63', 'label62');" onmouseover="ContentPreview('label63');" onmouseout="ContentUnpreview('label63');" title="click to collapse or expand..."> more... </a>
  <div id="label63" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.9 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.5 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">detailed_svc_name</span> <b>(Alias name: detailed-svc-name)</b>  Enable/disable logging of the specific service name or the top-most service group name. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">tacacs_accounting_server_alternate</span> <b>(Alias name: tacacs-accounting-server-alternate)</b>  Enable/disable tacacs acounting server alternating. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -269,18 +281,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure general log settings.
         fortinet.fmgdevice.fmgd_log_setting:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           log_setting:
@@ -316,6 +320,8 @@ Examples
             # rest_api_performance: <value in [disable, enable]>
             # zone_name: <value in [disable, enable]>
             # web_svc_perf: <value in [disable, enable]>
+            # detailed_svc_name: <value in [disable, enable]>
+            # tacacs_accounting_server_alternate: <value in [disable, enable]>
 
 
 Return Values

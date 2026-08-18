@@ -167,206 +167,44 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure quarantine options.
         fortinet.fmgdevice.fmgd_antivirus_quarantine:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           antivirus_quarantine:
             # agelimit: <integer>
             # destination: <value in [NULL, disk, FortiAnalyzer]>
-            # drop_infected:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "im"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
-            # drop_machine_learning:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
+            # drop_infected: ["imap", "smtp", "pop3", "http", "ftp", "im", "nntp", "imaps", "smtps",
+            #                 "pop3s", "https", "mm1", "mm3", "mm4", "mm7", "ftps", "mapi", "cifs",
+            #                 "ssh"]
+            # drop_machine_learning: ["imap", "smtp", "pop3", "http", "ftp", "nntp", "imaps",
+            #                         "smtps", "pop3s", "https", "ftps", "mapi", "cifs", "ssh"]
             # lowspace: <value in [ovrw-old, drop-new]>
             # maxfilesize: <integer>
             # quarantine_quota: <integer>
-            # store_infected:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "im"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
-            # store_machine_learning:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
-            # drop_blocked:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
-            # store_blocked:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
-            # drop_heuristic:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "im"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
-            # store_heuristic:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "im"
-            #   - "nntp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
-            #   - "cifs"
-            #   - "ssh"
-            # drop_intercepted:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
-            # store_intercepted:
-            #   - "imap"
-            #   - "smtp"
-            #   - "pop3"
-            #   - "http"
-            #   - "ftp"
-            #   - "imaps"
-            #   - "smtps"
-            #   - "pop3s"
-            #   - "https"
-            #   - "mm1"
-            #   - "mm3"
-            #   - "mm4"
-            #   - "mm7"
-            #   - "ftps"
-            #   - "mapi"
+            # store_infected: ["imap", "smtp", "pop3", "http", "ftp", "im", "nntp", "imaps",
+            #                  "smtps", "pop3s", "https", "mm1", "mm3", "mm4", "mm7", "ftps",
+            #                  "mapi", "cifs", "ssh"]
+            # store_machine_learning: ["imap", "smtp", "pop3", "http", "ftp", "nntp", "imaps",
+            #                          "smtps", "pop3s", "https", "ftps", "mapi", "cifs", "ssh"]
+            # drop_blocked: ["imap", "smtp", "pop3", "http", "ftp", "nntp", "imaps", "smtps",
+            #                "pop3s", "https", "mm1", "mm3", "mm4", "mm7", "ftps", "mapi", "cifs",
+            #                "ssh"]
+            # store_blocked: ["imap", "smtp", "pop3", "http", "ftp", "nntp", "imaps", "smtps",
+            #                 "pop3s", "https", "mm1", "mm3", "mm4", "mm7", "ftps", "mapi", "cifs",
+            #                 "ssh"]
+            # drop_heuristic: ["imap", "smtp", "pop3", "http", "ftp", "im", "nntp", "imaps",
+            #                  "smtps", "pop3s", "https", "mm1", "mm3", "mm4", "mm7", "ftps",
+            #                  "mapi", "cifs", "ssh"]
+            # store_heuristic: ["imap", "smtp", "pop3", "http", "ftp", "im", "nntp", "imaps",
+            #                   "smtps", "pop3s", "https", "mm1", "mm3", "mm4", "mm7", "ftps",
+            #                   "mapi", "cifs", "ssh"]
+            # drop_intercepted: ["imap", "smtp", "pop3", "http", "ftp", "imaps", "smtps", "pop3s",
+            #                    "https", "mm1", "mm3", "mm4", "mm7", "ftps", "mapi"]
+            # store_intercepted: ["imap", "smtp", "pop3", "http", "ftp", "imaps", "smtps", "pop3s",
+            #                     "https", "mm1", "mm3", "mm4", "mm7", "ftps", "mapi"]
 
 
 Return Values

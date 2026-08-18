@@ -635,18 +635,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure IS-IS.
         fortinet.fmgdevice.fmgd_router_isis:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           router_isis:
@@ -708,9 +700,7 @@ Examples
             # metric_style: <value in [narrow, narrow-transition, narrow-transition-l1, ...]>
             # overload_bit: <value in [disable, enable]>
             # overload_bit_on_startup: <integer>
-            # overload_bit_suppress:
-            #   - "external"
-            #   - "interlevel"
+            # overload_bit_suppress: ["external", "interlevel"]
             # redistribute:
             #   level: <value in [level-1-2, level-1, level-2]>
             #   metric: <integer>

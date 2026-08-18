@@ -182,30 +182,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure FortiSwitch SNMP v1/v2c communities globally.
         fortinet.fmgdevice.fmgd_switchcontroller_snmpcommunity:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
           switchcontroller_snmpcommunity:
             id: 0 # Required variable, integer
-            # events:
-            #   - "cpu-high"
-            #   - "mem-low"
-            #   - "log-full"
-            #   - "intf-ip"
-            #   - "ent-conf-change"
-            #   - "l2mac"
+            # events: ["cpu-high", "mem-low", "log-full", "intf-ip", "ent-conf-change", "l2mac"]
             # hosts:
             #   - id: <integer>
             #     ip: <list or string>

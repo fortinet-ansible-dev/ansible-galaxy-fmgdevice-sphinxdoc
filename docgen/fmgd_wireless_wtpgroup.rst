@@ -68,7 +68,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">platform_type</span> <b>(Alias name: platform-type)</b>  Fortiap models to define the wtp group platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [220B, 210B, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, S321C, S323C, FWF, S311C, S313C, AP-11N, S322C, S321CR, S322CR, S323CR, S421E, S422E, S423E, 421E, 423E, C221E, C226E, C23JD, C24JE, C21D, U421E, U423E, 221E, 222E, 223E, S221E, S223E, U221EV, U223EV, U321EV, U323EV, 224E, U422EV, U24JEV, 321E, U431F, U433F, 231E, 431F, 433F, 231F, 432F, 234F, 23JF, U231F, 831F, U234F, U432F, 431FL, 432FR, 433FL, 231FL, 231G, 233G, 431G, 433G, U231G, U441G, 234G, 432G, 441K, 443K, 241K, 243K, 231K, 23JK, 222KL, 244K, 432K, MVP, 231KD]</span>
+ <li><span class="li-head">platform_type</span> <b>(Alias name: platform-type)</b>  Fortiap models to define the wtp group platform type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [220B, 210B, 222B, 112B, 320B, 11C, 14C, 223B, 28C, 320C, 221C, 25D, 222C, 224D, 214B, 21D, 24D, 112D, 223C, 321C, C220C, C225C, S321C, S323C, FWF, S311C, S313C, AP-11N, S322C, S321CR, S322CR, S323CR, S421E, S422E, S423E, 421E, 423E, C221E, C226E, C23JD, C24JE, C21D, U421E, U423E, 221E, 222E, 223E, S221E, S223E, U221EV, U223EV, U321EV, U323EV, 224E, U422EV, U24JEV, 321E, U431F, U433F, 231E, 431F, 433F, 231F, 432F, 234F, 23JF, U231F, 831F, U234F, U432F, 431FL, 432FR, 433FL, 231FL, 231G, 233G, 431G, 433G, U231G, U441G, 234G, 432G, 441K, 443K, 241K, 243K, 231K, 23JK, 222KL, 244K, 432K, MVP, 231KD, 221K, 435K]</span>
  <a id='label4' href="javascript:ContentClick('label5', 'label4');" onmouseover="ContentPreview('label5');" onmouseout="ContentUnpreview('label5');" title="click to collapse or expand..."> more... </a>
  <div id="label5" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -102,18 +102,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure WTP groups.
         fortinet.fmgdevice.fmgd_wireless_wtpgroup:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>

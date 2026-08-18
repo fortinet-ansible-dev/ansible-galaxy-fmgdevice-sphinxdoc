@@ -171,7 +171,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip6_allowaccess</span> <b>(Alias name: ip6-allowaccess)</b>  Allow management access to the interface. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, scim, probe-response]</span>
+ <li><span class="li-head">ip6_allowaccess</span> <b>(Alias name: ip6-allowaccess)</b>  Allow management access to the interface. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, capwap, fabric, scim, probe-response, mqtt]</span>
  <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
  <div id="label39" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -673,6 +673,24 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">dhcp6_egress_cos</span> <b>(Alias name: dhcp6-egress-cos)</b>  Cos in vlan tag for outgoing dhcpv6 packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [cos0, cos1, cos2, cos3, cos4, cos5, cos6, cos7]</span>
+ <a id='label200' href="javascript:ContentClick('label201', 'label200');" onmouseover="ContentPreview('label201');" onmouseout="ContentUnpreview('label201');" title="click to collapse or expand..."> more... </a>
+ <div id="label201" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip6_link_local</span> <b>(Alias name: ip6-link-local)</b>  Ipv6 link-local address of interface. <span class="li-normal">type: str</span>
+ <a id='label202' href="javascript:ContentClick('label203', 'label202');" onmouseover="ContentPreview('label203');" onmouseout="ContentUnpreview('label203');" title="click to collapse or expand..."> more... </a>
+ <div id="label203" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip6_mgmt_address</span> <b>(Alias name: ip6-mgmt-address)</b>  High availability in-band management ipv6 address of this interface and should be in the same subnet with primary ipv6 address <span class="li-normal">type: str</span>
+ <a id='label204' href="javascript:ContentClick('label205', 'label204');" onmouseover="ContentPreview('label205');" onmouseout="ContentUnpreview('label205');" title="click to collapse or expand..."> more... </a>
+ <div id="label205" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -695,29 +713,16 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: IPv6 of interface.
         fortinet.fmgdevice.fmgd_system_interface_ipv6:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           interface: <your own value>
           system_interface_ipv6:
             # autoconf: <value in [disable, enable]>
             # cli_conn6_status: <integer>
-            # dhcp6_client_options:
-            #   - "rapid"
-            #   - "iapd"
-            #   - "iana"
-            #   - "dns"
-            #   - "dnsname"
+            # dhcp6_client_options: ["rapid", "iapd", "iana", "dns", "dnsname"]
             # dhcp6_iapd_list:
             #   - iaid: <integer>
             #     prefix_hint: <string>
@@ -734,18 +739,8 @@ Examples
             # icmp6_send_redirect: <value in [disable, enable]>
             # interface_identifier: <string>
             # ip6_address: <string>
-            # ip6_allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
-            #   - "capwap"
-            #   - "fabric"
-            #   - "scim"
-            #   - "probe-response"
+            # ip6_allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm", "capwap",
+            #                   "fabric", "scim", "probe-response", "mqtt"]
             # ip6_default_life: <integer>
             # ip6_delegated_prefix_iaid: <integer>
             # ip6_delegated_prefix_list:
@@ -826,6 +821,9 @@ Examples
             #     route_life_time: <integer>
             #     route_pref: <value in [medium, high, low]>
             # ip6_route_pref: <value in [medium, high, low]>
+            # dhcp6_egress_cos: <value in [cos0, cos1, cos2, ...]>
+            # ip6_link_local: <string>
+            # ip6_mgmt_address: <string>
 
 
 Return Values

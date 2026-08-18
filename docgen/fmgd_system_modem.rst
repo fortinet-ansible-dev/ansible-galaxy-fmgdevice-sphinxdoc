@@ -341,37 +341,17 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure MODEM.
         fortinet.fmgdevice.fmgd_system_modem:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           system_modem:
             # altmode: <value in [disable, enable]>
-            # authtype1:
-            #   - "pap"
-            #   - "chap"
-            #   - "mschapv2"
-            #   - "mschap"
-            # authtype2:
-            #   - "pap"
-            #   - "chap"
-            #   - "mschapv2"
-            #   - "mschap"
-            # authtype3:
-            #   - "pap"
-            #   - "chap"
-            #   - "mschapv2"
-            #   - "mschap"
+            # authtype1: ["pap", "chap", "mschapv2", "mschap"]
+            # authtype2: ["pap", "chap", "mschapv2", "mschap"]
+            # authtype3: ["pap", "chap", "mschapv2", "mschap"]
             # auto_dial: <value in [disable, enable]>
             # connect_timeout: <integer>
             # dial_cmd1: <string>

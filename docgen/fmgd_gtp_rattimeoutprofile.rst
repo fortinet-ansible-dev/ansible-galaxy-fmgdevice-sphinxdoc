@@ -122,6 +122,78 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.4.6</code>, <code class="docutils literal notranslate">v7.4.8 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">ltem_geo_timeout</span> <b>(Alias name: ltem-geo-timeout)</b>  Established ltem-geo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
+ <div id="label23" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ltem_leo_timeout</span> <b>(Alias name: ltem-leo-timeout)</b>  Established ltem-leo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label24' href="javascript:ContentClick('label25', 'label24');" onmouseover="ContentPreview('label25');" onmouseout="ContentUnpreview('label25');" title="click to collapse or expand..."> more... </a>
+ <div id="label25" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ltem_meo_timeout</span> <b>(Alias name: ltem-meo-timeout)</b>  Established ltem-meo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
+ <div id="label27" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ltem_othersat_timeout</span> <b>(Alias name: ltem-othersat-timeout)</b>  Established ltem-othersat timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label28' href="javascript:ContentClick('label29', 'label28');" onmouseover="ContentPreview('label29');" onmouseout="ContentUnpreview('label29');" title="click to collapse or expand..."> more... </a>
+ <div id="label29" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">nbiot_geo_timeout</span> <b>(Alias name: nbiot-geo-timeout)</b>  Established nbiot-geo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label30' href="javascript:ContentClick('label31', 'label30');" onmouseover="ContentPreview('label31');" onmouseout="ContentUnpreview('label31');" title="click to collapse or expand..."> more... </a>
+ <div id="label31" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">nbiot_leo_timeout</span> <b>(Alias name: nbiot-leo-timeout)</b>  Established nbiot-leo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label32' href="javascript:ContentClick('label33', 'label32');" onmouseover="ContentPreview('label33');" onmouseout="ContentUnpreview('label33');" title="click to collapse or expand..."> more... </a>
+ <div id="label33" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">nbiot_meo_timeout</span> <b>(Alias name: nbiot-meo-timeout)</b>  Established nbiot-meo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label34' href="javascript:ContentClick('label35', 'label34');" onmouseover="ContentPreview('label35');" onmouseout="ContentUnpreview('label35');" title="click to collapse or expand..."> more... </a>
+ <div id="label35" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">nbiot_othersat_timeout</span> <b>(Alias name: nbiot-othersat-timeout)</b>  Established nbiot-othersat timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label36' href="javascript:ContentClick('label37', 'label36');" onmouseover="ContentPreview('label37');" onmouseout="ContentUnpreview('label37');" title="click to collapse or expand..."> more... </a>
+ <div id="label37" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wb_eutran_geo_timeout</span> <b>(Alias name: wb-eutran-geo-timeout)</b>  Established wb-eutran-geo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label38' href="javascript:ContentClick('label39', 'label38');" onmouseover="ContentPreview('label39');" onmouseout="ContentUnpreview('label39');" title="click to collapse or expand..."> more... </a>
+ <div id="label39" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wb_eutran_leo_timeout</span> <b>(Alias name: wb-eutran-leo-timeout)</b>  Established wb-eutran-leo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label40' href="javascript:ContentClick('label41', 'label40');" onmouseover="ContentPreview('label41');" onmouseout="ContentUnpreview('label41');" title="click to collapse or expand..."> more... </a>
+ <div id="label41" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wb_eutran_meo_timeout</span> <b>(Alias name: wb-eutran-meo-timeout)</b>  Established wb-eutran-meo timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label42' href="javascript:ContentClick('label43', 'label42');" onmouseover="ContentPreview('label43');" onmouseout="ContentUnpreview('label43');" title="click to collapse or expand..."> more... </a>
+ <div id="label43" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">wb_eutran_othersat_timeout</span> <b>(Alias name: wb-eutran-othersat-timeout)</b>  Established wb-eutran-othersat timeout in seconds (default = 0). <span class="li-normal">type: int</span>
+ <a id='label44' href="javascript:ContentClick('label45', 'label44');" onmouseover="ContentPreview('label45');" onmouseout="ContentUnpreview('label45');" title="click to collapse or expand..."> more... </a>
+ <div id="label45" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v8.0.0 -> latest</code></p>
+ </div>
+ </li>
  </ul>
  </ul>
 
@@ -144,18 +216,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: RAT timeout profile
         fortinet.fmgdevice.fmgd_gtp_rattimeoutprofile:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           state: present # <value in [present, absent]>
@@ -171,6 +235,18 @@ Examples
             # utran_timeout: <integer>
             # virtual_timeout: <integer>
             # wlan_timeout: <integer>
+            # ltem_geo_timeout: <integer>
+            # ltem_leo_timeout: <integer>
+            # ltem_meo_timeout: <integer>
+            # ltem_othersat_timeout: <integer>
+            # nbiot_geo_timeout: <integer>
+            # nbiot_leo_timeout: <integer>
+            # nbiot_meo_timeout: <integer>
+            # nbiot_othersat_timeout: <integer>
+            # wb_eutran_geo_timeout: <integer>
+            # wb_eutran_leo_timeout: <integer>
+            # wb_eutran_meo_timeout: <integer>
+            # wb_eutran_othersat_timeout: <integer>
 
 
 Return Values

@@ -109,18 +109,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Servers for link-monitor to monitor.
         fortinet.fmgdevice.fmgd_system_linkmonitor_serverlist:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           link_monitor: <your own value>
@@ -129,13 +121,7 @@ Examples
             id: 0 # Required variable, integer
             # dst: <string>
             # port: <integer>
-            # protocol:
-            #   - "ping"
-            #   - "tcp-echo"
-            #   - "udp-echo"
-            #   - "http"
-            #   - "twamp"
-            #   - "https"
+            # protocol: ["ping", "tcp-echo", "udp-echo", "http", "twamp", "https"]
             # weight: <integer>
 
 

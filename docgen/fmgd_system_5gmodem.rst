@@ -250,85 +250,97 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">esim</span> Enable/disable esim on slot-2. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
+ <div id="label65" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.11 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">gps_antenna_type</span> <b>(Alias name: gps-antenna-type)</b>  Gps antenna type used on the gnss port (default = passive). <span class="li-normal">type: str</span> <span class="li-normal">choices: [active, passive]</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">modem2</span> Modem2. <span class="li-normal">type: dict</span>
- <a id='label64' href="javascript:ContentClick('label65', 'label64');" onmouseover="ContentPreview('label65');" onmouseout="ContentUnpreview('label65');" title="click to collapse or expand..."> more... </a>
- <div id="label65" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- <ul class="ul-self">
- <li><span class="li-head">carrier_config</span> <b>(Alias name: carrier-config)</b>  Carrier-config selection mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [manual, auto-gcf, auto-ptcrb]</span>
- <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
- <div id="label67" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">custom_ipv4_netmask</span> <b>(Alias name: custom-ipv4-netmask)</b>  Netmask assigned by the dhcp server. <span class="li-normal">type: str</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">default_gateway</span> <b>(Alias name: default-gateway)</b>  Modem interface default gateway. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, none]</span>
+ <ul class="ul-self">
+ <li><span class="li-head">carrier_config</span> <b>(Alias name: carrier-config)</b>  Carrier-config selection mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [manual, auto-gcf, auto-ptcrb]</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">default_netmask</span> <b>(Alias name: default-netmask)</b>  Modem interface default netmask. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, custom]</span>
+ <li><span class="li-head">custom_ipv4_netmask</span> <b>(Alias name: custom-ipv4-netmask)</b>  Netmask assigned by the dhcp server. <span class="li-normal">type: str</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">gps_service</span> <b>(Alias name: gps-service)</b>  Enable/disable modem online mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">default_gateway</span> <b>(Alias name: default-gateway)</b>  Modem interface default gateway. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, none]</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">intferface</span> Modem interface. <span class="li-normal">type: str</span>
+ <li><span class="li-head">default_netmask</span> <b>(Alias name: default-netmask)</b>  Modem interface default netmask. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, custom]</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">modem_id</span> <b>(Alias name: modem-id)</b>  Modem id. <span class="li-normal">type: int</span>
+ <li><span class="li-head">gps_service</span> <b>(Alias name: gps-service)</b>  Enable/disable modem online mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">network_type</span> <b>(Alias name: network-type)</b>  Modem network type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 4g|5g, 3g|4g, 3g|5g, 5g, 4g, 3g]</span>
+ <li><span class="li-head">intferface</span> Modem interface. <span class="li-normal">type: str</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sim_data_plan</span> <b>(Alias name: sim-data-plan)</b>  Data plan for sim. <span class="li-normal">type: list</span>
+ <li><span class="li-head">modem_id</span> <b>(Alias name: modem-id)</b>  Modem id. <span class="li-normal">type: int</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">sim_pin</span> <b>(Alias name: sim-pin)</b>  Pin code for sim(if applicable). <span class="li-normal">type: list</span>
+ <li><span class="li-head">network_type</span> <b>(Alias name: network-type)</b>  Modem network type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [auto, 4g|5g, 3g|4g, 3g|5g, 5g, 4g, 3g]</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">status</span> Enable/disable modem online mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [online, low-power]</span>
+ <li><span class="li-head">sim_data_plan</span> <b>(Alias name: sim-data-plan)</b>  Data plan for sim. <span class="li-normal">type: list</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">sim_pin</span> <b>(Alias name: sim-pin)</b>  Pin code for sim(if applicable). <span class="li-normal">type: list</span>
+ <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
+ <div id="label89" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">status</span> Enable/disable modem online mode. <span class="li-normal">type: str</span> <span class="li-normal">choices: [online, low-power]</span>
+ <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
+ <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">status</span> Enable/disable usb 5g modem daemon. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
- <div id="label89" style="display:none">
+ <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
+ <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
@@ -354,18 +366,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure USB 5G modems.
         fortinet.fmgdevice.fmgd_system_5gmodem:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_5gmodem:
             # data_plan:
@@ -400,6 +404,8 @@ Examples
             #   sim2_data_plan: <list or string>
             #   sim2_pin: <list or string>
             #   status: <value in [online, low-power]>
+            #   esim: <value in [disable, enable]>
+            #   gps_antenna_type: <value in [active, passive]>
             # modem2:
             #   carrier_config: <value in [manual, auto-gcf, auto-ptcrb]>
             #   custom_ipv4_netmask: <string>

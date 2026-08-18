@@ -123,7 +123,7 @@ Parameters
  <li><span class="li-head">change_4_characters</span> <b>(Alias name: change-4-characters)</b>  Enable/disable changing at least 4 characters for a new password (this attribute overrides reuse-password if both are enabled). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label22' href="javascript:ContentClick('label23', 'label22');" onmouseover="ContentPreview('label23');" onmouseout="ContentUnpreview('label23');" title="click to collapse or expand..."> more... </a>
  <div id="label23" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">reuse_password_limit</span> <b>(Alias name: reuse-password-limit)</b>  Number of times passwords can be reused (0 - 20, default = 0. <span class="li-normal">type: int</span>
@@ -135,7 +135,7 @@ Parameters
  <li><span class="li-head">password_history</span> <b>(Alias name: password-history)</b>  Number of previous passwords that cannot be reused. <span class="li-normal">type: int</span>
  <a id='label26' href="javascript:ContentClick('label27', 'label26');" onmouseover="ContentPreview('label27');" onmouseout="ContentUnpreview('label27');" title="click to collapse or expand..."> more... </a>
  <div id="label27" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.10</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.8 -> v7.4.11</code>, <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  </li>
  </ul>
@@ -160,22 +160,13 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure the password policy for guest administrators.
         fortinet.fmgdevice.fmgd_system_passwordpolicyguestadmin:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           system_passwordpolicyguestadmin:
-            # apply_to:
-            #   - "guest-admin-password"
+            # apply_to: ["guest-admin-password"]
             # expire_day: <integer>
             # expire_status: <value in [disable, enable]>
             # min_change_characters: <integer>

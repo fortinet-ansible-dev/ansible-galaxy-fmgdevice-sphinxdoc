@@ -197,7 +197,7 @@ Parameters
  <li><span class="li-head">intelligent_mode</span> <b>(Alias name: intelligent-mode)</b>  Enable/disable ips adaptive scanning (intelligent mode). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label46' href="javascript:ContentClick('label47', 'label46');" onmouseover="ContentPreview('label47');" onmouseout="ContentUnpreview('label47');" title="click to collapse or expand..."> more... </a>
  <div id="label47" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> v7.6.7</code></p>
  </div>
  </li>
  <li><span class="li-head">skype_client_public_ipaddr</span> <b>(Alias name: skype-client-public-ipaddr)</b>  Public ip addresses of your network that receive skype sessions. <span class="li-normal">type: str</span>
@@ -234,18 +234,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure IPS global parameter.
         fortinet.fmgdevice.fmgd_ips_global:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           ips_global:
             # anomaly_mode: <value in [periodical, continuous]>

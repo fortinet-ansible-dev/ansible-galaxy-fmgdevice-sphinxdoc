@@ -63,7 +63,7 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
  </div>
  <ul class="ul-self">
- <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb tenant extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json]</span>
+ <li><span class="li-head">body_type</span> <b>(Alias name: body-type)</b>  Casb tenant extraction filter body type. <span class="li-normal">type: str</span> <span class="li-normal">choices: [json, form]</span>
  <a id='label2' href="javascript:ContentClick('label3', 'label2');" onmouseover="ContentPreview('label3');" onmouseout="ContentUnpreview('label3');" title="click to collapse or expand..."> more... </a>
  <div id="label3" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.4 -> latest</code></p>
@@ -135,25 +135,17 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: CASB user activity tenant extraction.
         fortinet.fmgdevice.fmgd_casb_useractivity_match_tenantextraction:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           user_activity: <your own value>
           match: <your own value>
           casb_useractivity_match_tenantextraction:
             # filters:
-            #   - body_type: <value in [json]>
+            #   - body_type: <value in [json, form]>
             #     direction: <value in [request, response]>
             #     header_name: <string>
             #     id: <integer>

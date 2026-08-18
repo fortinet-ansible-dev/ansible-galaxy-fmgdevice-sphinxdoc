@@ -257,287 +257,293 @@ Parameters
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
+ <li><span class="li-head">update_source</span> <b>(Alias name: update-source)</b>  Interface to use as source ip. <span class="li-normal">type: list</span>
+ <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
+ <div id="label67" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.7 -> v7.6.7</code></p>
+ </div>
+ </li>
  </ul>
  </li>
  <li><span class="li-head">multicast_routing</span> <b>(Alias name: multicast-routing)</b>  Enable/disable ip multicast routing. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
- <a id='label66' href="javascript:ContentClick('label67', 'label66');" onmouseover="ContentPreview('label67');" onmouseout="ContentUnpreview('label67');" title="click to collapse or expand..."> more... </a>
- <div id="label67" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">pim_sm_global</span> <b>(Alias name: pim-sm-global)</b>  Pim sm global. <span class="li-normal">type: dict</span>
  <a id='label68' href="javascript:ContentClick('label69', 'label68');" onmouseover="ContentPreview('label69');" onmouseout="ContentUnpreview('label69');" title="click to collapse or expand..."> more... </a>
  <div id="label69" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">accept_register_list</span> <b>(Alias name: accept-register-list)</b>  Sources allowed to register packets with this rendezvous point (rp). <span class="li-normal">type: list</span>
+ </li>
+ <li><span class="li-head">pim_sm_global</span> <b>(Alias name: pim-sm-global)</b>  Pim sm global. <span class="li-normal">type: dict</span>
  <a id='label70' href="javascript:ContentClick('label71', 'label70');" onmouseover="ContentPreview('label71');" onmouseout="ContentUnpreview('label71');" title="click to collapse or expand..."> more... </a>
  <div id="label71" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">accept_source_list</span> <b>(Alias name: accept-source-list)</b>  Sources allowed to send multicast traffic. <span class="li-normal">type: list</span>
+ <ul class="ul-self">
+ <li><span class="li-head">accept_register_list</span> <b>(Alias name: accept-register-list)</b>  Sources allowed to register packets with this rendezvous point (rp). <span class="li-normal">type: list</span>
  <a id='label72' href="javascript:ContentClick('label73', 'label72');" onmouseover="ContentPreview('label73');" onmouseout="ContentUnpreview('label73');" title="click to collapse or expand..."> more... </a>
  <div id="label73" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_allow_quick_refresh</span> <b>(Alias name: bsr-allow-quick-refresh)</b>  Enable/disable accept bsr quick refresh packets from neighbors. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">accept_source_list</span> <b>(Alias name: accept-source-list)</b>  Sources allowed to send multicast traffic. <span class="li-normal">type: list</span>
  <a id='label74' href="javascript:ContentClick('label75', 'label74');" onmouseover="ContentPreview('label75');" onmouseout="ContentUnpreview('label75');" title="click to collapse or expand..."> more... </a>
  <div id="label75" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_candidate</span> <b>(Alias name: bsr-candidate)</b>  Enable/disable allowing this router to become a bootstrap router (bsr). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">bsr_allow_quick_refresh</span> <b>(Alias name: bsr-allow-quick-refresh)</b>  Enable/disable accept bsr quick refresh packets from neighbors. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label76' href="javascript:ContentClick('label77', 'label76');" onmouseover="ContentPreview('label77');" onmouseout="ContentUnpreview('label77');" title="click to collapse or expand..."> more... </a>
  <div id="label77" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_hash</span> <b>(Alias name: bsr-hash)</b>  Bsr hash length (0 - 32, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">bsr_candidate</span> <b>(Alias name: bsr-candidate)</b>  Enable/disable allowing this router to become a bootstrap router (bsr). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label78' href="javascript:ContentClick('label79', 'label78');" onmouseover="ContentPreview('label79');" onmouseout="ContentUnpreview('label79');" title="click to collapse or expand..."> more... </a>
  <div id="label79" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_interface</span> <b>(Alias name: bsr-interface)</b>  Interface to advertise as candidate bsr. <span class="li-normal">type: list</span>
+ <li><span class="li-head">bsr_hash</span> <b>(Alias name: bsr-hash)</b>  Bsr hash length (0 - 32, default = 10). <span class="li-normal">type: int</span>
  <a id='label80' href="javascript:ContentClick('label81', 'label80');" onmouseover="ContentPreview('label81');" onmouseout="ContentUnpreview('label81');" title="click to collapse or expand..."> more... </a>
  <div id="label81" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_priority</span> <b>(Alias name: bsr-priority)</b>  Bsr priority (0 - 255, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">bsr_interface</span> <b>(Alias name: bsr-interface)</b>  Interface to advertise as candidate bsr. <span class="li-normal">type: list</span>
  <a id='label82' href="javascript:ContentClick('label83', 'label82');" onmouseover="ContentPreview('label83');" onmouseout="ContentUnpreview('label83');" title="click to collapse or expand..."> more... </a>
  <div id="label83" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cisco_crp_prefix</span> <b>(Alias name: cisco-crp-prefix)</b>  Enable/disable making candidate rp compatible with old cisco ios. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">bsr_priority</span> <b>(Alias name: bsr-priority)</b>  Bsr priority (0 - 255, default = 0). <span class="li-normal">type: int</span>
  <a id='label84' href="javascript:ContentClick('label85', 'label84');" onmouseover="ContentPreview('label85');" onmouseout="ContentUnpreview('label85');" title="click to collapse or expand..."> more... </a>
  <div id="label85" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cisco_ignore_rp_set_priority</span> <b>(Alias name: cisco-ignore-rp-set-priority)</b>  Use only hash for rp selection (compatibility with old cisco ios). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">cisco_crp_prefix</span> <b>(Alias name: cisco-crp-prefix)</b>  Enable/disable making candidate rp compatible with old cisco ios. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label86' href="javascript:ContentClick('label87', 'label86');" onmouseover="ContentPreview('label87');" onmouseout="ContentUnpreview('label87');" title="click to collapse or expand..."> more... </a>
  <div id="label87" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cisco_register_checksum</span> <b>(Alias name: cisco-register-checksum)</b>  Checksum entire register packet(for old cisco ios compatibility). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">cisco_ignore_rp_set_priority</span> <b>(Alias name: cisco-ignore-rp-set-priority)</b>  Use only hash for rp selection (compatibility with old cisco ios). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label88' href="javascript:ContentClick('label89', 'label88');" onmouseover="ContentPreview('label89');" onmouseout="ContentUnpreview('label89');" title="click to collapse or expand..."> more... </a>
  <div id="label89" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cisco_register_checksum_group</span> <b>(Alias name: cisco-register-checksum-group)</b>  Cisco register checksum only these groups. <span class="li-normal">type: list</span>
+ <li><span class="li-head">cisco_register_checksum</span> <b>(Alias name: cisco-register-checksum)</b>  Checksum entire register packet(for old cisco ios compatibility). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label90' href="javascript:ContentClick('label91', 'label90');" onmouseover="ContentPreview('label91');" onmouseout="ContentUnpreview('label91');" title="click to collapse or expand..."> more... </a>
  <div id="label91" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">join_prune_holdtime</span> <b>(Alias name: join-prune-holdtime)</b>  Join/prune holdtime (1 - 65535, default = 210). <span class="li-normal">type: int</span>
+ <li><span class="li-head">cisco_register_checksum_group</span> <b>(Alias name: cisco-register-checksum-group)</b>  Cisco register checksum only these groups. <span class="li-normal">type: list</span>
  <a id='label92' href="javascript:ContentClick('label93', 'label92');" onmouseover="ContentPreview('label93');" onmouseout="ContentUnpreview('label93');" title="click to collapse or expand..."> more... </a>
  <div id="label93" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">message_interval</span> <b>(Alias name: message-interval)</b>  Period of time between sending periodic pim join/prune messages in seconds (1 - 65535, default = 60). <span class="li-normal">type: int</span>
+ <li><span class="li-head">join_prune_holdtime</span> <b>(Alias name: join-prune-holdtime)</b>  Join/prune holdtime (1 - 65535, default = 210). <span class="li-normal">type: int</span>
  <a id='label94' href="javascript:ContentClick('label95', 'label94');" onmouseover="ContentPreview('label95');" onmouseout="ContentUnpreview('label95');" title="click to collapse or expand..."> more... </a>
  <div id="label95" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">null_register_retries</span> <b>(Alias name: null-register-retries)</b>  Maximum retries of null register (1 - 20, default = 1). <span class="li-normal">type: int</span>
+ <li><span class="li-head">message_interval</span> <b>(Alias name: message-interval)</b>  Period of time between sending periodic pim join/prune messages in seconds (1 - 65535, default = 60). <span class="li-normal">type: int</span>
  <a id='label96' href="javascript:ContentClick('label97', 'label96');" onmouseover="ContentPreview('label97');" onmouseout="ContentUnpreview('label97');" title="click to collapse or expand..."> more... </a>
  <div id="label97" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pim_use_sdwan</span> <b>(Alias name: pim-use-sdwan)</b>  Enable/disable use of sdwan when checking rpf neighbor and sending of reg packet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">null_register_retries</span> <b>(Alias name: null-register-retries)</b>  Maximum retries of null register (1 - 20, default = 1). <span class="li-normal">type: int</span>
  <a id='label98' href="javascript:ContentClick('label99', 'label98');" onmouseover="ContentPreview('label99');" onmouseout="ContentUnpreview('label99');" title="click to collapse or expand..."> more... </a>
  <div id="label99" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">pim_use_sdwan</span> <b>(Alias name: pim-use-sdwan)</b>  Enable/disable use of sdwan when checking rpf neighbor and sending of reg packet. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
+ <div id="label101" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  <li><span class="li-head">register_rate_limit</span> <b>(Alias name: register-rate-limit)</b>  Limit of packets/sec per source registered through this rp (0 - 65535, default = 0 which means unlimited). <span class="li-normal">type: int</span>
- <a id='label100' href="javascript:ContentClick('label101', 'label100');" onmouseover="ContentPreview('label101');" onmouseout="ContentUnpreview('label101');" title="click to collapse or expand..."> more... </a>
- <div id="label101" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">register_rp_reachability</span> <b>(Alias name: register-rp-reachability)</b>  Enable/disable check rp is reachable before registering packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label102' href="javascript:ContentClick('label103', 'label102');" onmouseover="ContentPreview('label103');" onmouseout="ContentUnpreview('label103');" title="click to collapse or expand..."> more... </a>
  <div id="label103" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">register_source</span> <b>(Alias name: register-source)</b>  Override source address in register packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, ip-address, interface]</span>
+ <li><span class="li-head">register_rp_reachability</span> <b>(Alias name: register-rp-reachability)</b>  Enable/disable check rp is reachable before registering packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label104' href="javascript:ContentClick('label105', 'label104');" onmouseover="ContentPreview('label105');" onmouseout="ContentUnpreview('label105');" title="click to collapse or expand..."> more... </a>
  <div id="label105" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">register_source_interface</span> <b>(Alias name: register-source-interface)</b>  Override with primary interface address. <span class="li-normal">type: list</span>
+ <li><span class="li-head">register_source</span> <b>(Alias name: register-source)</b>  Override source address in register packets. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, ip-address, interface]</span>
  <a id='label106' href="javascript:ContentClick('label107', 'label106');" onmouseover="ContentPreview('label107');" onmouseout="ContentUnpreview('label107');" title="click to collapse or expand..."> more... </a>
  <div id="label107" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">register_source_ip</span> <b>(Alias name: register-source-ip)</b>  Override with local ip address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">register_source_interface</span> <b>(Alias name: register-source-interface)</b>  Override with primary interface address. <span class="li-normal">type: list</span>
  <a id='label108' href="javascript:ContentClick('label109', 'label108');" onmouseover="ContentPreview('label109');" onmouseout="ContentUnpreview('label109');" title="click to collapse or expand..."> more... </a>
  <div id="label109" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">register_supression</span> <b>(Alias name: register-supression)</b>  Period of time to honor register-stop message (1 - 65535 sec, default = 60). <span class="li-normal">type: int</span>
+ <li><span class="li-head">register_source_ip</span> <b>(Alias name: register-source-ip)</b>  Override with local ip address. <span class="li-normal">type: str</span>
  <a id='label110' href="javascript:ContentClick('label111', 'label110');" onmouseover="ContentPreview('label111');" onmouseout="ContentUnpreview('label111');" title="click to collapse or expand..."> more... </a>
  <div id="label111" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rp_address</span> <b>(Alias name: rp-address)</b>  Rp address. <span class="li-normal">type: list</span>
+ <li><span class="li-head">register_supression</span> <b>(Alias name: register-supression)</b>  Period of time to honor register-stop message (1 - 65535 sec, default = 60). <span class="li-normal">type: int</span>
  <a id='label112' href="javascript:ContentClick('label113', 'label112');" onmouseover="ContentPreview('label113');" onmouseout="ContentUnpreview('label113');" title="click to collapse or expand..."> more... </a>
  <div id="label113" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">group</span> Groups to use this rp. <span class="li-normal">type: list</span>
+ </li>
+ <li><span class="li-head">rp_address</span> <b>(Alias name: rp-address)</b>  Rp address. <span class="li-normal">type: list</span>
  <a id='label114' href="javascript:ContentClick('label115', 'label114');" onmouseover="ContentPreview('label115');" onmouseout="ContentUnpreview('label115');" title="click to collapse or expand..."> more... </a>
  <div id="label115" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">group</span> Groups to use this rp. <span class="li-normal">type: list</span>
  <a id='label116' href="javascript:ContentClick('label117', 'label116');" onmouseover="ContentPreview('label117');" onmouseout="ContentUnpreview('label117');" title="click to collapse or expand..."> more... </a>
  <div id="label117" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_address</span> <b>(Alias name: ip-address)</b>  Rp router address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label118' href="javascript:ContentClick('label119', 'label118');" onmouseover="ContentPreview('label119');" onmouseout="ContentUnpreview('label119');" title="click to collapse or expand..."> more... </a>
  <div id="label119" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip_address</span> <b>(Alias name: ip-address)</b>  Rp router address. <span class="li-normal">type: str</span>
+ <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
+ <div id="label121" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">rp_register_keepalive</span> <b>(Alias name: rp-register-keepalive)</b>  Timeout for rp receiving data on (s,g) tree (1 - 65535 sec, default = 185). <span class="li-normal">type: int</span>
- <a id='label120' href="javascript:ContentClick('label121', 'label120');" onmouseover="ContentPreview('label121');" onmouseout="ContentUnpreview('label121');" title="click to collapse or expand..."> more... </a>
- <div id="label121" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">spt_threshold</span> <b>(Alias name: spt-threshold)</b>  Enable/disable switching to source specific trees. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label122' href="javascript:ContentClick('label123', 'label122');" onmouseover="ContentPreview('label123');" onmouseout="ContentUnpreview('label123');" title="click to collapse or expand..."> more... </a>
  <div id="label123" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">spt_threshold_group</span> <b>(Alias name: spt-threshold-group)</b>  Groups allowed to switch to source tree. <span class="li-normal">type: list</span>
+ <li><span class="li-head">spt_threshold</span> <b>(Alias name: spt-threshold)</b>  Enable/disable switching to source specific trees. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label124' href="javascript:ContentClick('label125', 'label124');" onmouseover="ContentPreview('label125');" onmouseout="ContentUnpreview('label125');" title="click to collapse or expand..."> more... </a>
  <div id="label125" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssm</span> Enable/disable source specific multicast. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">spt_threshold_group</span> <b>(Alias name: spt-threshold-group)</b>  Groups allowed to switch to source tree. <span class="li-normal">type: list</span>
  <a id='label126' href="javascript:ContentClick('label127', 'label126');" onmouseover="ContentPreview('label127');" onmouseout="ContentUnpreview('label127');" title="click to collapse or expand..."> more... </a>
  <div id="label127" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ssm_range</span> <b>(Alias name: ssm-range)</b>  Groups allowed to source specific multicast. <span class="li-normal">type: list</span>
+ <li><span class="li-head">ssm</span> Enable/disable source specific multicast. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label128' href="javascript:ContentClick('label129', 'label128');" onmouseover="ContentPreview('label129');" onmouseout="ContentUnpreview('label129');" title="click to collapse or expand..."> more... </a>
  <div id="label129" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ssm_range</span> <b>(Alias name: ssm-range)</b>  Groups allowed to source specific multicast. <span class="li-normal">type: list</span>
+ <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
+ <div id="label131" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">route_limit</span> <b>(Alias name: route-limit)</b>  Maximum number of multicast routes. <span class="li-normal">type: int</span>
- <a id='label130' href="javascript:ContentClick('label131', 'label130');" onmouseover="ContentPreview('label131');" onmouseout="ContentUnpreview('label131');" title="click to collapse or expand..."> more... </a>
- <div id="label131" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
- </div>
- </li>
- <li><span class="li-head">route_threshold</span> <b>(Alias name: route-threshold)</b>  Generate warnings when the number of multicast routes exceeds this number, must not be greater than route-limit. <span class="li-normal">type: int</span>
  <a id='label132' href="javascript:ContentClick('label133', 'label132');" onmouseover="ContentPreview('label133');" onmouseout="ContentUnpreview('label133');" title="click to collapse or expand..."> more... </a>
  <div id="label133" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">pim_sm_global_vrf</span> <b>(Alias name: pim-sm-global-vrf)</b>  Pim sm global vrf. <span class="li-normal">type: list</span>
+ <li><span class="li-head">route_threshold</span> <b>(Alias name: route-threshold)</b>  Generate warnings when the number of multicast routes exceeds this number, must not be greater than route-limit. <span class="li-normal">type: int</span>
  <a id='label134' href="javascript:ContentClick('label135', 'label134');" onmouseover="ContentPreview('label135');" onmouseout="ContentUnpreview('label135');" title="click to collapse or expand..."> more... </a>
  <div id="label135" style="display:none">
- <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">bsr_allow_quick_refresh</span> <b>(Alias name: bsr-allow-quick-refresh)</b>  Enable/disable accept bsr quick refresh packets from neighbors. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ </li>
+ <li><span class="li-head">pim_sm_global_vrf</span> <b>(Alias name: pim-sm-global-vrf)</b>  Pim sm global vrf. <span class="li-normal">type: list</span>
  <a id='label136' href="javascript:ContentClick('label137', 'label136');" onmouseover="ContentPreview('label137');" onmouseout="ContentUnpreview('label137');" title="click to collapse or expand..."> more... </a>
  <div id="label137" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">bsr_candidate</span> <b>(Alias name: bsr-candidate)</b>  Enable/disable allowing this router to become a bootstrap router (bsr). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <ul class="ul-self">
+ <li><span class="li-head">bsr_allow_quick_refresh</span> <b>(Alias name: bsr-allow-quick-refresh)</b>  Enable/disable accept bsr quick refresh packets from neighbors. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label138' href="javascript:ContentClick('label139', 'label138');" onmouseover="ContentPreview('label139');" onmouseout="ContentUnpreview('label139');" title="click to collapse or expand..."> more... </a>
  <div id="label139" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_hash</span> <b>(Alias name: bsr-hash)</b>  Bsr hash length (0 - 32, default = 10). <span class="li-normal">type: int</span>
+ <li><span class="li-head">bsr_candidate</span> <b>(Alias name: bsr-candidate)</b>  Enable/disable allowing this router to become a bootstrap router (bsr). <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label140' href="javascript:ContentClick('label141', 'label140');" onmouseover="ContentPreview('label141');" onmouseout="ContentUnpreview('label141');" title="click to collapse or expand..."> more... </a>
  <div id="label141" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_interface</span> <b>(Alias name: bsr-interface)</b>  Interface to advertise as candidate bsr. <span class="li-normal">type: list</span>
+ <li><span class="li-head">bsr_hash</span> <b>(Alias name: bsr-hash)</b>  Bsr hash length (0 - 32, default = 10). <span class="li-normal">type: int</span>
  <a id='label142' href="javascript:ContentClick('label143', 'label142');" onmouseover="ContentPreview('label143');" onmouseout="ContentUnpreview('label143');" title="click to collapse or expand..."> more... </a>
  <div id="label143" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">bsr_priority</span> <b>(Alias name: bsr-priority)</b>  Bsr priority (0 - 255, default = 0). <span class="li-normal">type: int</span>
+ <li><span class="li-head">bsr_interface</span> <b>(Alias name: bsr-interface)</b>  Interface to advertise as candidate bsr. <span class="li-normal">type: list</span>
  <a id='label144' href="javascript:ContentClick('label145', 'label144');" onmouseover="ContentPreview('label145');" onmouseout="ContentUnpreview('label145');" title="click to collapse or expand..."> more... </a>
  <div id="label145" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">cisco_crp_prefix</span> <b>(Alias name: cisco-crp-prefix)</b>  Enable/disable making candidate rp compatible with old cisco ios. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
+ <li><span class="li-head">bsr_priority</span> <b>(Alias name: bsr-priority)</b>  Bsr priority (0 - 255, default = 0). <span class="li-normal">type: int</span>
  <a id='label146' href="javascript:ContentClick('label147', 'label146');" onmouseover="ContentPreview('label147');" onmouseout="ContentUnpreview('label147');" title="click to collapse or expand..."> more... </a>
  <div id="label147" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">rp_address</span> <b>(Alias name: rp-address)</b>  Rp address. <span class="li-normal">type: list</span>
+ <li><span class="li-head">cisco_crp_prefix</span> <b>(Alias name: cisco-crp-prefix)</b>  Enable/disable making candidate rp compatible with old cisco ios. <span class="li-normal">type: str</span> <span class="li-normal">choices: [disable, enable]</span>
  <a id='label148' href="javascript:ContentClick('label149', 'label148');" onmouseover="ContentPreview('label149');" onmouseout="ContentUnpreview('label149');" title="click to collapse or expand..."> more... </a>
  <div id="label149" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
- <ul class="ul-self">
- <li><span class="li-head">group</span> Groups to use this rp. <span class="li-normal">type: list</span>
+ </li>
+ <li><span class="li-head">rp_address</span> <b>(Alias name: rp-address)</b>  Rp address. <span class="li-normal">type: list</span>
  <a id='label150' href="javascript:ContentClick('label151', 'label150');" onmouseover="ContentPreview('label151');" onmouseout="ContentUnpreview('label151');" title="click to collapse or expand..."> more... </a>
  <div id="label151" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
- </li>
- <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
+ <ul class="ul-self">
+ <li><span class="li-head">group</span> Groups to use this rp. <span class="li-normal">type: list</span>
  <a id='label152' href="javascript:ContentClick('label153', 'label152');" onmouseover="ContentPreview('label153');" onmouseout="ContentUnpreview('label153');" title="click to collapse or expand..."> more... </a>
  <div id="label153" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
- <li><span class="li-head">ip_address</span> <b>(Alias name: ip-address)</b>  Rp router address. <span class="li-normal">type: str</span>
+ <li><span class="li-head">id</span> Id. <span class="li-normal">type: int</span>
  <a id='label154' href="javascript:ContentClick('label155', 'label154');" onmouseover="ContentPreview('label155');" onmouseout="ContentUnpreview('label155');" title="click to collapse or expand..."> more... </a>
  <div id="label155" style="display:none">
+ <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
+ </div>
+ </li>
+ <li><span class="li-head">ip_address</span> <b>(Alias name: ip-address)</b>  Rp router address. <span class="li-normal">type: str</span>
+ <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
+ <div id="label157" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
  </ul>
  </li>
  <li><span class="li-head">vrf</span> Vrf id. <span class="li-normal">type: int</span>
- <a id='label156' href="javascript:ContentClick('label157', 'label156');" onmouseover="ContentPreview('label157');" onmouseout="ContentUnpreview('label157');" title="click to collapse or expand..."> more... </a>
- <div id="label157" style="display:none">
+ <a id='label158' href="javascript:ContentClick('label159', 'label158');" onmouseover="ContentPreview('label159');" onmouseout="ContentUnpreview('label159');" title="click to collapse or expand..."> more... </a>
+ <div id="label159" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.6.2 -> latest</code></p>
  </div>
  </li>
@@ -565,18 +571,10 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Configure router multicast.
         fortinet.fmgdevice.fmgd_router_multicast:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           vdom: <your own value>
           router_multicast:
@@ -613,6 +611,7 @@ Examples
             #     state_refresh_interval: <integer>
             #     static_group: <list or string>
             #     ttl_threshold: <integer>
+            #     update_source: <list or string>
             # multicast_routing: <value in [disable, enable]>
             # pim_sm_global:
             #   accept_register_list: <list or string>

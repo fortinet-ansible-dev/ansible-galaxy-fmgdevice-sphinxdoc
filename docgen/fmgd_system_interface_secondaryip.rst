@@ -56,7 +56,7 @@ Parameters
  <li><span class="li-head">interface</span> - The parameter in requested url <span class="li-normal">type: str</span> <span class="li-required">required: true</span> </li>
  <li><span class="li-head">system_interface_secondaryip</span> - Second IP address of interface. <span class="li-normal">type: dict</span></li>
  <ul class="ul-self">
- <li><span class="li-head">allowaccess</span> Management access settings for the secondary ip address. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, speed-test, icond, scim]</span>
+ <li><span class="li-head">allowaccess</span> Management access settings for the secondary ip address. <span class="li-normal">type: list</span> <span class="li-normal">choices: [https, ping, ssh, snmp, http, telnet, fgfm, auto-ipsec, radius-acct, probe-response, capwap, dnp, ftm, fabric, speed-test, icond, scim, mqtt]</span>
  <a id='label0' href="javascript:ContentClick('label1', 'label0');" onmouseover="ContentPreview('label1');" onmouseout="ContentUnpreview('label1');" title="click to collapse or expand..."> more... </a>
  <div id="label1" style="display:none">
  <p>Supported Version Ranges: <code class="docutils literal notranslate">v7.2.6 -> v7.2.12</code>, <code class="docutils literal notranslate">v7.4.3 -> latest</code></p>
@@ -102,41 +102,18 @@ Examples
     hosts: fortimanagers
     connection: httpapi
     gather_facts: false
-    vars:
-      ansible_httpapi_use_ssl: true
-      ansible_httpapi_validate_certs: false
-      ansible_httpapi_port: 443
     tasks:
       - name: Second IP address of interface.
         fortinet.fmgdevice.fmgd_system_interface_secondaryip:
-          # bypass_validation: false
           # workspace_locking_adom: <global or your adom name>
-          # workspace_locking_timeout: 300
-          # rc_succeeded: [0, -2, -3, ...]
-          # rc_failed: [-2, -3, ...]
           device: <your own value>
           interface: <your own value>
           state: present # <value in [present, absent]>
           system_interface_secondaryip:
             id: 0 # Required variable, integer
-            # allowaccess:
-            #   - "https"
-            #   - "ping"
-            #   - "ssh"
-            #   - "snmp"
-            #   - "http"
-            #   - "telnet"
-            #   - "fgfm"
-            #   - "auto-ipsec"
-            #   - "radius-acct"
-            #   - "probe-response"
-            #   - "capwap"
-            #   - "dnp"
-            #   - "ftm"
-            #   - "fabric"
-            #   - "speed-test"
-            #   - "icond"
-            #   - "scim"
+            # allowaccess: ["https", "ping", "ssh", "snmp", "http", "telnet", "fgfm", "auto-ipsec",
+            #               "radius-acct", "probe-response", "capwap", "dnp", "ftm", "fabric",
+            #               "speed-test", "icond", "scim", "mqtt"]
             # ip: <list or string>
             # secip_relay_ip: <string>
 
